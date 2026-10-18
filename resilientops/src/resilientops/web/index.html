@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ResilientOps · Supply chain control tower</title>
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script src="/assets/app.js" defer></script>
+</head>
+<body>
+  <header><a class="brand" href="/">R<span>ResilientOps</span></a><span class="pill">Synthetic demonstration</span></header>
+  <main>
+    <section class="hero"><div><p class="eyebrow">SUPPLY CHAIN CONTROL TOWER</p><h1>When the evidence changes,<br>the plan should too.</h1><p class="intro">Interpret shipment updates, see the impact on dated demand, and compare recovery options before approving an action.</p></div></section>
+    <section class="scenario-bar card" aria-label="Scenario selection"><div><label for="scenario">Explore a synthetic scenario</label><select id="scenario"><option value="baseline">Original disruption</option></select><p id="scenario-description" class="muted"></p></div><button id="analyze" class="primary">Analyze scenario ↗</button></section>
+    <details id="access" class="access"><summary>Approver access <span id="access-status">· read-only session</span></summary><label for="token">Workspace approver credential</label><div class="access-fields"><input id="token" type="password" autocomplete="off" placeholder="Enter your manager or senior credential"><button id="connect">Connect</button></div><p class="muted">Held only in this tab. Needed for approval, source corrections, and simulated execution.</p></details>
+    <div id="message" class="message" role="status" aria-live="polite" hidden></div>
+    <section class="pipeline" aria-label="Agent progress" id="pipeline"></section>
+    <section class="workspace">
+      <div class="main-column">
+        <article class="card"><div class="card-title"><h2>Incident overview</h2><span id="status" class="pill">Ready</span></div><p id="incident-detail">SUP017 · PCB-X41 · Chennai. A synthetic storm and shipment delay puts six days of scheduled demand at risk.</p><div class="metrics" id="metrics"></div>
+          <div class="network" aria-label="Illustrative supply network"><div><span class="dot warning"></span><strong>SUP017</strong><small>Shenzhen · disrupted supplier</small></div><span class="connector">→</span><div><span class="dot blue"></span><strong>Chennai</strong><small>Destination plant</small></div><span class="connector">←</span><div><span class="dot green"></span><strong>Pune</strong><small>Potential inventory transfer</small></div></div><p class="muted">Illustrative network · supplier location does not establish a confirmed delay.</p>
+        </article>
+        <article class="card"><div class="card-title"><h2>What the evidence changes</h2><span id="interpretation-status" class="pill">Awaiting evidence</span></div><div id="interpretation"><p class="empty">Cited shipment facts, conflicts, and changes to planning assumptions appear here.</p></div><details id="source-editor" hidden><summary>Add a shipment update or correction</summary><p class="muted">A new update clears the current approval and triggers a fresh analysis. Explicitly select any earlier reports it replaces.</p><label for="source-label">Source label</label><input id="source-label" maxlength="120" value="Analyst-supplied synthetic update"><label for="source-text">Shipment message</label><textarea id="source-text" rows="5" maxlength="8000" placeholder="PUNE-TRANSFER. Confirmed arrival: 2026-10-19. Available: 400 units."></textarea><p id="supersedes-label" class="muted">Reports explicitly replaced by this correction (optional)</p><div id="supersedes" class="source-options" role="group" aria-labelledby="supersedes-label"></div><button id="submit-update">Submit update and reanalyze</button></details></article>
+        <article class="card"><h2>Business impact · planning comparison</h2><div id="business"><p class="empty">Compare the modeled outcome with and without recovery.</p></div></article>
+        <article class="card"><div class="card-title"><h2>Recovery decision</h2><span id="solver" class="muted">Waiting for analysis</span></div><div id="plan"><p class="empty">The Recovery agent will compare approved options against dated demand.</p></div><div id="approval" hidden><div class="actions"><button id="approve" class="primary">Approve plan</button><button id="reject">Reject</button><button id="execute" class="primary" hidden>Execute simulated plan</button><button id="receive" class="primary" hidden>Confirm simulated delivery</button><button id="reanalyze" hidden>Refresh analysis</button></div></div><p id="closure" class="muted"></p></article>
+        <article class="card"><h2>Demand and shortage</h2><p class="muted">Cumulative unmet units at the end of each planning day; arrivals occur before consumption.</p><div class="table-scroll"><table><thead><tr><th scope="col">Day</th><th scope="col">Demand</th><th scope="col">Without action</th><th scope="col">With plan</th></tr></thead><tbody id="timeline"></tbody></table></div></article>
+      </div>
+      <aside><article class="card"><h2>Evaluation evidence</h2><div id="evaluation"><p class="empty">Loading evaluation status…</p></div></article><article class="card"><h2>Agent explanations</h2><div id="commentary"><p class="empty">Live Gemini explanations appear after analysis in Google mode.</p></div><p id="run-metrics" class="muted"></p></article><article class="card"><h2>Supporting evidence</h2><div id="evidence"><p class="empty">Source records and calculation references appear here.</p></div></article><article class="card"><h2>Activity</h2><ol id="activity" class="activity"></ol></article><article class="card subtle"><h2>About this demonstration</h2><p id="mode">Loading configuration…</p><p>All scenarios and ERP actions are synthetic. Approval is bound to the exact plan; execution rechecks available inventory.</p><a href="/docs" target="_blank" rel="noopener">Explore the API ↗</a></article></aside>
+    </section>
+  </main>
+  <footer>ResilientOps · Evidence informs. Tools calculate. People authorize.</footer>
+</body>
+</html>

@@ -1,0 +1,31 @@
+{
+  "categories": [
+    "POLITICAL",
+    "ECONOMIC",
+    "SOCIAL",
+    "CULTURAL",
+    "TECHNOLOGICAL",
+    "ENVIRONMENTAL",
+    "LEGAL"
+  ],
+  "classification": "One primary category plus optional secondary categories. Shared event_cluster_id prevents double counting.",
+  "impact_record_fields": {
+    "event_id": "string",
+    "evidence_ids": "list[string]",
+    "entity_id": "string",
+    "exposure_status": "UNASSESSED | UNRELATED | POSSIBLE | CONFIRMED | SIMULATED",
+    "association_basis": "specific site/route/item/system match",
+    "effective_start_utc": "nullable timestamp",
+    "effective_end_utc": "nullable timestamp",
+    "known_at_utc": "timestamp",
+    "metric": "string",
+    "unit": "string",
+    "baseline_value": "nullable number",
+    "scenario_value": "nullable number",
+    "delta": "nullable number",
+    "assumption_ids": "list[string]",
+    "calculation_version": "string",
+    "review_status": "PENDING | APPROVED | REJECTED"
+  },
+  "rule": "Do not emit a numerical company-impact claim until exposure and calculation inputs exist."
+}

@@ -1,0 +1,1531 @@
+{
+  "generated_at": "2026-10-14T15:23:42.925388+00:00",
+  "suite_fingerprint": "fc29d64e9db05796af815c0e28ac3a0522a0b646bcf3cf32287549394a4eefbf",
+  "dataset": "11 authored synthetic scenarios; not a held-out industry dataset",
+  "limits": [
+    "Small developer-authored regression benchmark; no statistical claim of generalization or judge score improvement.",
+    "Structured-only ignores shipment messages. Rules uses a disclosed strict ISO template; it is not the strongest possible non-LLM baseline.",
+    "Gemini is measured only when explicitly selected and actually called. No recorded or scripted model outputs are counted as live results.",
+    "Citation metrics check exact spans, not semantic entailment or sender authenticity.",
+    "Model tokens/cost cover extraction only. Google-mode ADK orchestration requires a separate live demo run.",
+    "Human review time and real business outcomes have not been measured."
+  ],
+  "gemini_live": "not_run",
+  "modes": {
+    "structured-only": {
+      "summary": {
+        "cases": 11,
+        "correct_decisions": 5,
+        "decision_success_rate": 0.45454545454545453,
+        "extraction_precision": null,
+        "extraction_recall": 0.0,
+        "citation_span_validity": null,
+        "feasible_plan_rate": 0.3333333333333333,
+        "escalation_recall": 0.25,
+        "false_escalations": 0,
+        "failed_runs": 0,
+        "median_latency_ms": 159.23,
+        "p95_latency_ms": 186.3,
+        "reported_model_calls": 0,
+        "estimated_cost_usd": 0,
+        "human_review_time_seconds": null
+      },
+      "cases": [
+        {
+          "id": "baseline",
+          "expected_outcome": "PLAN",
+          "outcome": "PLAN",
+          "decision_correct": true,
+          "returned_feasible_plan": true,
+          "true_positive_facts": 0,
+          "predicted_facts": 0,
+          "expected_facts": 0,
+          "exact_citation_spans": 0,
+          "citation_count": 0,
+          "plan_cost_paise": 6340000,
+          "truth_validation_errors": [],
+          "error": null,
+          "usage": {
+            "calls": 0,
+            "estimated_cost_usd": 0
+          },
+          "business_impact": {
+            "assumed_cost_per_short_unit_paise": 500000,
+            "executable_plan": true,
+            "modeled_exposure_reduction_paise": 140000000,
+            "modeled_net_benefit_paise": 133660000,
+            "recovery_cost_paise": 6340000,
+            "scope": "Synthetic planning comparison. Exposure uses an assumed cost per end-of-horizon short unit; it is not measured savings, revenue, downtime or realized benefit. Arrivals precede consumption. No-action assumes no incoming supply.",
+            "shortage_units_covered": 280,
+            "timeline": [
+              {
+                "day": 1,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 0
+              },
+              {
+                "day": 2,
+                "demand": 100,
+                "recovery_arrivals": 280,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 0
+              },
+              {
+                "day": 3,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 0
+              },
+              {
+                "day": 4,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 80
+              },
+              {
+                "day": 5,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 180
+              },
+              {
+                "day": 6,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 280
+              }
+            ],
+            "uncovered_unit_days_with_plan": 0,
+            "uncovered_unit_days_without_action": 540,
+            "with_plan_shortage_units": 0,
+            "without_action_shortage_units": 280
+          },
+          "latency_ms": 186.3
+        },
+        {
+          "id": "late-arrival",
+          "expected_outcome": "PLAN",
+          "outcome": "PLAN",
+          "decision_correct": false,
+          "returned_feasible_plan": false,
+          "true_positive_facts": 0,
+          "predicted_facts": 0,
+          "expected_facts": 2,
+          "exact_citation_spans": 0,
+          "citation_count": 0,
+          "plan_cost_paise": 6340000,
+          "truth_validation_errors": [
+            "Uncovered demand on day 4",
+            "Uncovered demand on day 5"
+          ],
+          "error": null,
+          "usage": {
+            "calls": 0,
+            "estimated_cost_usd": 0
+          },
+          "business_impact": {
+            "assumed_cost_per_short_unit_paise": 500000,
+            "executable_plan": true,
+            "modeled_exposure_reduction_paise": 140000000,
+            "modeled_net_benefit_paise": 133660000,
+            "recovery_cost_paise": 6340000,
+            "scope": "Synthetic planning comparison. Exposure uses an assumed cost per end-of-horizon short unit; it is not measured savings, revenue, downtime or realized benefit. Arrivals precede consumption. No-action assumes no incoming supply.",
+            "shortage_units_covered": 280,
+            "timeline": [
+              {
+                "day": 1,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 0
+              },
+              {
+                "day": 2,
+                "demand": 100,
+                "recovery_arrivals": 280,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 0
+              },
+              {
+                "day": 3,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 0
+              },
+              {
+                "day": 4,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 80
+              },
+              {
+                "day": 5,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 180
+              },
+              {
+                "day": 6,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 280
+              }
+            ],
+            "uncovered_unit_days_with_plan": 0,
+            "uncovered_unit_days_without_action": 540,
+            "with_plan_shortage_units": 0,
+            "without_action_shortage_units": 280
+          },
+          "latency_ms": 166.17
+        },
+        {
+          "id": "limited-capacity",
+          "expected_outcome": "PLAN",
+          "outcome": "PLAN",
+          "decision_correct": false,
+          "returned_feasible_plan": false,
+          "true_positive_facts": 0,
+          "predicted_facts": 0,
+          "expected_facts": 2,
+          "exact_citation_spans": 0,
+          "citation_count": 0,
+          "plan_cost_paise": 6340000,
+          "truth_validation_errors": [
+            "Capacity exceeded: PUNE-TRANSFER"
+          ],
+          "error": null,
+          "usage": {
+            "calls": 0,
+            "estimated_cost_usd": 0
+          },
+          "business_impact": {
+            "assumed_cost_per_short_unit_paise": 500000,
+            "executable_plan": true,
+            "modeled_exposure_reduction_paise": 140000000,
+            "modeled_net_benefit_paise": 133660000,
+            "recovery_cost_paise": 6340000,
+            "scope": "Synthetic planning comparison. Exposure uses an assumed cost per end-of-horizon short unit; it is not measured savings, revenue, downtime or realized benefit. Arrivals precede consumption. No-action assumes no incoming supply.",
+            "shortage_units_covered": 280,
+            "timeline": [
+              {
+                "day": 1,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 0
+              },
+              {
+                "day": 2,
+                "demand": 100,
+                "recovery_arrivals": 280,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 0
+              },
+              {
+                "day": 3,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 0
+              },
+              {
+                "day": 4,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 80
+              },
+              {
+                "day": 5,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 180
+              },
+              {
+                "day": 6,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 280
+              }
+            ],
+            "uncovered_unit_days_with_plan": 0,
+            "uncovered_unit_days_without_action": 540,
+            "with_plan_shortage_units": 0,
+            "without_action_shortage_units": 280
+          },
+          "latency_ms": 162.57
+        },
+        {
+          "id": "conflicting-updates",
+          "expected_outcome": "ESCALATE",
+          "outcome": "PLAN",
+          "decision_correct": false,
+          "returned_feasible_plan": false,
+          "true_positive_facts": 0,
+          "predicted_facts": 0,
+          "expected_facts": 4,
+          "exact_citation_spans": 0,
+          "citation_count": 0,
+          "plan_cost_paise": 6340000,
+          "truth_validation_errors": [],
+          "error": null,
+          "usage": {
+            "calls": 0,
+            "estimated_cost_usd": 0
+          },
+          "business_impact": {
+            "assumed_cost_per_short_unit_paise": 500000,
+            "executable_plan": true,
+            "modeled_exposure_reduction_paise": 140000000,
+            "modeled_net_benefit_paise": 133660000,
+            "recovery_cost_paise": 6340000,
+            "scope": "Synthetic planning comparison. Exposure uses an assumed cost per end-of-horizon short unit; it is not measured savings, revenue, downtime or realized benefit. Arrivals precede consumption. No-action assumes no incoming supply.",
+            "shortage_units_covered": 280,
+            "timeline": [
+              {
+                "day": 1,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 0
+              },
+              {
+                "day": 2,
+                "demand": 100,
+                "recovery_arrivals": 280,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 0
+              },
+              {
+                "day": 3,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 0
+              },
+              {
+                "day": 4,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 80
+              },
+              {
+                "day": 5,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 180
+              },
+              {
+                "day": 6,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 280
+              }
+            ],
+            "uncovered_unit_days_with_plan": 0,
+            "uncovered_unit_days_without_action": 540,
+            "with_plan_shortage_units": 0,
+            "without_action_shortage_units": 280
+          },
+          "latency_ms": 175.1
+        },
+        {
+          "id": "natural-language",
+          "expected_outcome": "PLAN",
+          "outcome": "PLAN",
+          "decision_correct": false,
+          "returned_feasible_plan": false,
+          "true_positive_facts": 0,
+          "predicted_facts": 0,
+          "expected_facts": 2,
+          "exact_citation_spans": 0,
+          "citation_count": 0,
+          "plan_cost_paise": 6340000,
+          "truth_validation_errors": [
+            "Uncovered demand on day 4",
+            "Uncovered demand on day 5"
+          ],
+          "error": null,
+          "usage": {
+            "calls": 0,
+            "estimated_cost_usd": 0
+          },
+          "business_impact": {
+            "assumed_cost_per_short_unit_paise": 500000,
+            "executable_plan": true,
+            "modeled_exposure_reduction_paise": 140000000,
+            "modeled_net_benefit_paise": 133660000,
+            "recovery_cost_paise": 6340000,
+            "scope": "Synthetic planning comparison. Exposure uses an assumed cost per end-of-horizon short unit; it is not measured savings, revenue, downtime or realized benefit. Arrivals precede consumption. No-action assumes no incoming supply.",
+            "shortage_units_covered": 280,
+            "timeline": [
+              {
+                "day": 1,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 0
+              },
+              {
+                "day": 2,
+                "demand": 100,
+                "recovery_arrivals": 280,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 0
+              },
+              {
+                "day": 3,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 0
+              },
+              {
+                "day": 4,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 80
+              },
+              {
+                "day": 5,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 180
+              },
+              {
+                "day": 6,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 280
+              }
+            ],
+            "uncovered_unit_days_with_plan": 0,
+            "uncovered_unit_days_without_action": 540,
+            "with_plan_shortage_units": 0,
+            "without_action_shortage_units": 280
+          },
+          "latency_ms": 159.23
+        },
+        {
+          "id": "ambiguous-update",
+          "expected_outcome": "ESCALATE",
+          "outcome": "PLAN",
+          "decision_correct": false,
+          "returned_feasible_plan": false,
+          "true_positive_facts": 0,
+          "predicted_facts": 0,
+          "expected_facts": 1,
+          "exact_citation_spans": 0,
+          "citation_count": 0,
+          "plan_cost_paise": 6340000,
+          "truth_validation_errors": [],
+          "error": null,
+          "usage": {
+            "calls": 0,
+            "estimated_cost_usd": 0
+          },
+          "business_impact": {
+            "assumed_cost_per_short_unit_paise": 500000,
+            "executable_plan": true,
+            "modeled_exposure_reduction_paise": 140000000,
+            "modeled_net_benefit_paise": 133660000,
+            "recovery_cost_paise": 6340000,
+            "scope": "Synthetic planning comparison. Exposure uses an assumed cost per end-of-horizon short unit; it is not measured savings, revenue, downtime or realized benefit. Arrivals precede consumption. No-action assumes no incoming supply.",
+            "shortage_units_covered": 280,
+            "timeline": [
+              {
+                "day": 1,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 0
+              },
+              {
+                "day": 2,
+                "demand": 100,
+                "recovery_arrivals": 280,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 0
+              },
+              {
+                "day": 3,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 0
+              },
+              {
+                "day": 4,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 80
+              },
+              {
+                "day": 5,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 180
+              },
+              {
+                "day": 6,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 280
+              }
+            ],
+            "uncovered_unit_days_with_plan": 0,
+            "uncovered_unit_days_without_action": 540,
+            "with_plan_shortage_units": 0,
+            "without_action_shortage_units": 280
+          },
+          "latency_ms": 166.91
+        },
+        {
+          "id": "missing-policy",
+          "expected_outcome": "ESCALATE",
+          "outcome": "ESCALATE",
+          "decision_correct": true,
+          "returned_feasible_plan": false,
+          "true_positive_facts": 0,
+          "predicted_facts": 0,
+          "expected_facts": 0,
+          "exact_citation_spans": 0,
+          "citation_count": 0,
+          "plan_cost_paise": null,
+          "truth_validation_errors": [],
+          "error": "Insufficient evidence: active demo transfer and sourcing policies are required",
+          "usage": {
+            "calls": 0,
+            "estimated_cost_usd": 0
+          },
+          "business_impact": null,
+          "latency_ms": 113.95
+        },
+        {
+          "id": "unapproved-supplier",
+          "expected_outcome": "PLAN",
+          "outcome": "PLAN",
+          "decision_correct": true,
+          "returned_feasible_plan": true,
+          "true_positive_facts": 0,
+          "predicted_facts": 0,
+          "expected_facts": 2,
+          "exact_citation_spans": 0,
+          "citation_count": 0,
+          "plan_cost_paise": 6340000,
+          "truth_validation_errors": [],
+          "error": null,
+          "usage": {
+            "calls": 0,
+            "estimated_cost_usd": 0
+          },
+          "business_impact": {
+            "assumed_cost_per_short_unit_paise": 500000,
+            "executable_plan": true,
+            "modeled_exposure_reduction_paise": 140000000,
+            "modeled_net_benefit_paise": 133660000,
+            "recovery_cost_paise": 6340000,
+            "scope": "Synthetic planning comparison. Exposure uses an assumed cost per end-of-horizon short unit; it is not measured savings, revenue, downtime or realized benefit. Arrivals precede consumption. No-action assumes no incoming supply.",
+            "shortage_units_covered": 280,
+            "timeline": [
+              {
+                "day": 1,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 0
+              },
+              {
+                "day": 2,
+                "demand": 100,
+                "recovery_arrivals": 280,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 0
+              },
+              {
+                "day": 3,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 0
+              },
+              {
+                "day": 4,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 80
+              },
+              {
+                "day": 5,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 180
+              },
+              {
+                "day": 6,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 280
+              }
+            ],
+            "uncovered_unit_days_with_plan": 0,
+            "uncovered_unit_days_without_action": 540,
+            "with_plan_shortage_units": 0,
+            "without_action_shortage_units": 280
+          },
+          "latency_ms": 152.32
+        },
+        {
+          "id": "corrected-update",
+          "expected_outcome": "PLAN",
+          "outcome": "PLAN",
+          "decision_correct": true,
+          "returned_feasible_plan": true,
+          "true_positive_facts": 0,
+          "predicted_facts": 0,
+          "expected_facts": 2,
+          "exact_citation_spans": 0,
+          "citation_count": 0,
+          "plan_cost_paise": 6340000,
+          "truth_validation_errors": [],
+          "error": null,
+          "usage": {
+            "calls": 0,
+            "estimated_cost_usd": 0
+          },
+          "business_impact": {
+            "assumed_cost_per_short_unit_paise": 500000,
+            "executable_plan": true,
+            "modeled_exposure_reduction_paise": 140000000,
+            "modeled_net_benefit_paise": 133660000,
+            "recovery_cost_paise": 6340000,
+            "scope": "Synthetic planning comparison. Exposure uses an assumed cost per end-of-horizon short unit; it is not measured savings, revenue, downtime or realized benefit. Arrivals precede consumption. No-action assumes no incoming supply.",
+            "shortage_units_covered": 280,
+            "timeline": [
+              {
+                "day": 1,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 0
+              },
+              {
+                "day": 2,
+                "demand": 100,
+                "recovery_arrivals": 280,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 0
+              },
+              {
+                "day": 3,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 0
+              },
+              {
+                "day": 4,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 80
+              },
+              {
+                "day": 5,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 180
+              },
+              {
+                "day": 6,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 280
+              }
+            ],
+            "uncovered_unit_days_with_plan": 0,
+            "uncovered_unit_days_without_action": 540,
+            "with_plan_shortage_units": 0,
+            "without_action_shortage_units": 280
+          },
+          "latency_ms": 156.58
+        },
+        {
+          "id": "no-shortage",
+          "expected_outcome": "NO_ACTION",
+          "outcome": "NO_ACTION",
+          "decision_correct": true,
+          "returned_feasible_plan": false,
+          "true_positive_facts": 0,
+          "predicted_facts": 0,
+          "expected_facts": 0,
+          "exact_citation_spans": 0,
+          "citation_count": 0,
+          "plan_cost_paise": 0,
+          "truth_validation_errors": [],
+          "error": null,
+          "usage": {
+            "calls": 0,
+            "estimated_cost_usd": 0
+          },
+          "business_impact": {
+            "assumed_cost_per_short_unit_paise": 500000,
+            "executable_plan": false,
+            "modeled_exposure_reduction_paise": 0,
+            "modeled_net_benefit_paise": 0,
+            "recovery_cost_paise": 0,
+            "scope": "Synthetic planning comparison. Exposure uses an assumed cost per end-of-horizon short unit; it is not measured savings, revenue, downtime or realized benefit. Arrivals precede consumption. No-action assumes no incoming supply.",
+            "shortage_units_covered": 0,
+            "timeline": [
+              {
+                "day": 1,
+                "demand": 20,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 0
+              },
+              {
+                "day": 2,
+                "demand": 20,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 0
+              },
+              {
+                "day": 3,
+                "demand": 20,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 0
+              },
+              {
+                "day": 4,
+                "demand": 20,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 0
+              },
+              {
+                "day": 5,
+                "demand": 20,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 0
+              },
+              {
+                "day": 6,
+                "demand": 20,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 0
+              }
+            ],
+            "uncovered_unit_days_with_plan": 0,
+            "uncovered_unit_days_without_action": 0,
+            "with_plan_shortage_units": 0,
+            "without_action_shortage_units": 0
+          },
+          "latency_ms": 149.12
+        },
+        {
+          "id": "infeasible-arrivals",
+          "expected_outcome": "ESCALATE",
+          "outcome": "PLAN",
+          "decision_correct": false,
+          "returned_feasible_plan": false,
+          "true_positive_facts": 0,
+          "predicted_facts": 0,
+          "expected_facts": 4,
+          "exact_citation_spans": 0,
+          "citation_count": 0,
+          "plan_cost_paise": 6340000,
+          "truth_validation_errors": [
+            "Uncovered demand on day 4",
+            "Uncovered demand on day 5"
+          ],
+          "error": null,
+          "usage": {
+            "calls": 0,
+            "estimated_cost_usd": 0
+          },
+          "business_impact": {
+            "assumed_cost_per_short_unit_paise": 500000,
+            "executable_plan": true,
+            "modeled_exposure_reduction_paise": 140000000,
+            "modeled_net_benefit_paise": 133660000,
+            "recovery_cost_paise": 6340000,
+            "scope": "Synthetic planning comparison. Exposure uses an assumed cost per end-of-horizon short unit; it is not measured savings, revenue, downtime or realized benefit. Arrivals precede consumption. No-action assumes no incoming supply.",
+            "shortage_units_covered": 280,
+            "timeline": [
+              {
+                "day": 1,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 0
+              },
+              {
+                "day": 2,
+                "demand": 100,
+                "recovery_arrivals": 280,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 0
+              },
+              {
+                "day": 3,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 0
+              },
+              {
+                "day": 4,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 80
+              },
+              {
+                "day": 5,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 180
+              },
+              {
+                "day": 6,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 280
+              }
+            ],
+            "uncovered_unit_days_with_plan": 0,
+            "uncovered_unit_days_without_action": 540,
+            "with_plan_shortage_units": 0,
+            "without_action_shortage_units": 280
+          },
+          "latency_ms": 154.08
+        }
+      ]
+    },
+    "rules": {
+      "summary": {
+        "cases": 11,
+        "correct_decisions": 10,
+        "decision_success_rate": 0.9090909090909091,
+        "extraction_precision": 1.0,
+        "extraction_recall": 0.8421052631578947,
+        "citation_span_validity": 1.0,
+        "feasible_plan_rate": 1.0,
+        "escalation_recall": 1.0,
+        "false_escalations": 1,
+        "failed_runs": 0,
+        "median_latency_ms": 150.51,
+        "p95_latency_ms": 181.34,
+        "reported_model_calls": 0,
+        "estimated_cost_usd": 0,
+        "human_review_time_seconds": null
+      },
+      "cases": [
+        {
+          "id": "baseline",
+          "expected_outcome": "PLAN",
+          "outcome": "PLAN",
+          "decision_correct": true,
+          "returned_feasible_plan": true,
+          "true_positive_facts": 0,
+          "predicted_facts": 0,
+          "expected_facts": 0,
+          "exact_citation_spans": 0,
+          "citation_count": 0,
+          "plan_cost_paise": 6340000,
+          "truth_validation_errors": [],
+          "error": null,
+          "usage": {
+            "calls": 0,
+            "estimated_cost_usd": 0
+          },
+          "business_impact": {
+            "assumed_cost_per_short_unit_paise": 500000,
+            "executable_plan": true,
+            "modeled_exposure_reduction_paise": 140000000,
+            "modeled_net_benefit_paise": 133660000,
+            "recovery_cost_paise": 6340000,
+            "scope": "Synthetic planning comparison. Exposure uses an assumed cost per end-of-horizon short unit; it is not measured savings, revenue, downtime or realized benefit. Arrivals precede consumption. No-action assumes no incoming supply.",
+            "shortage_units_covered": 280,
+            "timeline": [
+              {
+                "day": 1,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 0
+              },
+              {
+                "day": 2,
+                "demand": 100,
+                "recovery_arrivals": 280,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 0
+              },
+              {
+                "day": 3,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 0
+              },
+              {
+                "day": 4,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 80
+              },
+              {
+                "day": 5,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 180
+              },
+              {
+                "day": 6,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 280
+              }
+            ],
+            "uncovered_unit_days_with_plan": 0,
+            "uncovered_unit_days_without_action": 540,
+            "with_plan_shortage_units": 0,
+            "without_action_shortage_units": 280
+          },
+          "latency_ms": 148.23
+        },
+        {
+          "id": "late-arrival",
+          "expected_outcome": "PLAN",
+          "outcome": "PLAN",
+          "decision_correct": true,
+          "returned_feasible_plan": true,
+          "true_positive_facts": 2,
+          "predicted_facts": 2,
+          "expected_facts": 2,
+          "exact_citation_spans": 2,
+          "citation_count": 2,
+          "plan_cost_paise": 9500000,
+          "truth_validation_errors": [],
+          "error": null,
+          "usage": {
+            "calls": 0,
+            "estimated_cost_usd": 0,
+            "input_tokens": 0,
+            "latency_ms": 1.64,
+            "model": null,
+            "output_tokens": 0,
+            "provider": "rules",
+            "thought_tokens": 0
+          },
+          "business_impact": {
+            "assumed_cost_per_short_unit_paise": 500000,
+            "executable_plan": true,
+            "modeled_exposure_reduction_paise": 140000000,
+            "modeled_net_benefit_paise": 130500000,
+            "recovery_cost_paise": 9500000,
+            "scope": "Synthetic planning comparison. Exposure uses an assumed cost per end-of-horizon short unit; it is not measured savings, revenue, downtime or realized benefit. Arrivals precede consumption. No-action assumes no incoming supply.",
+            "shortage_units_covered": 280,
+            "timeline": [
+              {
+                "day": 1,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 0
+              },
+              {
+                "day": 2,
+                "demand": 100,
+                "recovery_arrivals": 80,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 0
+              },
+              {
+                "day": 3,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 0
+              },
+              {
+                "day": 4,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 80
+              },
+              {
+                "day": 5,
+                "demand": 100,
+                "recovery_arrivals": 200,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 180
+              },
+              {
+                "day": 6,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 280
+              }
+            ],
+            "uncovered_unit_days_with_plan": 0,
+            "uncovered_unit_days_without_action": 540,
+            "with_plan_shortage_units": 0,
+            "without_action_shortage_units": 280
+          },
+          "latency_ms": 156.73
+        },
+        {
+          "id": "limited-capacity",
+          "expected_outcome": "PLAN",
+          "outcome": "PLAN",
+          "decision_correct": true,
+          "returned_feasible_plan": true,
+          "true_positive_facts": 2,
+          "predicted_facts": 2,
+          "expected_facts": 2,
+          "exact_citation_spans": 2,
+          "citation_count": 2,
+          "plan_cost_paise": 8510000,
+          "truth_validation_errors": [],
+          "error": null,
+          "usage": {
+            "calls": 0,
+            "estimated_cost_usd": 0,
+            "input_tokens": 0,
+            "latency_ms": 1.54,
+            "model": null,
+            "output_tokens": 0,
+            "provider": "rules",
+            "thought_tokens": 0
+          },
+          "business_impact": {
+            "assumed_cost_per_short_unit_paise": 500000,
+            "executable_plan": true,
+            "modeled_exposure_reduction_paise": 140000000,
+            "modeled_net_benefit_paise": 131490000,
+            "recovery_cost_paise": 8510000,
+            "scope": "Synthetic planning comparison. Exposure uses an assumed cost per end-of-horizon short unit; it is not measured savings, revenue, downtime or realized benefit. Arrivals precede consumption. No-action assumes no incoming supply.",
+            "shortage_units_covered": 280,
+            "timeline": [
+              {
+                "day": 1,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 0
+              },
+              {
+                "day": 2,
+                "demand": 100,
+                "recovery_arrivals": 100,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 0
+              },
+              {
+                "day": 3,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 0
+              },
+              {
+                "day": 4,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 80
+              },
+              {
+                "day": 5,
+                "demand": 100,
+                "recovery_arrivals": 180,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 180
+              },
+              {
+                "day": 6,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 280
+              }
+            ],
+            "uncovered_unit_days_with_plan": 0,
+            "uncovered_unit_days_without_action": 540,
+            "with_plan_shortage_units": 0,
+            "without_action_shortage_units": 280
+          },
+          "latency_ms": 181.34
+        },
+        {
+          "id": "conflicting-updates",
+          "expected_outcome": "ESCALATE",
+          "outcome": "ESCALATE",
+          "decision_correct": true,
+          "returned_feasible_plan": false,
+          "true_positive_facts": 4,
+          "predicted_facts": 4,
+          "expected_facts": 4,
+          "exact_citation_spans": 4,
+          "citation_count": 4,
+          "plan_cost_paise": null,
+          "truth_validation_errors": [],
+          "error": "Conflicting arrival_date for PUNE-TRANSFER: PUNE-DISPATCH reports 2026-10-15; PUNE-CARRIER reports 2026-10-19",
+          "usage": {
+            "calls": 0,
+            "estimated_cost_usd": 0,
+            "input_tokens": 0,
+            "latency_ms": 1.67,
+            "model": null,
+            "output_tokens": 0,
+            "provider": "rules",
+            "thought_tokens": 0
+          },
+          "business_impact": null,
+          "latency_ms": 108.31
+        },
+        {
+          "id": "natural-language",
+          "expected_outcome": "PLAN",
+          "outcome": "ESCALATE",
+          "decision_correct": false,
+          "returned_feasible_plan": false,
+          "true_positive_facts": 0,
+          "predicted_facts": 0,
+          "expected_facts": 2,
+          "exact_citation_spans": 0,
+          "citation_count": 0,
+          "plan_cost_paise": null,
+          "truth_validation_errors": [],
+          "error": "PUNE-PROSE: The rules baseline requires one booking ID, 'Confirmed arrival: YYYY-MM-DD.' and 'Available: N units.'. Review this message or use Gemini.; PUNE-PROSE: no known recovery option could be established.",
+          "usage": {
+            "calls": 0,
+            "estimated_cost_usd": 0,
+            "input_tokens": 0,
+            "latency_ms": 0.23,
+            "model": null,
+            "output_tokens": 0,
+            "provider": "rules",
+            "thought_tokens": 0
+          },
+          "business_impact": null,
+          "latency_ms": 116.66
+        },
+        {
+          "id": "ambiguous-update",
+          "expected_outcome": "ESCALATE",
+          "outcome": "ESCALATE",
+          "decision_correct": true,
+          "returned_feasible_plan": false,
+          "true_positive_facts": 0,
+          "predicted_facts": 0,
+          "expected_facts": 1,
+          "exact_citation_spans": 0,
+          "citation_count": 0,
+          "plan_cost_paise": null,
+          "truth_validation_errors": [],
+          "error": "PUNE-TENTATIVE: The rules baseline requires one booking ID, 'Confirmed arrival: YYYY-MM-DD.' and 'Available: N units.'. Review this message or use Gemini.; PUNE-TENTATIVE: no known recovery option could be established.",
+          "usage": {
+            "calls": 0,
+            "estimated_cost_usd": 0,
+            "input_tokens": 0,
+            "latency_ms": 0.24,
+            "model": null,
+            "output_tokens": 0,
+            "provider": "rules",
+            "thought_tokens": 0
+          },
+          "business_impact": null,
+          "latency_ms": 136.68
+        },
+        {
+          "id": "missing-policy",
+          "expected_outcome": "ESCALATE",
+          "outcome": "ESCALATE",
+          "decision_correct": true,
+          "returned_feasible_plan": false,
+          "true_positive_facts": 0,
+          "predicted_facts": 0,
+          "expected_facts": 0,
+          "exact_citation_spans": 0,
+          "citation_count": 0,
+          "plan_cost_paise": null,
+          "truth_validation_errors": [],
+          "error": "Insufficient evidence: active demo transfer and sourcing policies are required",
+          "usage": {
+            "calls": 0,
+            "estimated_cost_usd": 0
+          },
+          "business_impact": null,
+          "latency_ms": 133.25
+        },
+        {
+          "id": "unapproved-supplier",
+          "expected_outcome": "PLAN",
+          "outcome": "PLAN",
+          "decision_correct": true,
+          "returned_feasible_plan": true,
+          "true_positive_facts": 2,
+          "predicted_facts": 2,
+          "expected_facts": 2,
+          "exact_citation_spans": 2,
+          "citation_count": 2,
+          "plan_cost_paise": 6340000,
+          "truth_validation_errors": [],
+          "error": null,
+          "usage": {
+            "calls": 0,
+            "estimated_cost_usd": 0,
+            "input_tokens": 0,
+            "latency_ms": 4.36,
+            "model": null,
+            "output_tokens": 0,
+            "provider": "rules",
+            "thought_tokens": 0
+          },
+          "business_impact": {
+            "assumed_cost_per_short_unit_paise": 500000,
+            "executable_plan": true,
+            "modeled_exposure_reduction_paise": 140000000,
+            "modeled_net_benefit_paise": 133660000,
+            "recovery_cost_paise": 6340000,
+            "scope": "Synthetic planning comparison. Exposure uses an assumed cost per end-of-horizon short unit; it is not measured savings, revenue, downtime or realized benefit. Arrivals precede consumption. No-action assumes no incoming supply.",
+            "shortage_units_covered": 280,
+            "timeline": [
+              {
+                "day": 1,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 0
+              },
+              {
+                "day": 2,
+                "demand": 100,
+                "recovery_arrivals": 280,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 0
+              },
+              {
+                "day": 3,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 0
+              },
+              {
+                "day": 4,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 80
+              },
+              {
+                "day": 5,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 180
+              },
+              {
+                "day": 6,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 280
+              }
+            ],
+            "uncovered_unit_days_with_plan": 0,
+            "uncovered_unit_days_without_action": 540,
+            "with_plan_shortage_units": 0,
+            "without_action_shortage_units": 280
+          },
+          "latency_ms": 150.51
+        },
+        {
+          "id": "corrected-update",
+          "expected_outcome": "PLAN",
+          "outcome": "PLAN",
+          "decision_correct": true,
+          "returned_feasible_plan": true,
+          "true_positive_facts": 2,
+          "predicted_facts": 2,
+          "expected_facts": 2,
+          "exact_citation_spans": 2,
+          "citation_count": 2,
+          "plan_cost_paise": 6340000,
+          "truth_validation_errors": [],
+          "error": null,
+          "usage": {
+            "calls": 0,
+            "estimated_cost_usd": 0,
+            "input_tokens": 0,
+            "latency_ms": 1.4,
+            "model": null,
+            "output_tokens": 0,
+            "provider": "rules",
+            "thought_tokens": 0
+          },
+          "business_impact": {
+            "assumed_cost_per_short_unit_paise": 500000,
+            "executable_plan": true,
+            "modeled_exposure_reduction_paise": 140000000,
+            "modeled_net_benefit_paise": 133660000,
+            "recovery_cost_paise": 6340000,
+            "scope": "Synthetic planning comparison. Exposure uses an assumed cost per end-of-horizon short unit; it is not measured savings, revenue, downtime or realized benefit. Arrivals precede consumption. No-action assumes no incoming supply.",
+            "shortage_units_covered": 280,
+            "timeline": [
+              {
+                "day": 1,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 0
+              },
+              {
+                "day": 2,
+                "demand": 100,
+                "recovery_arrivals": 280,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 0
+              },
+              {
+                "day": 3,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 0
+              },
+              {
+                "day": 4,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 80
+              },
+              {
+                "day": 5,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 180
+              },
+              {
+                "day": 6,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 280
+              }
+            ],
+            "uncovered_unit_days_with_plan": 0,
+            "uncovered_unit_days_without_action": 540,
+            "with_plan_shortage_units": 0,
+            "without_action_shortage_units": 280
+          },
+          "latency_ms": 161.08
+        },
+        {
+          "id": "no-shortage",
+          "expected_outcome": "NO_ACTION",
+          "outcome": "NO_ACTION",
+          "decision_correct": true,
+          "returned_feasible_plan": false,
+          "true_positive_facts": 0,
+          "predicted_facts": 0,
+          "expected_facts": 0,
+          "exact_citation_spans": 0,
+          "citation_count": 0,
+          "plan_cost_paise": 0,
+          "truth_validation_errors": [],
+          "error": null,
+          "usage": {
+            "calls": 0,
+            "estimated_cost_usd": 0
+          },
+          "business_impact": {
+            "assumed_cost_per_short_unit_paise": 500000,
+            "executable_plan": false,
+            "modeled_exposure_reduction_paise": 0,
+            "modeled_net_benefit_paise": 0,
+            "recovery_cost_paise": 0,
+            "scope": "Synthetic planning comparison. Exposure uses an assumed cost per end-of-horizon short unit; it is not measured savings, revenue, downtime or realized benefit. Arrivals precede consumption. No-action assumes no incoming supply.",
+            "shortage_units_covered": 0,
+            "timeline": [
+              {
+                "day": 1,
+                "demand": 20,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 0
+              },
+              {
+                "day": 2,
+                "demand": 20,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 0
+              },
+              {
+                "day": 3,
+                "demand": 20,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 0
+              },
+              {
+                "day": 4,
+                "demand": 20,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 0
+              },
+              {
+                "day": 5,
+                "demand": 20,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 0
+              },
+              {
+                "day": 6,
+                "demand": 20,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 0
+              }
+            ],
+            "uncovered_unit_days_with_plan": 0,
+            "uncovered_unit_days_without_action": 0,
+            "with_plan_shortage_units": 0,
+            "without_action_shortage_units": 0
+          },
+          "latency_ms": 150.72
+        },
+        {
+          "id": "infeasible-arrivals",
+          "expected_outcome": "ESCALATE",
+          "outcome": "ESCALATE",
+          "decision_correct": true,
+          "returned_feasible_plan": false,
+          "true_positive_facts": 4,
+          "predicted_facts": 4,
+          "expected_facts": 4,
+          "exact_citation_spans": 4,
+          "citation_count": 4,
+          "plan_cost_paise": 0,
+          "truth_validation_errors": [],
+          "error": "Plan has no executable feasible recovery",
+          "usage": {
+            "calls": 0,
+            "estimated_cost_usd": 0,
+            "input_tokens": 0,
+            "latency_ms": 3.87,
+            "model": null,
+            "output_tokens": 0,
+            "provider": "rules",
+            "thought_tokens": 0
+          },
+          "business_impact": {
+            "assumed_cost_per_short_unit_paise": 500000,
+            "executable_plan": false,
+            "modeled_exposure_reduction_paise": 0,
+            "modeled_net_benefit_paise": 0,
+            "recovery_cost_paise": 0,
+            "scope": "Synthetic planning comparison. Exposure uses an assumed cost per end-of-horizon short unit; it is not measured savings, revenue, downtime or realized benefit. Arrivals precede consumption. No-action assumes no incoming supply.",
+            "shortage_units_covered": 0,
+            "timeline": [
+              {
+                "day": 1,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 0
+              },
+              {
+                "day": 2,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 0
+              },
+              {
+                "day": 3,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 0,
+                "shortage_without_action": 0
+              },
+              {
+                "day": 4,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 80,
+                "shortage_without_action": 80
+              },
+              {
+                "day": 5,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 180,
+                "shortage_without_action": 180
+              },
+              {
+                "day": 6,
+                "demand": 100,
+                "recovery_arrivals": 0,
+                "shortage_with_plan": 280,
+                "shortage_without_action": 280
+              }
+            ],
+            "uncovered_unit_days_with_plan": 540,
+            "uncovered_unit_days_without_action": 540,
+            "with_plan_shortage_units": 280,
+            "without_action_shortage_units": 280
+          },
+          "latency_ms": 169.43
+        }
+      ]
+    }
+  }
+}

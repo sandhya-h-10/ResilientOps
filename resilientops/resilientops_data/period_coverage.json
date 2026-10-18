@@ -1,0 +1,41 @@
+[
+  {
+    "year": 2024,
+    "start": "2024-01-01",
+    "end_inclusive": "2024-12-31",
+    "history_days": 366,
+    "weather_expected_station_days": 2562,
+    "weather_observed_station_days": 2361,
+    "weather_missing_station_days": 201,
+    "weather_first_observation": "2024-01-01",
+    "weather_last_observation": "2024-12-31",
+    "curated_news_records": 7,
+    "news_coverage": "SELECTED_EXAMPLES_NOT_EXHAUSTIVE"
+  },
+  {
+    "year": 2025,
+    "start": "2025-01-01",
+    "end_inclusive": "2025-12-31",
+    "history_days": 365,
+    "weather_expected_station_days": 2555,
+    "weather_observed_station_days": 1550,
+    "weather_missing_station_days": 1005,
+    "weather_first_observation": "2025-01-01",
+    "weather_last_observation": "2025-08-24",
+    "curated_news_records": 6,
+    "news_coverage": "SELECTED_EXAMPLES_NOT_EXHAUSTIVE"
+  },
+  {
+    "year": 2026,
+    "start": "2026-01-01",
+    "end_inclusive": "2026-09-30",
+    "history_days": 273,
+    "weather_expected_station_days": 1911,
+    "weather_observed_station_days": 0,
+    "weather_missing_station_days": 1911,
+    "weather_first_observation": null,
+    "weather_last_observation": null,
+    "curated_news_records": 3,
+    "news_coverage": "SELECTED_EXAMPLES_NOT_EXHAUSTIVE"
+  }
+]

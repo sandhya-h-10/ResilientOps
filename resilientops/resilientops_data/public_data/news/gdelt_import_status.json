@@ -1,0 +1,8 @@
+{
+  "status": "NOT_RUN",
+  "requested_start": "2024-01-01",
+  "requested_end_exclusive": "2026-10-01",
+  "windows": 144,
+  "curated_records": 16,
+  "reason": "No Google project or credentials configured. The curated collection is a small reviewed sample, not comprehensive historical coverage."
+}

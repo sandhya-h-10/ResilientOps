@@ -1,0 +1,12 @@
+{"customer_id": "CUS_001", "customer_name": "Fictional Automotive Customer 001", "dataset_version": "v2_2024-01-01_2026-10-01_seed42", "is_synthetic": true, "service_priority": 2}
+{"customer_id": "CUS_002", "customer_name": "Fictional Automotive Customer 002", "dataset_version": "v2_2024-01-01_2026-10-01_seed42", "is_synthetic": true, "service_priority": 3}
+{"customer_id": "CUS_003", "customer_name": "Fictional Automotive Customer 003", "dataset_version": "v2_2024-01-01_2026-10-01_seed42", "is_synthetic": true, "service_priority": 1}
+{"customer_id": "CUS_004", "customer_name": "Fictional Automotive Customer 004", "dataset_version": "v2_2024-01-01_2026-10-01_seed42", "is_synthetic": true, "service_priority": 2}
+{"customer_id": "CUS_005", "customer_name": "Fictional Automotive Customer 005", "dataset_version": "v2_2024-01-01_2026-10-01_seed42", "is_synthetic": true, "service_priority": 3}
+{"customer_id": "CUS_006", "customer_name": "Fictional Automotive Customer 006", "dataset_version": "v2_2024-01-01_2026-10-01_seed42", "is_synthetic": true, "service_priority": 1}
+{"customer_id": "CUS_007", "customer_name": "Fictional Automotive Customer 007", "dataset_version": "v2_2024-01-01_2026-10-01_seed42", "is_synthetic": true, "service_priority": 2}
+{"customer_id": "CUS_008", "customer_name": "Fictional Automotive Customer 008", "dataset_version": "v2_2024-01-01_2026-10-01_seed42", "is_synthetic": true, "service_priority": 3}
+{"customer_id": "CUS_009", "customer_name": "Fictional Automotive Customer 009", "dataset_version": "v2_2024-01-01_2026-10-01_seed42", "is_synthetic": true, "service_priority": 1}
+{"customer_id": "CUS_010", "customer_name": "Fictional Automotive Customer 010", "dataset_version": "v2_2024-01-01_2026-10-01_seed42", "is_synthetic": true, "service_priority": 2}
+{"customer_id": "CUS_011", "customer_name": "Fictional Automotive Customer 011", "dataset_version": "v2_2024-01-01_2026-10-01_seed42", "is_synthetic": true, "service_priority": 3}
+{"customer_id": "CUS_012", "customer_name": "Fictional Automotive Customer 012", "dataset_version": "v2_2024-01-01_2026-10-01_seed42", "is_synthetic": true, "service_priority": 1}

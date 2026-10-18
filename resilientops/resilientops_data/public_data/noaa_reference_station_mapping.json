@@ -1,0 +1,146 @@
+[
+  {
+    "entity_id": "PLT_MUM",
+    "station_id": "43003099999",
+    "station_name": "CHHATRAPATI SHIVAJI MAHARAJ INTL",
+    "distance_km": 1.79,
+    "station_latitude": 19.089,
+    "station_longitude": 72.868
+  },
+  {
+    "entity_id": "PLT_TYO",
+    "station_id": "47671399999",
+    "station_name": "ICHIGAYA",
+    "distance_km": 6.34,
+    "station_latitude": 35.68,
+    "station_longitude": 139.72
+  },
+  {
+    "entity_id": "PLT_BJS",
+    "station_id": "54511099999",
+    "station_name": "BEIJING - CAPITAL INTERNATIONAL AIRPORT",
+    "distance_km": 24.76,
+    "station_latitude": 40.08,
+    "station_longitude": 116.585
+  },
+  {
+    "entity_id": "SUP_001_SITE",
+    "station_id": "45032099999",
+    "station_name": "TA KWU LING",
+    "distance_km": 9.28,
+    "station_latitude": 22.533,
+    "station_longitude": 114.15
+  },
+  {
+    "entity_id": "SUP_002_SITE",
+    "station_id": "47772099999",
+    "station_name": "OSAKA",
+    "distance_km": 1.74,
+    "station_latitude": 34.683,
+    "station_longitude": 135.517
+  },
+  {
+    "entity_id": "SUP_003_SITE",
+    "station_id": "43063099999",
+    "station_name": "PUNE",
+    "distance_km": 1.31,
+    "station_latitude": 18.533,
+    "station_longitude": 73.85
+  },
+  {
+    "entity_id": "SUP_004_SITE",
+    "station_id": "45032099999",
+    "station_name": "TA KWU LING",
+    "distance_km": 9.72,
+    "station_latitude": 22.533,
+    "station_longitude": 114.15
+  },
+  {
+    "entity_id": "SUP_005_SITE",
+    "station_id": "47772099999",
+    "station_name": "OSAKA",
+    "distance_km": 3.38,
+    "station_latitude": 34.683,
+    "station_longitude": 135.517
+  },
+  {
+    "entity_id": "SUP_006_SITE",
+    "station_id": "43063099999",
+    "station_name": "PUNE",
+    "distance_km": 3.18,
+    "station_latitude": 18.533,
+    "station_longitude": 73.85
+  },
+  {
+    "entity_id": "SUP_007_SITE",
+    "station_id": "45032099999",
+    "station_name": "TA KWU LING",
+    "distance_km": 10.62,
+    "station_latitude": 22.533,
+    "station_longitude": 114.15
+  },
+  {
+    "entity_id": "SUP_008_SITE",
+    "station_id": "47772099999",
+    "station_name": "OSAKA",
+    "distance_km": 5.45,
+    "station_latitude": 34.683,
+    "station_longitude": 135.517
+  },
+  {
+    "entity_id": "SUP_009_SITE",
+    "station_id": "43063099999",
+    "station_name": "PUNE",
+    "distance_km": 5.33,
+    "station_latitude": 18.533,
+    "station_longitude": 73.85
+  },
+  {
+    "entity_id": "SUP_010_SITE",
+    "station_id": "45032099999",
+    "station_name": "TA KWU LING",
+    "distance_km": 11.87,
+    "station_latitude": 22.533,
+    "station_longitude": 114.15
+  },
+  {
+    "entity_id": "SUP_011_SITE",
+    "station_id": "47771099999",
+    "station_name": "OSAKA INTL",
+    "distance_km": 6.94,
+    "station_latitude": 34.786,
+    "station_longitude": 135.438
+  },
+  {
+    "entity_id": "SUP_012_SITE",
+    "station_id": "43063099999",
+    "station_name": "PUNE",
+    "distance_km": 7.52,
+    "station_latitude": 18.533,
+    "station_longitude": 73.85
+  },
+  {
+    "entity_id": "SUP_013_SITE",
+    "station_id": "45032099999",
+    "station_name": "TA KWU LING",
+    "distance_km": 13.38,
+    "station_latitude": 22.533,
+    "station_longitude": 114.15
+  },
+  {
+    "entity_id": "SUP_014_SITE",
+    "station_id": "47771099999",
+    "station_name": "OSAKA INTL",
+    "distance_km": 5.94,
+    "station_latitude": 34.786,
+    "station_longitude": 135.438
+  },
+  {
+    "entity_id": "SUP_015_SITE",
+    "station_id": "43063099999",
+    "station_name": "PUNE",
+    "distance_km": 9.73,
+    "station_latitude": 18.533,
+    "station_longitude": 73.85
+  }
+]

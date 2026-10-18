@@ -1,0 +1,22 @@
+{
+  "backend": "vertex",
+  "model": "gemini-3.5-flash",
+  "authentication_verified": true,
+  "generation_verified": true,
+  "complete_live_workflow_verified": false,
+  "completed_stages": [
+    "Commander",
+    "Impact",
+    "Investigator",
+    "Recovery",
+    "Sentinel"
+  ],
+  "completed_reviews": [
+    "Impact",
+    "Investigator",
+    "Recovery",
+    "Sentinel"
+  ],
+  "remaining_blocker": "40-call workflow limit reached before Commander review",
+  "local_targeted_tests_passed": 13
+}

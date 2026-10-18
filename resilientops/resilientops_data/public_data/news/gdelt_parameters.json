@@ -1,0 +1,7 @@
+{
+  "start_date": "2025-09-22",
+  "end_date": "2025-09-26",
+  "location_pattern": "mumbai|bombay|tokyo|beijing|peking|shenzhen|osaka|pune|hong kong|guangdong",
+  "topic_pattern": "flood|typhoon|cyclone|earthquake|strike|port.closure|factory.fire|power.outage|transport|sanction|tariff|border|conflict|inflation|commodity|exchange.rate|labor|labour|protest|public.health|holiday|festival|shutdown|outage|cyber|ransomware|export.control|customs|compliance",
+  "max_records": 100
+}

@@ -1,0 +1,203 @@
+[
+  {
+    "source_id": "SRC_NEWS_001",
+    "category": "ENVIRONMENTAL",
+    "secondary_categories": [],
+    "publisher": "Airport Authority Hong Kong",
+    "url": "https://www.hongkongairport.com/en/media-centre/press-release/2025/pr_1820",
+    "evidence_id": "NEWS_001",
+    "ingestion_status": "SHORT_REVIEWED_PARAPHRASE_INCLUDED",
+    "full_text_stored": false
+  },
+  {
+    "source_id": "SRC_NEWS_002",
+    "category": "ENVIRONMENTAL",
+    "secondary_categories": [],
+    "publisher": "Airport Authority Hong Kong",
+    "url": "https://www.hongkongairport.com/en/media-centre/press-release/2025/pr_1823",
+    "evidence_id": "NEWS_002",
+    "ingestion_status": "SHORT_REVIEWED_PARAPHRASE_INCLUDED",
+    "full_text_stored": false
+  },
+  {
+    "source_id": "SRC_NEWS_003",
+    "category": "ENVIRONMENTAL",
+    "secondary_categories": [],
+    "publisher": "Hong Kong Government",
+    "url": "https://www.news.gov.hk/eng/2025/09/20250924/20250924_210413_837.html",
+    "evidence_id": "NEWS_003",
+    "ingestion_status": "SHORT_REVIEWED_PARAPHRASE_INCLUDED",
+    "full_text_stored": false
+  },
+  {
+    "source_id": "SRC_NEWS_004",
+    "category": "ENVIRONMENTAL",
+    "secondary_categories": [],
+    "publisher": "Singapore Airlines",
+    "url": "https://www.singaporeair.com/en_UK/gb/corporate/newsroom/newsalert-listing/advisory-on-singapore-airlines-flights-affected-by-typhoon-ragas/",
+    "evidence_id": "NEWS_004",
+    "ingestion_status": "SHORT_REVIEWED_PARAPHRASE_INCLUDED",
+    "full_text_stored": false
+  },
+  {
+    "source_id": "SRC_NEWS_005",
+    "category": "ENVIRONMENTAL",
+    "secondary_categories": [],
+    "publisher": "Japan Meteorological Agency",
+    "url": "https://www.jma.go.jp/jma/en/2024_Noto_Peninsula_Earthquake/index.html",
+    "evidence_id": "NEWS_005",
+    "ingestion_status": "SHORT_REVIEWED_PARAPHRASE_INCLUDED",
+    "full_text_stored": false
+  },
+  {
+    "source_id": "SRC_NEWS_006",
+    "category": "ENVIRONMENTAL",
+    "secondary_categories": [],
+    "publisher": "Hong Kong Observatory",
+    "url": "https://www.hko.gov.hk/en/informtc/tc2025/tc2509.html",
+    "evidence_id": "NEWS_006",
+    "ingestion_status": "SHORT_REVIEWED_PARAPHRASE_INCLUDED",
+    "full_text_stored": false
+  },
+  {
+    "source_id": "SRC_NEWS_007",
+    "category": "ENVIRONMENTAL",
+    "secondary_categories": [],
+    "publisher": "Maersk",
+    "url": "https://www.maersk.com/news/articles/2024/07/18/dragon-typhoon-season-changes",
+    "evidence_id": "NEWS_007",
+    "ingestion_status": "SHORT_REVIEWED_PARAPHRASE_INCLUDED",
+    "full_text_stored": false
+  },
+  {
+    "source_id": "SRC_NEWS_008",
+    "category": "ENVIRONMENTAL",
+    "secondary_categories": [],
+    "publisher": "Shanghai Municipal Government",
+    "url": "https://english.shanghai.gov.cn/en-Latest-WhatsNew/20240916/baf03f1e469640bd8f0fc115b858cb3e.html",
+    "evidence_id": "NEWS_008",
+    "ingestion_status": "SHORT_REVIEWED_PARAPHRASE_INCLUDED",
+    "full_text_stored": false
+  },
+  {
+    "source_id": "SRC_NEWS_009",
+    "category": "POLITICAL",
+    "secondary_categories": [],
+    "publisher": "Maersk",
+    "url": "https://www.maersk.com/news/articles/2026/04/01/hormuz-disruption-detention-storage-india-ports",
+    "evidence_id": "NEWS_009",
+    "ingestion_status": "SHORT_REVIEWED_PARAPHRASE_INCLUDED",
+    "full_text_stored": false
+  },
+  {
+    "source_id": "SRC_NEWS_010",
+    "category": "ENVIRONMENTAL",
+    "secondary_categories": [],
+    "publisher": "Maersk",
+    "url": "https://www.maersk.com/news/articles/2026/09/18/east-asia-typhoon-season-update-2",
+    "evidence_id": "NEWS_010",
+    "ingestion_status": "SHORT_REVIEWED_PARAPHRASE_INCLUDED",
+    "full_text_stored": false
+  },
+  {
+    "source_id": "SRC_NEWS_011",
+    "category": "POLITICAL",
+    "secondary_categories": [
+      "ECONOMIC"
+    ],
+    "publisher": "WTO",
+    "url": "https://www.wto.org/english/news_e/news25_e/tfore_16apr25_e.htm",
+    "evidence_id": "NEWS_011",
+    "ingestion_status": "SHORT_REVIEWED_PARAPHRASE_INCLUDED",
+    "full_text_stored": false
+  },
+  {
+    "source_id": "SRC_NEWS_012",
+    "category": "ECONOMIC",
+    "secondary_categories": [],
+    "publisher": "World Bank",
+    "url": "https://thedocs.worldbank.org/en/doc/1c533d236291c53757b147f8acb8a82f-0050012024/commodity-markets-outlook-october-2024",
+    "evidence_id": "NEWS_012",
+    "ingestion_status": "SHORT_REVIEWED_PARAPHRASE_INCLUDED",
+    "full_text_stored": false
+  },
+  {
+    "source_id": "SRC_NEWS_013",
+    "category": "SOCIAL",
+    "secondary_categories": [],
+    "publisher": "ILA and USMX joint statement",
+    "url": "https://ilaunion.org/joint-statement-regarding-master-contract/",
+    "evidence_id": "NEWS_013",
+    "ingestion_status": "SHORT_REVIEWED_PARAPHRASE_INCLUDED",
+    "full_text_stored": false
+  },
+  {
+    "source_id": "SRC_NEWS_014",
+    "category": "CULTURAL",
+    "secondary_categories": [
+      "LEGAL"
+    ],
+    "publisher": "China State Council, reproduced by Haidian government",
+    "url": "https://en.bjhd.gov.cn/workinginhaidian/supportingservices/publicholidays/202512/t20251211_4797062.shtml",
+    "evidence_id": "NEWS_014",
+    "ingestion_status": "SHORT_REVIEWED_PARAPHRASE_INCLUDED",
+    "full_text_stored": false
+  },
+  {
+    "source_id": "SRC_NEWS_015",
+    "category": "TECHNOLOGICAL",
+    "secondary_categories": [],
+    "publisher": "CrowdStrike",
+    "url": "https://www.crowdstrike.com/en-us/blog/falcon-update-for-windows-hosts-technical-details/",
+    "evidence_id": "NEWS_015",
+    "ingestion_status": "SHORT_REVIEWED_PARAPHRASE_INCLUDED",
+    "full_text_stored": false
+  },
+  {
+    "source_id": "SRC_NEWS_016",
+    "category": "LEGAL",
+    "secondary_categories": [
+      "POLITICAL",
+      "TECHNOLOGICAL"
+    ],
+    "publisher": "US Bureau of Industry and Security",
+    "url": "https://www.bis.gov/press-release/commerce-strengthens-export-controls-restrict-chinas-capability-produce-advanced-semiconductors-military",
+    "evidence_id": "NEWS_016",
+    "ingestion_status": "SHORT_REVIEWED_PARAPHRASE_INCLUDED",
+    "full_text_stored": false
+  },
+  {
+    "source_id": "SRC_WB_SERIES",
+    "category": "ECONOMIC",
+    "publisher": "World Bank",
+    "url": "https://datacatalog.worldbank.org/search/dataset/0038238/commodity-prices-history-and-projections",
+    "ingestion_status": "CATALOG_REVIEWED_TIME_SERIES_NOT_IMPORTED",
+    "intended_fields": [
+      "commodity",
+      "month",
+      "price",
+      "unit",
+      "actual_or_forecast",
+      "vintage"
+    ]
+  },
+  {
+    "source_id": "SRC_UNCTAD",
+    "category": "POLITICAL",
+    "publisher": "UNCTAD",
+    "url": "https://unctad.org/publication/navigating-troubled-waters-impact-global-trade-disruption-shipping-routes-red-sea-black",
+    "ingestion_status": "DISCOVERED_SEARCH_METADATA_ONLY_FULL_PAGE_RETURNED_403",
+    "intended_fields": [
+      "route",
+      "disruption mechanism",
+      "report date"
+    ]
+  },
+  {
+    "source_id": "SRC_NOAA",
+    "category": "ENVIRONMENTAL",
+    "publisher": "NOAA NCEI",
+    "url": "https://www.ncei.noaa.gov/data/global-summary-of-the-day/access/",
+    "ingestion_status": "PARTIAL_STATION_DATA_IMPORTED_SEE_WEATHER_COVERAGE"
+  }
+]

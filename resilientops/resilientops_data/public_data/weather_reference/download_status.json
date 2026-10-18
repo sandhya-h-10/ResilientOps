@@ -1,0 +1,184 @@
+[
+  {
+    "station_id": "43003099999",
+    "year": 2024,
+    "status": "DOWNLOADED",
+    "url": "https://www.ncei.noaa.gov/data/global-summary-of-the-day/access/2024/43003099999.csv",
+    "rows": 356,
+    "sha256": "9f25bdda93102be9520eb740a55e09f85160ae57596fe49f28a5893c6802c300",
+    "retrieved_at_utc": "2026-10-04T17:50:31.106701+00:00"
+  },
+  {
+    "station_id": "43003099999",
+    "year": 2025,
+    "status": "DOWNLOADED",
+    "url": "https://www.ncei.noaa.gov/data/global-summary-of-the-day/access/2025/43003099999.csv",
+    "rows": 236,
+    "sha256": "0189ae79d40527bba1380e7cf8b27159282728110a87fedb0360a75b5880894d",
+    "retrieved_at_utc": "2026-10-04T17:50:30.994654+00:00"
+  },
+  {
+    "station_id": "43003099999",
+    "year": 2026,
+    "status": "FAILED",
+    "url": "https://www.ncei.noaa.gov/data/global-summary-of-the-day/access/2026/43003099999.csv",
+    "error": "HTTP Error 404: Not Found",
+    "attempted_at_utc": "2026-10-04T17:50:30.886883+00:00"
+  },
+  {
+    "station_id": "43063099999",
+    "year": 2024,
+    "status": "DOWNLOADED",
+    "url": "https://www.ncei.noaa.gov/data/global-summary-of-the-day/access/2024/43063099999.csv",
+    "rows": 350,
+    "sha256": "98bbb626ea291d6dc5b1dbae5b65091ad93bbb52826150535905f8789a34d808",
+    "retrieved_at_utc": "2026-10-04T17:50:31.119590+00:00"
+  },
+  {
+    "station_id": "43063099999",
+    "year": 2025,
+    "status": "DOWNLOADED",
+    "url": "https://www.ncei.noaa.gov/data/global-summary-of-the-day/access/2025/43063099999.csv",
+    "rows": 236,
+    "sha256": "0cd34d65670f2590129ea5a9b697960c8d7627e1b38b09685d030795322d389d",
+    "retrieved_at_utc": "2026-10-04T17:50:40.786478+00:00"
+  },
+  {
+    "station_id": "43063099999",
+    "year": 2026,
+    "status": "FAILED",
+    "url": "https://www.ncei.noaa.gov/data/global-summary-of-the-day/access/2026/43063099999.csv",
+    "error": "HTTP Error 404: Not Found",
+    "attempted_at_utc": "2026-10-04T17:50:40.757382+00:00"
+  },
+  {
+    "station_id": "45032099999",
+    "year": 2024,
+    "status": "DOWNLOADED",
+    "url": "https://www.ncei.noaa.gov/data/global-summary-of-the-day/access/2024/45032099999.csv",
+    "rows": 353,
+    "sha256": "b82f9eebc785ec416fde3fb7274f435ab6643da9720c8753012d92ec79d396d7",
+    "retrieved_at_utc": "2026-10-04T17:50:40.793572+00:00"
+  },
+  {
+    "station_id": "45032099999",
+    "year": 2025,
+    "status": "DOWNLOADED",
+    "url": "https://www.ncei.noaa.gov/data/global-summary-of-the-day/access/2025/45032099999.csv",
+    "rows": 236,
+    "sha256": "a7750dfad1bef0cb352e0cffd978d6b218a91a4fd9ca8abd92b969a6ccd4b556",
+    "retrieved_at_utc": "2026-10-04T17:50:40.881052+00:00"
+  },
+  {
+    "station_id": "45032099999",
+    "year": 2026,
+    "status": "FAILED",
+    "url": "https://www.ncei.noaa.gov/data/global-summary-of-the-day/access/2026/45032099999.csv",
+    "error": "HTTP Error 404: Not Found",
+    "attempted_at_utc": "2026-10-04T17:50:49.966655+00:00"
+  },
+  {
+    "station_id": "47671399999",
+    "year": 2024,
+    "status": "DOWNLOADED",
+    "url": "https://www.ncei.noaa.gov/data/global-summary-of-the-day/access/2024/47671399999.csv",
+    "rows": 237,
+    "sha256": "22911e569b5cd750a2a4ca04bbec17ed590ff0061c6250bc738e57aa4ec5e3ce",
+    "retrieved_at_utc": "2026-10-04T17:50:50.247153+00:00"
+  },
+  {
+    "station_id": "47671399999",
+    "year": 2025,
+    "status": "DOWNLOADED",
+    "url": "https://www.ncei.noaa.gov/data/global-summary-of-the-day/access/2025/47671399999.csv",
+    "rows": 134,
+    "sha256": "5e5f22449a5c437931e9dcebdd49ac91c3c2202d6f40d672d42bab20119c61f5",
+    "retrieved_at_utc": "2026-10-04T17:50:50.086310+00:00"
+  },
+  {
+    "station_id": "47671399999",
+    "year": 2026,
+    "status": "FAILED",
+    "url": "https://www.ncei.noaa.gov/data/global-summary-of-the-day/access/2026/47671399999.csv",
+    "error": "HTTP Error 404: Not Found",
+    "attempted_at_utc": "2026-10-04T17:50:50.038750+00:00"
+  },
+  {
+    "station_id": "47771099999",
+    "year": 2024,
+    "status": "DOWNLOADED",
+    "url": "https://www.ncei.noaa.gov/data/global-summary-of-the-day/access/2024/47771099999.csv",
+    "rows": 355,
+    "sha256": "24c5f32363cb6a2482f2495d6ab49f71d0414b572d04e01f4f2f71e6eda1badf",
+    "retrieved_at_utc": "2026-10-04T17:51:00.480661+00:00"
+  },
+  {
+    "station_id": "47771099999",
+    "year": 2025,
+    "status": "DOWNLOADED",
+    "url": "https://www.ncei.noaa.gov/data/global-summary-of-the-day/access/2025/47771099999.csv",
+    "rows": 236,
+    "sha256": "1dd885b9e4fc7ea243e2e3b3a5ddbc8a8b6d49e7f6c53c55e9a783c2fc5fa258",
+    "retrieved_at_utc": "2026-10-04T17:51:00.571854+00:00"
+  },
+  {
+    "station_id": "47771099999",
+    "year": 2026,
+    "status": "FAILED",
+    "url": "https://www.ncei.noaa.gov/data/global-summary-of-the-day/access/2026/47771099999.csv",
+    "error": "HTTP Error 404: Not Found",
+    "attempted_at_utc": "2026-10-04T17:51:00.298774+00:00"
+  },
+  {
+    "station_id": "47772099999",
+    "year": 2024,
+    "status": "DOWNLOADED",
+    "url": "https://www.ncei.noaa.gov/data/global-summary-of-the-day/access/2024/47772099999.csv",
+    "rows": 355,
+    "sha256": "a44819d53a714e465e5ce8ab6936d6c89a112b66ac42c1e34cef226079cc1bdb",
+    "retrieved_at_utc": "2026-10-04T17:51:00.605468+00:00"
+  },
+  {
+    "station_id": "47772099999",
+    "year": 2025,
+    "status": "DOWNLOADED",
+    "url": "https://www.ncei.noaa.gov/data/global-summary-of-the-day/access/2025/47772099999.csv",
+    "rows": 236,
+    "sha256": "00396d574bd65d36b5f81e8356cd0c9ab9f7fa87506b16416e3e7e83c9606fa8",
+    "retrieved_at_utc": "2026-10-04T17:51:09.656710+00:00"
+  },
+  {
+    "station_id": "47772099999",
+    "year": 2026,
+    "status": "FAILED",
+    "url": "https://www.ncei.noaa.gov/data/global-summary-of-the-day/access/2026/47772099999.csv",
+    "error": "HTTP Error 404: Not Found",
+    "attempted_at_utc": "2026-10-04T17:51:09.609142+00:00"
+  },
+  {
+    "station_id": "54511099999",
+    "year": 2024,
+    "status": "DOWNLOADED",
+    "url": "https://www.ncei.noaa.gov/data/global-summary-of-the-day/access/2024/54511099999.csv",
+    "rows": 355,
+    "sha256": "79cc2e97c2cd32672d7b3a465031f2231824327ae29b6c6d822df165dfb61537",
+    "retrieved_at_utc": "2026-10-04T17:51:09.645254+00:00"
+  },
+  {
+    "station_id": "54511099999",
+    "year": 2025,
+    "status": "DOWNLOADED",
+    "url": "https://www.ncei.noaa.gov/data/global-summary-of-the-day/access/2025/54511099999.csv",
+    "rows": 236,
+    "sha256": "915e3fc14f7d354a6774db4e7c262bea020541995382ae4df5b2e9f15ade1086",
+    "retrieved_at_utc": "2026-10-04T17:51:09.739224+00:00"
+  },
+  {
+    "station_id": "54511099999",
+    "year": 2026,
+    "status": "FAILED",
+    "url": "https://www.ncei.noaa.gov/data/global-summary-of-the-day/access/2026/54511099999.csv",
+    "error": "HTTP Error 404: Not Found",
+    "attempted_at_utc": "2026-10-04T17:51:20.435040+00:00"
+  }
+]

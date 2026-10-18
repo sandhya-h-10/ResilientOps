@@ -1,0 +1,13 @@
+[
+  {"id":"baseline","expected_outcome":"PLAN","facts":[],"truth_changes":[],"expected_cost_paise":6340000},
+  {"id":"late-arrival","expected_outcome":"PLAN","facts":[["PUNE-LATE","PUNE-TRANSFER","arrival_date","2026-10-19"],["PUNE-LATE","PUNE-TRANSFER","capacity_units","400"]],"truth_changes":[{"option_id":"PUNE-TRANSFER","arrival_day":6}]},
+  {"id":"limited-capacity","expected_outcome":"PLAN","facts":[["PUNE-LIMIT","PUNE-TRANSFER","arrival_date","2026-10-15"],["PUNE-LIMIT","PUNE-TRANSFER","capacity_units","100"]],"truth_changes":[{"option_id":"PUNE-TRANSFER","capacity":100}]},
+  {"id":"conflicting-updates","expected_outcome":"ESCALATE","facts":[["PUNE-DISPATCH","PUNE-TRANSFER","arrival_date","2026-10-15"],["PUNE-DISPATCH","PUNE-TRANSFER","capacity_units","400"],["PUNE-CARRIER","PUNE-TRANSFER","arrival_date","2026-10-19"],["PUNE-CARRIER","PUNE-TRANSFER","capacity_units","400"]],"truth_changes":[]},
+  {"id":"natural-language","expected_outcome":"PLAN","facts":[["PUNE-PROSE","PUNE-TRANSFER","arrival_date","2026-10-19"],["PUNE-PROSE","PUNE-TRANSFER","capacity_units","400"]],"truth_changes":[{"option_id":"PUNE-TRANSFER","arrival_day":6}]},
+  {"id":"ambiguous-update","expected_outcome":"ESCALATE","facts":[["PUNE-TENTATIVE","PUNE-TRANSFER","capacity_units","400"]],"truth_changes":[]},
+  {"id":"missing-policy","expected_outcome":"ESCALATE","facts":[],"truth_changes":[]},
+  {"id":"unapproved-supplier","expected_outcome":"PLAN","facts":[["SUP044-OFFER","SUP044-ALTERNATE","arrival_date","2026-10-15"],["SUP044-OFFER","SUP044-ALTERNATE","capacity_units","600"]],"truth_changes":[],"expected_cost_paise":6340000},
+  {"id":"corrected-update","expected_outcome":"PLAN","facts":[["PUNE-CORRECTED","PUNE-TRANSFER","arrival_date","2026-10-15"],["PUNE-CORRECTED","PUNE-TRANSFER","capacity_units","400"]],"truth_changes":[],"expected_cost_paise":6340000},
+  {"id":"no-shortage","expected_outcome":"NO_ACTION","facts":[],"truth_changes":[],"expected_cost_paise":0},
+  {"id":"infeasible-arrivals","expected_outcome":"ESCALATE","facts":[["PUNE-NO-EARLY","PUNE-TRANSFER","arrival_date","2026-10-19"],["PUNE-NO-EARLY","PUNE-TRANSFER","capacity_units","400"],["EXPEDITE-NO-EARLY","SHIP-882-EXPEDITE","arrival_date","2026-10-19"],["EXPEDITE-NO-EARLY","SHIP-882-EXPEDITE","capacity_units","200"]],"truth_changes":[{"option_id":"PUNE-TRANSFER","arrival_day":6},{"option_id":"SHIP-882-EXPEDITE","arrival_day":6}]}
+]

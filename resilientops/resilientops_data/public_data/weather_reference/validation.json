@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "source_stations": 7,
+  "station_year_downloads": 21,
+  "unique_observations": 3911,
+  "entity_observation_links": 10384,
+  "entities": 18,
+  "window_start": "2024-01-01",
+  "window_end_exclusive": "2026-10-01",
+  "checks": [
+    "Source download hashes match",
+    "Unique station-day observations",
+    "Source dates preserved",
+    "Missing sentinels converted to null",
+    "Coverage gaps reported without imputation",
+    "Ambiguous precipitation flags excluded from daily rainfall feature"
+  ]
+}

@@ -1,0 +1,2 @@
+{"action_type": "TRANSFER", "amount_from": "0.00", "amount_to": "500000.00", "approval_rule_id": "AR_001", "currency": "INR", "dataset_version": "v2_2024-01-01_2026-10-01_seed42", "is_synthetic": true, "required_role": "PLANNER_MANAGER"}
+{"action_type": "TRANSFER", "amount_from": "500000.00", "amount_to": null, "approval_rule_id": "AR_002", "currency": "INR", "dataset_version": "v2_2024-01-01_2026-10-01_seed42", "is_synthetic": true, "required_role": "OPERATIONS_DIRECTOR"}

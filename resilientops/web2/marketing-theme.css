@@ -1,0 +1,25 @@
+/* Shared appearance controls for product and account entry. */
+html[data-theme=dark]{color-scheme:dark}
+html[data-theme=light]{color-scheme:light;--bg:#f6f9f8;--surface:#fff;--ink:#132f3b;--muted:#48616d;--line:#b8cdcc;--accent:#096b5c}
+.marketing .account-links>button{height:44px;min-width:108px;padding:0 16px;font-size:14px;line-height:1;border-radius:8px;white-space:nowrap}
+.marketing #motion-toggle[aria-checked=true]{border-color:var(--accent);box-shadow:inset 0 -2px 0 var(--accent)}
+html[data-theme=light] body.marketing header{background:#f6f9f8f5}
+html[data-theme=light] body.marketing .brand-image{filter:none}
+html[data-theme=light] body.marketing :is(.links,.strip,.footer-group a,.footer-grid h3,.note,.capability-note,.form-status){color:var(--muted)}
+html[data-theme=light] body.marketing :is(.feature,.auth-card,.role,.tour-panel){background:var(--surface)}
+html[data-theme=light] body.marketing .request{background:linear-gradient(120deg,#e0f2eb,#edf4f7);border-color:#95b9b0}
+html[data-theme=light] body.marketing .form :is(input,textarea){background:#fff;color:var(--ink);border-color:#718d95}
+html[data-theme=light] body.marketing .form :is(input,textarea)::placeholder{color:#586d77}
+html[data-theme=light] body.marketing :is(button,.btn):hover{background:#e0eeeb}
+html[data-theme=light] body.marketing :is(.primary,.tour-tabs .active,.auth-tabs button.active){background:#096b5c;color:#fff;border-color:#096b5c}
+html[data-theme=light] body.marketing .primary:hover{background:#07564a}
+html[data-theme=light] body.marketing .note{border-color:#9ab5bc;background:#edf4f5}
+html[data-theme=light] body.marketing :focus-visible{outline-color:#096b5c!important;box-shadow:0 0 0 6px #fff!important}
+/* The illustrative product remains a high-contrast navy inset in either theme. */
+html[data-theme=light] body.marketing .sharp-preview{--ink:#eaf4f4;--muted:#b1c7ce;--accent:#73e4c4;--line:#345863;color:var(--ink);box-shadow:0 24px 65px #193d4126,0 0 0 7px #173d430d}
+html[data-theme=dark] body.marketing .light-band{background:#102b36;color:#eaf4f4}
+html[data-theme=dark] body.marketing .light-band p{color:#b1c7ce}
+html[data-theme=dark] body.marketing .light-band .eyebrow{color:#73e4c4}
+@media(min-width:1001px) and (max-width:1350px){body.marketing .bar .links{display:none}}
+@media(max-width:720px){body.marketing .account-links>button{min-width:100px;padding:0 10px}body.marketing .account-links{justify-content:flex-start;gap:8px}body.marketing .bar{row-gap:12px}}
+@media(forced-colors:active){html[data-theme=light] body.marketing .primary{background:ButtonFace;color:ButtonText}}

@@ -1,0 +1,3114 @@
+{
+  "synthetic": true,
+  "base_dataset_version": "v2_2024-01-01_2026-10-01_seed42",
+  "signals": [
+    {
+      "id": "SIGNAL_001",
+      "scenario_id": "RISK_001",
+      "family": "external",
+      "subtype": "political",
+      "plant": "PLT_MUM",
+      "material": "MAT_001_A",
+      "metric": "border clearance hours",
+      "unit": "hours",
+      "direction": "high",
+      "source_text": "Synthetic external / political monitoring case at PLT_MUM for MAT_001_A. border clearance hours is 48 hours, compared with a historical baseline around 12. A planner-supplied three-day receipt delay models the material availability consequence; the root cause is not inferred from the outlier. This is an illustrative source notice, not a live or verified event.",
+      "synthetic": true,
+      "observations": [
+        {
+          "day": "2026-08-01",
+          "value": 11.17
+        },
+        {
+          "day": "2026-08-02",
+          "value": 11.956
+        },
+        {
+          "day": "2026-08-03",
+          "value": 11.465
+        },
+        {
+          "day": "2026-08-04",
+          "value": 11.0
+        },
+        {
+          "day": "2026-08-05",
+          "value": 11.681
+        },
+        {
+          "day": "2026-08-06",
+          "value": 11.838
+        },
+        {
+          "day": "2026-08-07",
+          "value": 11.343
+        },
+        {
+          "day": "2026-08-08",
+          "value": 12.933
+        },
+        {
+          "day": "2026-08-09",
+          "value": 11.436
+        },
+        {
+          "day": "2026-08-10",
+          "value": 11.673
+        },
+        {
+          "day": "2026-08-11",
+          "value": 12.257
+        },
+        {
+          "day": "2026-08-12",
+          "value": 11.611
+        },
+        {
+          "day": "2026-08-13",
+          "value": 12.509
+        },
+        {
+          "day": "2026-08-14",
+          "value": 13.201
+        },
+        {
+          "day": "2026-08-15",
+          "value": 12.722
+        },
+        {
+          "day": "2026-08-16",
+          "value": 13.04
+        },
+        {
+          "day": "2026-08-17",
+          "value": 12.382
+        },
+        {
+          "day": "2026-08-18",
+          "value": 10.451
+        },
+        {
+          "day": "2026-08-19",
+          "value": 11.942
+        },
+        {
+          "day": "2026-08-20",
+          "value": 11.372
+        },
+        {
+          "day": "2026-08-21",
+          "value": 12.384
+        },
+        {
+          "day": "2026-08-22",
+          "value": 10.261
+        },
+        {
+          "day": "2026-08-23",
+          "value": 12.108
+        },
+        {
+          "day": "2026-08-24",
+          "value": 10.842
+        },
+        {
+          "day": "2026-08-25",
+          "value": 11.416
+        },
+        {
+          "day": "2026-08-26",
+          "value": 11.883
+        },
+        {
+          "day": "2026-08-27",
+          "value": 12.238
+        },
+        {
+          "day": "2026-08-28",
+          "value": 11.46
+        },
+        {
+          "day": "2026-08-29",
+          "value": 13.288
+        },
+        {
+          "day": "2026-08-30",
+          "value": 12.348
+        },
+        {
+          "day": "2026-08-31",
+          "value": 12.423
+        },
+        {
+          "day": "2026-09-01",
+          "value": 12.019
+        },
+        {
+          "day": "2026-09-02",
+          "value": 12.144
+        },
+        {
+          "day": "2026-09-03",
+          "value": 12.148
+        },
+        {
+          "day": "2026-09-04",
+          "value": 12.252
+        },
+        {
+          "day": "2026-09-05",
+          "value": 11.309
+        },
+        {
+          "day": "2026-09-06",
+          "value": 12.123
+        },
+        {
+          "day": "2026-09-07",
+          "value": 11.761
+        },
+        {
+          "day": "2026-09-08",
+          "value": 12.597
+        },
+        {
+          "day": "2026-09-09",
+          "value": 11.637
+        },
+        {
+          "day": "2026-09-10",
+          "value": 12.681
+        },
+        {
+          "day": "2026-09-11",
+          "value": 12.79
+        },
+        {
+          "day": "2026-09-12",
+          "value": 11.817
+        },
+        {
+          "day": "2026-09-13",
+          "value": 11.876
+        },
+        {
+          "day": "2026-09-14",
+          "value": 10.582
+        },
+        {
+          "day": "2026-09-15",
+          "value": 12.364
+        },
+        {
+          "day": "2026-09-16",
+          "value": 11.616
+        },
+        {
+          "day": "2026-09-17",
+          "value": 12.32
+        },
+        {
+          "day": "2026-09-18",
+          "value": 12.714
+        },
+        {
+          "day": "2026-09-19",
+          "value": 11.623
+        },
+        {
+          "day": "2026-09-20",
+          "value": 11.896
+        },
+        {
+          "day": "2026-09-21",
+          "value": 11.859
+        },
+        {
+          "day": "2026-09-22",
+          "value": 12.2
+        },
+        {
+          "day": "2026-09-23",
+          "value": 11.477
+        },
+        {
+          "day": "2026-09-24",
+          "value": 11.815
+        },
+        {
+          "day": "2026-09-25",
+          "value": 12.511
+        },
+        {
+          "day": "2026-09-26",
+          "value": 11.696
+        },
+        {
+          "day": "2026-09-27",
+          "value": 12.06
+        },
+        {
+          "day": "2026-09-28",
+          "value": 11.006
+        },
+        {
+          "day": "2026-09-29",
+          "value": 12.597
+        },
+        {
+          "day": "2026-09-30",
+          "value": 48
+        }
+      ]
+    },
+    {
+      "id": "SIGNAL_002",
+      "scenario_id": "RISK_002",
+      "family": "external",
+      "subtype": "economic",
+      "plant": "PLT_TYO",
+      "material": "MAT_002_A",
+      "metric": "import cost index",
+      "unit": "index",
+      "direction": "high",
+      "source_text": "Synthetic external / economic monitoring case at PLT_TYO for MAT_002_A. import cost index is 180 index, compared with a historical baseline around 100. A planner-supplied three-day receipt delay models the material availability consequence; the root cause is not inferred from the outlier. This is an illustrative source notice, not a live or verified event.",
+      "synthetic": true,
+      "observations": [
+        {
+          "day": "2026-08-01",
+          "value": 95.835
+        },
+        {
+          "day": "2026-08-02",
+          "value": 97.497
+        },
+        {
+          "day": "2026-08-03",
+          "value": 101.291
+        },
+        {
+          "day": "2026-08-04",
+          "value": 106.415
+        },
+        {
+          "day": "2026-08-05",
+          "value": 98.02
+        },
+        {
+          "day": "2026-08-06",
+          "value": 94.136
+        },
+        {
+          "day": "2026-08-07",
+          "value": 95.301
+        },
+        {
+          "day": "2026-08-08",
+          "value": 108.388
+        },
+        {
+          "day": "2026-08-09",
+          "value": 98.342
+        },
+        {
+          "day": "2026-08-10",
+          "value": 109.922
+        },
+        {
+          "day": "2026-08-11",
+          "value": 94.726
+        },
+        {
+          "day": "2026-08-12",
+          "value": 102.505
+        },
+        {
+          "day": "2026-08-13",
+          "value": 99.328
+        },
+        {
+          "day": "2026-08-14",
+          "value": 98.637
+        },
+        {
+          "day": "2026-08-15",
+          "value": 92.379
+        },
+        {
+          "day": "2026-08-16",
+          "value": 96.406
+        },
+        {
+          "day": "2026-08-17",
+          "value": 96.658
+        },
+        {
+          "day": "2026-08-18",
+          "value": 104.73
+        },
+        {
+          "day": "2026-08-19",
+          "value": 108.434
+        },
+        {
+          "day": "2026-08-20",
+          "value": 98.65
+        },
+        {
+          "day": "2026-08-21",
+          "value": 85.04
+        },
+        {
+          "day": "2026-08-22",
+          "value": 88.875
+        },
+        {
+          "day": "2026-08-23",
+          "value": 101.584
+        },
+        {
+          "day": "2026-08-24",
+          "value": 103.843
+        },
+        {
+          "day": "2026-08-25",
+          "value": 92.892
+        },
+        {
+          "day": "2026-08-26",
+          "value": 117.9
+        },
+        {
+          "day": "2026-08-27",
+          "value": 92.446
+        },
+        {
+          "day": "2026-08-28",
+          "value": 111.28
+        },
+        {
+          "day": "2026-08-29",
+          "value": 98.8
+        },
+        {
+          "day": "2026-08-30",
+          "value": 95.879
+        },
+        {
+          "day": "2026-08-31",
+          "value": 103.936
+        },
+        {
+          "day": "2026-09-01",
+          "value": 103.824
+        },
+        {
+          "day": "2026-09-02",
+          "value": 111.839
+        },
+        {
+          "day": "2026-09-03",
+          "value": 98.863
+        },
+        {
+          "day": "2026-09-04",
+          "value": 104.548
+        },
+        {
+          "day": "2026-09-05",
+          "value": 98.256
+        },
+        {
+          "day": "2026-09-06",
+          "value": 98.851
+        },
+        {
+          "day": "2026-09-07",
+          "value": 96.576
+        },
+        {
+          "day": "2026-09-08",
+          "value": 95.821
+        },
+        {
+          "day": "2026-09-09",
+          "value": 98.471
+        },
+        {
+          "day": "2026-09-10",
+          "value": 92.581
+        },
+        {
+          "day": "2026-09-11",
+          "value": 98.644
+        },
+        {
+          "day": "2026-09-12",
+          "value": 95.22
+        },
+        {
+          "day": "2026-09-13",
+          "value": 99.244
+        },
+        {
+          "day": "2026-09-14",
+          "value": 96.833
+        },
+        {
+          "day": "2026-09-15",
+          "value": 97.972
+        },
+        {
+          "day": "2026-09-16",
+          "value": 93.273
+        },
+        {
+          "day": "2026-09-17",
+          "value": 102.075
+        },
+        {
+          "day": "2026-09-18",
+          "value": 105.247
+        },
+        {
+          "day": "2026-09-19",
+          "value": 103.267
+        },
+        {
+          "day": "2026-09-20",
+          "value": 89.256
+        },
+        {
+          "day": "2026-09-21",
+          "value": 86.992
+        },
+        {
+          "day": "2026-09-22",
+          "value": 101.546
+        },
+        {
+          "day": "2026-09-23",
+          "value": 95.728
+        },
+        {
+          "day": "2026-09-24",
+          "value": 96.713
+        },
+        {
+          "day": "2026-09-25",
+          "value": 94.699
+        },
+        {
+          "day": "2026-09-26",
+          "value": 96.576
+        },
+        {
+          "day": "2026-09-27",
+          "value": 91.415
+        },
+        {
+          "day": "2026-09-28",
+          "value": 95.886
+        },
+        {
+          "day": "2026-09-29",
+          "value": 108.628
+        },
+        {
+          "day": "2026-09-30",
+          "value": 180.0
+        }
+      ]
+    },
+    {
+      "id": "SIGNAL_003",
+      "scenario_id": "RISK_003",
+      "family": "external",
+      "subtype": "environmental",
+      "plant": "PLT_BJS",
+      "material": "MAT_003_A",
+      "metric": "rainfall",
+      "unit": "mm/day",
+      "direction": "high",
+      "source_text": "Synthetic external / environmental monitoring case at PLT_BJS for MAT_003_A. rainfall is 105 mm/day, compared with a historical baseline around 15. A planner-supplied three-day receipt delay models the material availability consequence; the root cause is not inferred from the outlier. This is an illustrative source notice, not a live or verified event.",
+      "synthetic": true,
+      "observations": [
+        {
+          "day": "2026-08-01",
+          "value": 15.177
+        },
+        {
+          "day": "2026-08-02",
+          "value": 14.933
+        },
+        {
+          "day": "2026-08-03",
+          "value": 16.013
+        },
+        {
+          "day": "2026-08-04",
+          "value": 16.155
+        },
+        {
+          "day": "2026-08-05",
+          "value": 14.885
+        },
+        {
+          "day": "2026-08-06",
+          "value": 15.155
+        },
+        {
+          "day": "2026-08-07",
+          "value": 14.461
+        },
+        {
+          "day": "2026-08-08",
+          "value": 16.661
+        },
+        {
+          "day": "2026-08-09",
+          "value": 13.69
+        },
+        {
+          "day": "2026-08-10",
+          "value": 14.06
+        },
+        {
+          "day": "2026-08-11",
+          "value": 15.979
+        },
+        {
+          "day": "2026-08-12",
+          "value": 15.881
+        },
+        {
+          "day": "2026-08-13",
+          "value": 14.234
+        },
+        {
+          "day": "2026-08-14",
+          "value": 14.287
+        },
+        {
+          "day": "2026-08-15",
+          "value": 14.765
+        },
+        {
+          "day": "2026-08-16",
+          "value": 14.302
+        },
+        {
+          "day": "2026-08-17",
+          "value": 13.979
+        },
+        {
+          "day": "2026-08-18",
+          "value": 14.472
+        },
+        {
+          "day": "2026-08-19",
+          "value": 14.53
+        },
+        {
+          "day": "2026-08-20",
+          "value": 14.163
+        },
+        {
+          "day": "2026-08-21",
+          "value": 13.455
+        },
+        {
+          "day": "2026-08-22",
+          "value": 13.835
+        },
+        {
+          "day": "2026-08-23",
+          "value": 15.168
+        },
+        {
+          "day": "2026-08-24",
+          "value": 14.669
+        },
+        {
+          "day": "2026-08-25",
+          "value": 14.644
+        },
+        {
+          "day": "2026-08-26",
+          "value": 14.013
+        },
+        {
+          "day": "2026-08-27",
+          "value": 15.84
+        },
+        {
+          "day": "2026-08-28",
+          "value": 14.06
+        },
+        {
+          "day": "2026-08-29",
+          "value": 15.09
+        },
+        {
+          "day": "2026-08-30",
+          "value": 15.455
+        },
+        {
+          "day": "2026-08-31",
+          "value": 15.849
+        },
+        {
+          "day": "2026-09-01",
+          "value": 15.59
+        },
+        {
+          "day": "2026-09-02",
+          "value": 15.352
+        },
+        {
+          "day": "2026-09-03",
+          "value": 12.753
+        },
+        {
+          "day": "2026-09-04",
+          "value": 16.058
+        },
+        {
+          "day": "2026-09-05",
+          "value": 14.883
+        },
+        {
+          "day": "2026-09-06",
+          "value": 14.786
+        },
+        {
+          "day": "2026-09-07",
+          "value": 15.75
+        },
+        {
+          "day": "2026-09-08",
+          "value": 15.114
+        },
+        {
+          "day": "2026-09-09",
+          "value": 14.713
+        },
+        {
+          "day": "2026-09-10",
+          "value": 14.635
+        },
+        {
+          "day": "2026-09-11",
+          "value": 15.696
+        },
+        {
+          "day": "2026-09-12",
+          "value": 15.39
+        },
+        {
+          "day": "2026-09-13",
+          "value": 16.243
+        },
+        {
+          "day": "2026-09-14",
+          "value": 15.288
+        },
+        {
+          "day": "2026-09-15",
+          "value": 15.679
+        },
+        {
+          "day": "2026-09-16",
+          "value": 15.555
+        },
+        {
+          "day": "2026-09-17",
+          "value": 14.708
+        },
+        {
+          "day": "2026-09-18",
+          "value": 14.173
+        },
+        {
+          "day": "2026-09-19",
+          "value": 15.328
+        },
+        {
+          "day": "2026-09-20",
+          "value": 14.111
+        },
+        {
+          "day": "2026-09-21",
+          "value": 16.215
+        },
+        {
+          "day": "2026-09-22",
+          "value": 16.512
+        },
+        {
+          "day": "2026-09-23",
+          "value": 16.6
+        },
+        {
+          "day": "2026-09-24",
+          "value": 14.1
+        },
+        {
+          "day": "2026-09-25",
+          "value": 14.959
+        },
+        {
+          "day": "2026-09-26",
+          "value": 14.583
+        },
+        {
+          "day": "2026-09-27",
+          "value": 15.554
+        },
+        {
+          "day": "2026-09-28",
+          "value": 15.295
+        },
+        {
+          "day": "2026-09-29",
+          "value": 16.271
+        },
+        {
+          "day": "2026-09-30",
+          "value": 105
+        }
+      ]
+    },
+    {
+      "id": "SIGNAL_004",
+      "scenario_id": "RISK_004",
+      "family": "external",
+      "subtype": "technological",
+      "plant": "PLT_MUM",
+      "material": "MAT_001_A",
+      "metric": "port system outage",
+      "unit": "minutes/day",
+      "direction": "high",
+      "source_text": "Synthetic external / technological monitoring case at PLT_MUM for MAT_001_A. port system outage is 150 minutes/day, compared with a historical baseline around 10. A planner-supplied three-day receipt delay models the material availability consequence; the root cause is not inferred from the outlier. This is an illustrative source notice, not a live or verified event.",
+      "synthetic": true,
+      "observations": [
+        {
+          "day": "2026-08-01",
+          "value": 9.347
+        },
+        {
+          "day": "2026-08-02",
+          "value": 9.483
+        },
+        {
+          "day": "2026-08-03",
+          "value": 9.722
+        },
+        {
+          "day": "2026-08-04",
+          "value": 9.328
+        },
+        {
+          "day": "2026-08-05",
+          "value": 9.614
+        },
+        {
+          "day": "2026-08-06",
+          "value": 10.672
+        },
+        {
+          "day": "2026-08-07",
+          "value": 9.909
+        },
+        {
+          "day": "2026-08-08",
+          "value": 10.647
+        },
+        {
+          "day": "2026-08-09",
+          "value": 9.971
+        },
+        {
+          "day": "2026-08-10",
+          "value": 10.947
+        },
+        {
+          "day": "2026-08-11",
+          "value": 10.053
+        },
+        {
+          "day": "2026-08-12",
+          "value": 10.93
+        },
+        {
+          "day": "2026-08-13",
+          "value": 10.126
+        },
+        {
+          "day": "2026-08-14",
+          "value": 10.762
+        },
+        {
+          "day": "2026-08-15",
+          "value": 9.516
+        },
+        {
+          "day": "2026-08-16",
+          "value": 9.78
+        },
+        {
+          "day": "2026-08-17",
+          "value": 10.199
+        },
+        {
+          "day": "2026-08-18",
+          "value": 9.412
+        },
+        {
+          "day": "2026-08-19",
+          "value": 9.675
+        },
+        {
+          "day": "2026-08-20",
+          "value": 10.12
+        },
+        {
+          "day": "2026-08-21",
+          "value": 9.495
+        },
+        {
+          "day": "2026-08-22",
+          "value": 9.171
+        },
+        {
+          "day": "2026-08-23",
+          "value": 10.393
+        },
+        {
+          "day": "2026-08-24",
+          "value": 10.126
+        },
+        {
+          "day": "2026-08-25",
+          "value": 9.969
+        },
+        {
+          "day": "2026-08-26",
+          "value": 10.295
+        },
+        {
+          "day": "2026-08-27",
+          "value": 10.37
+        },
+        {
+          "day": "2026-08-28",
+          "value": 10.006
+        },
+        {
+          "day": "2026-08-29",
+          "value": 9.68
+        },
+        {
+          "day": "2026-08-30",
+          "value": 10.241
+        },
+        {
+          "day": "2026-08-31",
+          "value": 10.478
+        },
+        {
+          "day": "2026-09-01",
+          "value": 10.208
+        },
+        {
+          "day": "2026-09-02",
+          "value": 10.12
+        },
+        {
+          "day": "2026-09-03",
+          "value": 11.128
+        },
+        {
+          "day": "2026-09-04",
+          "value": 9.854
+        },
+        {
+          "day": "2026-09-05",
+          "value": 10.207
+        },
+        {
+          "day": "2026-09-06",
+          "value": 10.817
+        },
+        {
+          "day": "2026-09-07",
+          "value": 10.706
+        },
+        {
+          "day": "2026-09-08",
+          "value": 9.686
+        },
+        {
+          "day": "2026-09-09",
+          "value": 9.797
+        },
+        {
+          "day": "2026-09-10",
+          "value": 11.172
+        },
+        {
+          "day": "2026-09-11",
+          "value": 9.768
+        },
+        {
+          "day": "2026-09-12",
+          "value": 10.052
+        },
+        {
+          "day": "2026-09-13",
+          "value": 10.439
+        },
+        {
+          "day": "2026-09-14",
+          "value": 10.452
+        },
+        {
+          "day": "2026-09-15",
+          "value": 10.452
+        },
+        {
+          "day": "2026-09-16",
+          "value": 10.034
+        },
+        {
+          "day": "2026-09-17",
+          "value": 10.55
+        },
+        {
+          "day": "2026-09-18",
+          "value": 11.197
+        },
+        {
+          "day": "2026-09-19",
+          "value": 9.399
+        },
+        {
+          "day": "2026-09-20",
+          "value": 9.863
+        },
+        {
+          "day": "2026-09-21",
+          "value": 10.772
+        },
+        {
+          "day": "2026-09-22",
+          "value": 10.273
+        },
+        {
+          "day": "2026-09-23",
+          "value": 10.277
+        },
+        {
+          "day": "2026-09-24",
+          "value": 9.424
+        },
+        {
+          "day": "2026-09-25",
+          "value": 10.258
+        },
+        {
+          "day": "2026-09-26",
+          "value": 8.992
+        },
+        {
+          "day": "2026-09-27",
+          "value": 11.256
+        },
+        {
+          "day": "2026-09-28",
+          "value": 9.675
+        },
+        {
+          "day": "2026-09-29",
+          "value": 10.303
+        },
+        {
+          "day": "2026-09-30",
+          "value": 150
+        }
+      ]
+    },
+    {
+      "id": "SIGNAL_005",
+      "scenario_id": "RISK_005",
+      "family": "external",
+      "subtype": "social",
+      "plant": "PLT_TYO",
+      "material": "MAT_002_A",
+      "metric": "transport absence",
+      "unit": "percent",
+      "direction": "high",
+      "source_text": "Synthetic external / social monitoring case at PLT_TYO for MAT_002_A. transport absence is 30 percent, compared with a historical baseline around 5. A planner-supplied three-day receipt delay models the material availability consequence; the root cause is not inferred from the outlier. This is an illustrative source notice, not a live or verified event.",
+      "synthetic": true,
+      "observations": [
+        {
+          "day": "2026-08-01",
+          "value": 4.801
+        },
+        {
+          "day": "2026-08-02",
+          "value": 5.48
+        },
+        {
+          "day": "2026-08-03",
+          "value": 4.876
+        },
+        {
+          "day": "2026-08-04",
+          "value": 5.207
+        },
+        {
+          "day": "2026-08-05",
+          "value": 5.045
+        },
+        {
+          "day": "2026-08-06",
+          "value": 4.703
+        },
+        {
+          "day": "2026-08-07",
+          "value": 5.349
+        },
+        {
+          "day": "2026-08-08",
+          "value": 5.146
+        },
+        {
+          "day": "2026-08-09",
+          "value": 5.227
+        },
+        {
+          "day": "2026-08-10",
+          "value": 5.647
+        },
+        {
+          "day": "2026-08-11",
+          "value": 4.811
+        },
+        {
+          "day": "2026-08-12",
+          "value": 5.375
+        },
+        {
+          "day": "2026-08-13",
+          "value": 4.826
+        },
+        {
+          "day": "2026-08-14",
+          "value": 4.621
+        },
+        {
+          "day": "2026-08-15",
+          "value": 5.256
+        },
+        {
+          "day": "2026-08-16",
+          "value": 4.834
+        },
+        {
+          "day": "2026-08-17",
+          "value": 5.409
+        },
+        {
+          "day": "2026-08-18",
+          "value": 4.972
+        },
+        {
+          "day": "2026-08-19",
+          "value": 4.854
+        },
+        {
+          "day": "2026-08-20",
+          "value": 5.048
+        },
+        {
+          "day": "2026-08-21",
+          "value": 4.767
+        },
+        {
+          "day": "2026-08-22",
+          "value": 5.465
+        },
+        {
+          "day": "2026-08-23",
+          "value": 4.892
+        },
+        {
+          "day": "2026-08-24",
+          "value": 5.066
+        },
+        {
+          "day": "2026-08-25",
+          "value": 5.189
+        },
+        {
+          "day": "2026-08-26",
+          "value": 4.923
+        },
+        {
+          "day": "2026-08-27",
+          "value": 4.898
+        },
+        {
+          "day": "2026-08-28",
+          "value": 4.941
+        },
+        {
+          "day": "2026-08-29",
+          "value": 4.463
+        },
+        {
+          "day": "2026-08-30",
+          "value": 4.701
+        },
+        {
+          "day": "2026-08-31",
+          "value": 5.724
+        },
+        {
+          "day": "2026-09-01",
+          "value": 5.517
+        },
+        {
+          "day": "2026-09-02",
+          "value": 5.026
+        },
+        {
+          "day": "2026-09-03",
+          "value": 4.98
+        },
+        {
+          "day": "2026-09-04",
+          "value": 4.757
+        },
+        {
+          "day": "2026-09-05",
+          "value": 5.265
+        },
+        {
+          "day": "2026-09-06",
+          "value": 4.962
+        },
+        {
+          "day": "2026-09-07",
+          "value": 4.787
+        },
+        {
+          "day": "2026-09-08",
+          "value": 4.265
+        },
+        {
+          "day": "2026-09-09",
+          "value": 4.975
+        },
+        {
+          "day": "2026-09-10",
+          "value": 4.907
+        },
+        {
+          "day": "2026-09-11",
+          "value": 5.203
+        },
+        {
+          "day": "2026-09-12",
+          "value": 4.866
+        },
+        {
+          "day": "2026-09-13",
+          "value": 5.395
+        },
+        {
+          "day": "2026-09-14",
+          "value": 4.716
+        },
+        {
+          "day": "2026-09-15",
+          "value": 4.907
+        },
+        {
+          "day": "2026-09-16",
+          "value": 4.564
+        },
+        {
+          "day": "2026-09-17",
+          "value": 5.251
+        },
+        {
+          "day": "2026-09-18",
+          "value": 5.182
+        },
+        {
+          "day": "2026-09-19",
+          "value": 4.618
+        },
+        {
+          "day": "2026-09-20",
+          "value": 4.615
+        },
+        {
+          "day": "2026-09-21",
+          "value": 5.168
+        },
+        {
+          "day": "2026-09-22",
+          "value": 4.993
+        },
+        {
+          "day": "2026-09-23",
+          "value": 5.147
+        },
+        {
+          "day": "2026-09-24",
+          "value": 4.591
+        },
+        {
+          "day": "2026-09-25",
+          "value": 4.969
+        },
+        {
+          "day": "2026-09-26",
+          "value": 5.477
+        },
+        {
+          "day": "2026-09-27",
+          "value": 5.13
+        },
+        {
+          "day": "2026-09-28",
+          "value": 4.942
+        },
+        {
+          "day": "2026-09-29",
+          "value": 5.224
+        },
+        {
+          "day": "2026-09-30",
+          "value": 30
+        }
+      ]
+    },
+    {
+      "id": "SIGNAL_006",
+      "scenario_id": "RISK_006",
+      "family": "external",
+      "subtype": "legal",
+      "plant": "PLT_BJS",
+      "material": "MAT_003_A",
+      "metric": "compliance clearance hours",
+      "unit": "hours",
+      "direction": "high",
+      "source_text": "Synthetic external / legal monitoring case at PLT_BJS for MAT_003_A. compliance clearance hours is 40 hours, compared with a historical baseline around 8. A planner-supplied three-day receipt delay models the material availability consequence; the root cause is not inferred from the outlier. This is an illustrative source notice, not a live or verified event.",
+      "synthetic": true,
+      "observations": [
+        {
+          "day": "2026-08-01",
+          "value": 8.017
+        },
+        {
+          "day": "2026-08-02",
+          "value": 9.022
+        },
+        {
+          "day": "2026-08-03",
+          "value": 8.385
+        },
+        {
+          "day": "2026-08-04",
+          "value": 7.269
+        },
+        {
+          "day": "2026-08-05",
+          "value": 8.367
+        },
+        {
+          "day": "2026-08-06",
+          "value": 8.109
+        },
+        {
+          "day": "2026-08-07",
+          "value": 7.819
+        },
+        {
+          "day": "2026-08-08",
+          "value": 8.742
+        },
+        {
+          "day": "2026-08-09",
+          "value": 8.446
+        },
+        {
+          "day": "2026-08-10",
+          "value": 8.482
+        },
+        {
+          "day": "2026-08-11",
+          "value": 8.304
+        },
+        {
+          "day": "2026-08-12",
+          "value": 8.078
+        },
+        {
+          "day": "2026-08-13",
+          "value": 8.228
+        },
+        {
+          "day": "2026-08-14",
+          "value": 8.643
+        },
+        {
+          "day": "2026-08-15",
+          "value": 8.024
+        },
+        {
+          "day": "2026-08-16",
+          "value": 7.563
+        },
+        {
+          "day": "2026-08-17",
+          "value": 7.818
+        },
+        {
+          "day": "2026-08-18",
+          "value": 8.533
+        },
+        {
+          "day": "2026-08-19",
+          "value": 7.839
+        },
+        {
+          "day": "2026-08-20",
+          "value": 7.946
+        },
+        {
+          "day": "2026-08-21",
+          "value": 7.337
+        },
+        {
+          "day": "2026-08-22",
+          "value": 7.291
+        },
+        {
+          "day": "2026-08-23",
+          "value": 8.864
+        },
+        {
+          "day": "2026-08-24",
+          "value": 8.045
+        },
+        {
+          "day": "2026-08-25",
+          "value": 7.396
+        },
+        {
+          "day": "2026-08-26",
+          "value": 8.472
+        },
+        {
+          "day": "2026-08-27",
+          "value": 8.061
+        },
+        {
+          "day": "2026-08-28",
+          "value": 8.02
+        },
+        {
+          "day": "2026-08-29",
+          "value": 7.467
+        },
+        {
+          "day": "2026-08-30",
+          "value": 8.682
+        },
+        {
+          "day": "2026-08-31",
+          "value": 7.488
+        },
+        {
+          "day": "2026-09-01",
+          "value": 8.875
+        },
+        {
+          "day": "2026-09-02",
+          "value": 7.449
+        },
+        {
+          "day": "2026-09-03",
+          "value": 8.156
+        },
+        {
+          "day": "2026-09-04",
+          "value": 8.085
+        },
+        {
+          "day": "2026-09-05",
+          "value": 8.071
+        },
+        {
+          "day": "2026-09-06",
+          "value": 7.922
+        },
+        {
+          "day": "2026-09-07",
+          "value": 8.162
+        },
+        {
+          "day": "2026-09-08",
+          "value": 7.995
+        },
+        {
+          "day": "2026-09-09",
+          "value": 7.571
+        },
+        {
+          "day": "2026-09-10",
+          "value": 7.85
+        },
+        {
+          "day": "2026-09-11",
+          "value": 7.831
+        },
+        {
+          "day": "2026-09-12",
+          "value": 8.002
+        },
+        {
+          "day": "2026-09-13",
+          "value": 7.564
+        },
+        {
+          "day": "2026-09-14",
+          "value": 8.026
+        },
+        {
+          "day": "2026-09-15",
+          "value": 8.292
+        },
+        {
+          "day": "2026-09-16",
+          "value": 8.891
+        },
+        {
+          "day": "2026-09-17",
+          "value": 7.432
+        },
+        {
+          "day": "2026-09-18",
+          "value": 8.015
+        },
+        {
+          "day": "2026-09-19",
+          "value": 7.718
+        },
+        {
+          "day": "2026-09-20",
+          "value": 7.938
+        },
+        {
+          "day": "2026-09-21",
+          "value": 7.849
+        },
+        {
+          "day": "2026-09-22",
+          "value": 7.625
+        },
+        {
+          "day": "2026-09-23",
+          "value": 8.411
+        },
+        {
+          "day": "2026-09-24",
+          "value": 7.688
+        },
+        {
+          "day": "2026-09-25",
+          "value": 7.691
+        },
+        {
+          "day": "2026-09-26",
+          "value": 8.044
+        },
+        {
+          "day": "2026-09-27",
+          "value": 8.0
+        },
+        {
+          "day": "2026-09-28",
+          "value": 8.292
+        },
+        {
+          "day": "2026-09-29",
+          "value": 7.993
+        },
+        {
+          "day": "2026-09-30",
+          "value": 40
+        }
+      ]
+    },
+    {
+      "id": "SIGNAL_007",
+      "scenario_id": "RISK_007",
+      "family": "internal",
+      "subtype": "equipment",
+      "plant": "PLT_MUM",
+      "material": "MAT_001_A",
+      "metric": "receiving equipment downtime",
+      "unit": "minutes/day",
+      "direction": "high",
+      "source_text": "Synthetic internal / equipment monitoring case at PLT_MUM for MAT_001_A. receiving equipment downtime is 108 minutes/day, compared with a historical baseline around 12. A planner-supplied three-day receipt delay models the material availability consequence; the root cause is not inferred from the outlier. This is an illustrative source notice, not a live or verified event.",
+      "synthetic": true,
+      "observations": [
+        {
+          "day": "2026-08-01",
+          "value": 11.979
+        },
+        {
+          "day": "2026-08-02",
+          "value": 12.369
+        },
+        {
+          "day": "2026-08-03",
+          "value": 11.288
+        },
+        {
+          "day": "2026-08-04",
+          "value": 11.544
+        },
+        {
+          "day": "2026-08-05",
+          "value": 12.939
+        },
+        {
+          "day": "2026-08-06",
+          "value": 11.171
+        },
+        {
+          "day": "2026-08-07",
+          "value": 11.678
+        },
+        {
+          "day": "2026-08-08",
+          "value": 12.083
+        },
+        {
+          "day": "2026-08-09",
+          "value": 11.209
+        },
+        {
+          "day": "2026-08-10",
+          "value": 11.138
+        },
+        {
+          "day": "2026-08-11",
+          "value": 12.197
+        },
+        {
+          "day": "2026-08-12",
+          "value": 13.239
+        },
+        {
+          "day": "2026-08-13",
+          "value": 11.83
+        },
+        {
+          "day": "2026-08-14",
+          "value": 12.255
+        },
+        {
+          "day": "2026-08-15",
+          "value": 11.586
+        },
+        {
+          "day": "2026-08-16",
+          "value": 12.226
+        },
+        {
+          "day": "2026-08-17",
+          "value": 13.767
+        },
+        {
+          "day": "2026-08-18",
+          "value": 11.086
+        },
+        {
+          "day": "2026-08-19",
+          "value": 12.577
+        },
+        {
+          "day": "2026-08-20",
+          "value": 12.754
+        },
+        {
+          "day": "2026-08-21",
+          "value": 12.063
+        },
+        {
+          "day": "2026-08-22",
+          "value": 10.101
+        },
+        {
+          "day": "2026-08-23",
+          "value": 12.682
+        },
+        {
+          "day": "2026-08-24",
+          "value": 11.978
+        },
+        {
+          "day": "2026-08-25",
+          "value": 12.394
+        },
+        {
+          "day": "2026-08-26",
+          "value": 11.699
+        },
+        {
+          "day": "2026-08-27",
+          "value": 11.931
+        },
+        {
+          "day": "2026-08-28",
+          "value": 11.769
+        },
+        {
+          "day": "2026-08-29",
+          "value": 12.012
+        },
+        {
+          "day": "2026-08-30",
+          "value": 11.885
+        },
+        {
+          "day": "2026-08-31",
+          "value": 11.818
+        },
+        {
+          "day": "2026-09-01",
+          "value": 11.715
+        },
+        {
+          "day": "2026-09-02",
+          "value": 12.024
+        },
+        {
+          "day": "2026-09-03",
+          "value": 12.761
+        },
+        {
+          "day": "2026-09-04",
+          "value": 12.736
+        },
+        {
+          "day": "2026-09-05",
+          "value": 12.437
+        },
+        {
+          "day": "2026-09-06",
+          "value": 11.023
+        },
+        {
+          "day": "2026-09-07",
+          "value": 12.702
+        },
+        {
+          "day": "2026-09-08",
+          "value": 12.414
+        },
+        {
+          "day": "2026-09-09",
+          "value": 12.494
+        },
+        {
+          "day": "2026-09-10",
+          "value": 11.699
+        },
+        {
+          "day": "2026-09-11",
+          "value": 11.151
+        },
+        {
+          "day": "2026-09-12",
+          "value": 12.626
+        },
+        {
+          "day": "2026-09-13",
+          "value": 10.972
+        },
+        {
+          "day": "2026-09-14",
+          "value": 11.068
+        },
+        {
+          "day": "2026-09-15",
+          "value": 12.403
+        },
+        {
+          "day": "2026-09-16",
+          "value": 13.206
+        },
+        {
+          "day": "2026-09-17",
+          "value": 12.89
+        },
+        {
+          "day": "2026-09-18",
+          "value": 10.538
+        },
+        {
+          "day": "2026-09-19",
+          "value": 12.071
+        },
+        {
+          "day": "2026-09-20",
+          "value": 11.996
+        },
+        {
+          "day": "2026-09-21",
+          "value": 10.813
+        },
+        {
+          "day": "2026-09-22",
+          "value": 13.084
+        },
+        {
+          "day": "2026-09-23",
+          "value": 11.748
+        },
+        {
+          "day": "2026-09-24",
+          "value": 10.951
+        },
+        {
+          "day": "2026-09-25",
+          "value": 10.487
+        },
+        {
+          "day": "2026-09-26",
+          "value": 10.933
+        },
+        {
+          "day": "2026-09-27",
+          "value": 11.917
+        },
+        {
+          "day": "2026-09-28",
+          "value": 12.059
+        },
+        {
+          "day": "2026-09-29",
+          "value": 11.806
+        },
+        {
+          "day": "2026-09-30",
+          "value": 108
+        }
+      ]
+    },
+    {
+      "id": "SIGNAL_008",
+      "scenario_id": "RISK_008",
+      "family": "internal",
+      "subtype": "quality",
+      "plant": "PLT_TYO",
+      "material": "MAT_002_A",
+      "metric": "incoming inspection rejection",
+      "unit": "percent",
+      "direction": "high",
+      "source_text": "Synthetic internal / quality monitoring case at PLT_TYO for MAT_002_A. incoming inspection rejection is 20 percent, compared with a historical baseline around 2. A planner-supplied three-day receipt delay models the material availability consequence; the root cause is not inferred from the outlier. This is an illustrative source notice, not a live or verified event.",
+      "synthetic": true,
+      "observations": [
+        {
+          "day": "2026-08-01",
+          "value": 2.349
+        },
+        {
+          "day": "2026-08-02",
+          "value": 2.215
+        },
+        {
+          "day": "2026-08-03",
+          "value": 1.827
+        },
+        {
+          "day": "2026-08-04",
+          "value": 1.952
+        },
+        {
+          "day": "2026-08-05",
+          "value": 2.167
+        },
+        {
+          "day": "2026-08-06",
+          "value": 2.332
+        },
+        {
+          "day": "2026-08-07",
+          "value": 1.928
+        },
+        {
+          "day": "2026-08-08",
+          "value": 1.823
+        },
+        {
+          "day": "2026-08-09",
+          "value": 1.832
+        },
+        {
+          "day": "2026-08-10",
+          "value": 2.176
+        },
+        {
+          "day": "2026-08-11",
+          "value": 1.882
+        },
+        {
+          "day": "2026-08-12",
+          "value": 1.916
+        },
+        {
+          "day": "2026-08-13",
+          "value": 1.742
+        },
+        {
+          "day": "2026-08-14",
+          "value": 1.897
+        },
+        {
+          "day": "2026-08-15",
+          "value": 2.168
+        },
+        {
+          "day": "2026-08-16",
+          "value": 1.851
+        },
+        {
+          "day": "2026-08-17",
+          "value": 2.049
+        },
+        {
+          "day": "2026-08-18",
+          "value": 1.995
+        },
+        {
+          "day": "2026-08-19",
+          "value": 1.915
+        },
+        {
+          "day": "2026-08-20",
+          "value": 2.138
+        },
+        {
+          "day": "2026-08-21",
+          "value": 1.947
+        },
+        {
+          "day": "2026-08-22",
+          "value": 2.144
+        },
+        {
+          "day": "2026-08-23",
+          "value": 2.098
+        },
+        {
+          "day": "2026-08-24",
+          "value": 2.034
+        },
+        {
+          "day": "2026-08-25",
+          "value": 1.88
+        },
+        {
+          "day": "2026-08-26",
+          "value": 2.348
+        },
+        {
+          "day": "2026-08-27",
+          "value": 2.162
+        },
+        {
+          "day": "2026-08-28",
+          "value": 1.918
+        },
+        {
+          "day": "2026-08-29",
+          "value": 1.913
+        },
+        {
+          "day": "2026-08-30",
+          "value": 2.043
+        },
+        {
+          "day": "2026-08-31",
+          "value": 2.021
+        },
+        {
+          "day": "2026-09-01",
+          "value": 1.695
+        },
+        {
+          "day": "2026-09-02",
+          "value": 2.103
+        },
+        {
+          "day": "2026-09-03",
+          "value": 2.018
+        },
+        {
+          "day": "2026-09-04",
+          "value": 2.074
+        },
+        {
+          "day": "2026-09-05",
+          "value": 2.112
+        },
+        {
+          "day": "2026-09-06",
+          "value": 2.041
+        },
+        {
+          "day": "2026-09-07",
+          "value": 2.033
+        },
+        {
+          "day": "2026-09-08",
+          "value": 2.009
+        },
+        {
+          "day": "2026-09-09",
+          "value": 1.878
+        },
+        {
+          "day": "2026-09-10",
+          "value": 2.387
+        },
+        {
+          "day": "2026-09-11",
+          "value": 1.818
+        },
+        {
+          "day": "2026-09-12",
+          "value": 2.006
+        },
+        {
+          "day": "2026-09-13",
+          "value": 1.967
+        },
+        {
+          "day": "2026-09-14",
+          "value": 1.845
+        },
+        {
+          "day": "2026-09-15",
+          "value": 1.877
+        },
+        {
+          "day": "2026-09-16",
+          "value": 2.023
+        },
+        {
+          "day": "2026-09-17",
+          "value": 2.158
+        },
+        {
+          "day": "2026-09-18",
+          "value": 2.097
+        },
+        {
+          "day": "2026-09-19",
+          "value": 2.042
+        },
+        {
+          "day": "2026-09-20",
+          "value": 2.043
+        },
+        {
+          "day": "2026-09-21",
+          "value": 1.864
+        },
+        {
+          "day": "2026-09-22",
+          "value": 2.038
+        },
+        {
+          "day": "2026-09-23",
+          "value": 2.026
+        },
+        {
+          "day": "2026-09-24",
+          "value": 2.164
+        },
+        {
+          "day": "2026-09-25",
+          "value": 2.303
+        },
+        {
+          "day": "2026-09-26",
+          "value": 2.109
+        },
+        {
+          "day": "2026-09-27",
+          "value": 2.039
+        },
+        {
+          "day": "2026-09-28",
+          "value": 1.781
+        },
+        {
+          "day": "2026-09-29",
+          "value": 2.072
+        },
+        {
+          "day": "2026-09-30",
+          "value": 20
+        }
+      ]
+    },
+    {
+      "id": "SIGNAL_009",
+      "scenario_id": "RISK_009",
+      "family": "internal",
+      "subtype": "workforce",
+      "plant": "PLT_BJS",
+      "material": "MAT_003_A",
+      "metric": "receiving team absence",
+      "unit": "percent",
+      "direction": "high",
+      "source_text": "Synthetic internal / workforce monitoring case at PLT_BJS for MAT_003_A. receiving team absence is 28 percent, compared with a historical baseline around 4. A planner-supplied three-day receipt delay models the material availability consequence; the root cause is not inferred from the outlier. This is an illustrative source notice, not a live or verified event.",
+      "synthetic": true,
+      "observations": [
+        {
+          "day": "2026-08-01",
+          "value": 3.794
+        },
+        {
+          "day": "2026-08-02",
+          "value": 3.478
+        },
+        {
+          "day": "2026-08-03",
+          "value": 4.148
+        },
+        {
+          "day": "2026-08-04",
+          "value": 3.974
+        },
+        {
+          "day": "2026-08-05",
+          "value": 3.525
+        },
+        {
+          "day": "2026-08-06",
+          "value": 3.582
+        },
+        {
+          "day": "2026-08-07",
+          "value": 3.747
+        },
+        {
+          "day": "2026-08-08",
+          "value": 4.025
+        },
+        {
+          "day": "2026-08-09",
+          "value": 4.616
+        },
+        {
+          "day": "2026-08-10",
+          "value": 3.613
+        },
+        {
+          "day": "2026-08-11",
+          "value": 3.88
+        },
+        {
+          "day": "2026-08-12",
+          "value": 3.869
+        },
+        {
+          "day": "2026-08-13",
+          "value": 3.971
+        },
+        {
+          "day": "2026-08-14",
+          "value": 4.339
+        },
+        {
+          "day": "2026-08-15",
+          "value": 3.877
+        },
+        {
+          "day": "2026-08-16",
+          "value": 3.841
+        },
+        {
+          "day": "2026-08-17",
+          "value": 3.906
+        },
+        {
+          "day": "2026-08-18",
+          "value": 4.162
+        },
+        {
+          "day": "2026-08-19",
+          "value": 3.918
+        },
+        {
+          "day": "2026-08-20",
+          "value": 4.065
+        },
+        {
+          "day": "2026-08-21",
+          "value": 3.903
+        },
+        {
+          "day": "2026-08-22",
+          "value": 4.009
+        },
+        {
+          "day": "2026-08-23",
+          "value": 3.685
+        },
+        {
+          "day": "2026-08-24",
+          "value": 4.118
+        },
+        {
+          "day": "2026-08-25",
+          "value": 3.765
+        },
+        {
+          "day": "2026-08-26",
+          "value": 3.835
+        },
+        {
+          "day": "2026-08-27",
+          "value": 4.089
+        },
+        {
+          "day": "2026-08-28",
+          "value": 4.19
+        },
+        {
+          "day": "2026-08-29",
+          "value": 4.293
+        },
+        {
+          "day": "2026-08-30",
+          "value": 3.474
+        },
+        {
+          "day": "2026-08-31",
+          "value": 4.164
+        },
+        {
+          "day": "2026-09-01",
+          "value": 4.175
+        },
+        {
+          "day": "2026-09-02",
+          "value": 4.071
+        },
+        {
+          "day": "2026-09-03",
+          "value": 3.655
+        },
+        {
+          "day": "2026-09-04",
+          "value": 4.252
+        },
+        {
+          "day": "2026-09-05",
+          "value": 3.833
+        },
+        {
+          "day": "2026-09-06",
+          "value": 4.67
+        },
+        {
+          "day": "2026-09-07",
+          "value": 3.894
+        },
+        {
+          "day": "2026-09-08",
+          "value": 3.651
+        },
+        {
+          "day": "2026-09-09",
+          "value": 3.775
+        },
+        {
+          "day": "2026-09-10",
+          "value": 3.915
+        },
+        {
+          "day": "2026-09-11",
+          "value": 3.714
+        },
+        {
+          "day": "2026-09-12",
+          "value": 4.369
+        },
+        {
+          "day": "2026-09-13",
+          "value": 4.534
+        },
+        {
+          "day": "2026-09-14",
+          "value": 3.924
+        },
+        {
+          "day": "2026-09-15",
+          "value": 3.911
+        },
+        {
+          "day": "2026-09-16",
+          "value": 3.965
+        },
+        {
+          "day": "2026-09-17",
+          "value": 4.53
+        },
+        {
+          "day": "2026-09-18",
+          "value": 3.682
+        },
+        {
+          "day": "2026-09-19",
+          "value": 4.165
+        },
+        {
+          "day": "2026-09-20",
+          "value": 3.88
+        },
+        {
+          "day": "2026-09-21",
+          "value": 3.822
+        },
+        {
+          "day": "2026-09-22",
+          "value": 3.999
+        },
+        {
+          "day": "2026-09-23",
+          "value": 4.131
+        },
+        {
+          "day": "2026-09-24",
+          "value": 4.068
+        },
+        {
+          "day": "2026-09-25",
+          "value": 3.714
+        },
+        {
+          "day": "2026-09-26",
+          "value": 4.037
+        },
+        {
+          "day": "2026-09-27",
+          "value": 3.993
+        },
+        {
+          "day": "2026-09-28",
+          "value": 3.875
+        },
+        {
+          "day": "2026-09-29",
+          "value": 3.442
+        },
+        {
+          "day": "2026-09-30",
+          "value": 28
+        }
+      ]
+    },
+    {
+      "id": "SIGNAL_010",
+      "scenario_id": "RISK_010",
+      "family": "market",
+      "subtype": "supplier",
+      "plant": "PLT_MUM",
+      "material": "MAT_001_A",
+      "metric": "supplier lead time",
+      "unit": "days",
+      "direction": "high",
+      "source_text": "Synthetic market / supplier monitoring case at PLT_MUM for MAT_001_A. supplier lead time is 15 days, compared with a historical baseline around 5. A planner-supplied three-day receipt delay models the material availability consequence; the root cause is not inferred from the outlier. This is an illustrative source notice, not a live or verified event.",
+      "synthetic": true,
+      "observations": [
+        {
+          "day": "2026-08-01",
+          "value": 5.349
+        },
+        {
+          "day": "2026-08-02",
+          "value": 4.377
+        },
+        {
+          "day": "2026-08-03",
+          "value": 4.961
+        },
+        {
+          "day": "2026-08-04",
+          "value": 5.024
+        },
+        {
+          "day": "2026-08-05",
+          "value": 5.041
+        },
+        {
+          "day": "2026-08-06",
+          "value": 5.275
+        },
+        {
+          "day": "2026-08-07",
+          "value": 4.96
+        },
+        {
+          "day": "2026-08-08",
+          "value": 5.12
+        },
+        {
+          "day": "2026-08-09",
+          "value": 4.545
+        },
+        {
+          "day": "2026-08-10",
+          "value": 4.648
+        },
+        {
+          "day": "2026-08-11",
+          "value": 4.973
+        },
+        {
+          "day": "2026-08-12",
+          "value": 5.17
+        },
+        {
+          "day": "2026-08-13",
+          "value": 4.765
+        },
+        {
+          "day": "2026-08-14",
+          "value": 4.761
+        },
+        {
+          "day": "2026-08-15",
+          "value": 4.835
+        },
+        {
+          "day": "2026-08-16",
+          "value": 4.815
+        },
+        {
+          "day": "2026-08-17",
+          "value": 4.801
+        },
+        {
+          "day": "2026-08-18",
+          "value": 5.763
+        },
+        {
+          "day": "2026-08-19",
+          "value": 5.19
+        },
+        {
+          "day": "2026-08-20",
+          "value": 5.167
+        },
+        {
+          "day": "2026-08-21",
+          "value": 5.212
+        },
+        {
+          "day": "2026-08-22",
+          "value": 4.934
+        },
+        {
+          "day": "2026-08-23",
+          "value": 5.571
+        },
+        {
+          "day": "2026-08-24",
+          "value": 4.944
+        },
+        {
+          "day": "2026-08-25",
+          "value": 4.843
+        },
+        {
+          "day": "2026-08-26",
+          "value": 5.353
+        },
+        {
+          "day": "2026-08-27",
+          "value": 5.165
+        },
+        {
+          "day": "2026-08-28",
+          "value": 5.44
+        },
+        {
+          "day": "2026-08-29",
+          "value": 4.858
+        },
+        {
+          "day": "2026-08-30",
+          "value": 4.838
+        },
+        {
+          "day": "2026-08-31",
+          "value": 5.329
+        },
+        {
+          "day": "2026-09-01",
+          "value": 4.924
+        },
+        {
+          "day": "2026-09-02",
+          "value": 4.802
+        },
+        {
+          "day": "2026-09-03",
+          "value": 5.226
+        },
+        {
+          "day": "2026-09-04",
+          "value": 5.195
+        },
+        {
+          "day": "2026-09-05",
+          "value": 4.929
+        },
+        {
+          "day": "2026-09-06",
+          "value": 5.053
+        },
+        {
+          "day": "2026-09-07",
+          "value": 5.064
+        },
+        {
+          "day": "2026-09-08",
+          "value": 5.056
+        },
+        {
+          "day": "2026-09-09",
+          "value": 4.721
+        },
+        {
+          "day": "2026-09-10",
+          "value": 4.707
+        },
+        {
+          "day": "2026-09-11",
+          "value": 4.921
+        },
+        {
+          "day": "2026-09-12",
+          "value": 4.803
+        },
+        {
+          "day": "2026-09-13",
+          "value": 5.395
+        },
+        {
+          "day": "2026-09-14",
+          "value": 5.233
+        },
+        {
+          "day": "2026-09-15",
+          "value": 5.381
+        },
+        {
+          "day": "2026-09-16",
+          "value": 4.524
+        },
+        {
+          "day": "2026-09-17",
+          "value": 5.037
+        },
+        {
+          "day": "2026-09-18",
+          "value": 4.937
+        },
+        {
+          "day": "2026-09-19",
+          "value": 4.727
+        },
+        {
+          "day": "2026-09-20",
+          "value": 5.453
+        },
+        {
+          "day": "2026-09-21",
+          "value": 4.914
+        },
+        {
+          "day": "2026-09-22",
+          "value": 4.611
+        },
+        {
+          "day": "2026-09-23",
+          "value": 5.332
+        },
+        {
+          "day": "2026-09-24",
+          "value": 4.91
+        },
+        {
+          "day": "2026-09-25",
+          "value": 4.678
+        },
+        {
+          "day": "2026-09-26",
+          "value": 5.333
+        },
+        {
+          "day": "2026-09-27",
+          "value": 5.256
+        },
+        {
+          "day": "2026-09-28",
+          "value": 4.661
+        },
+        {
+          "day": "2026-09-29",
+          "value": 4.732
+        },
+        {
+          "day": "2026-09-30",
+          "value": 15
+        }
+      ]
+    },
+    {
+      "id": "SIGNAL_011",
+      "scenario_id": "RISK_011",
+      "family": "market",
+      "subtype": "demand",
+      "plant": "PLT_TYO",
+      "material": "MAT_002_A",
+      "metric": "daily demand index",
+      "unit": "index",
+      "direction": "high",
+      "source_text": "Synthetic market / demand monitoring case at PLT_TYO for MAT_002_A. daily demand index is 180 index, compared with a historical baseline around 100. Aggregate demand is increased by 40%; no extra customer-order value is invented. This is an illustrative source notice, not a live or verified event.",
+      "synthetic": true,
+      "observations": [
+        {
+          "day": "2026-08-01",
+          "value": 100.715
+        },
+        {
+          "day": "2026-08-02",
+          "value": 101.279
+        },
+        {
+          "day": "2026-08-03",
+          "value": 89.298
+        },
+        {
+          "day": "2026-08-04",
+          "value": 95.709
+        },
+        {
+          "day": "2026-08-05",
+          "value": 106.89
+        },
+        {
+          "day": "2026-08-06",
+          "value": 95.303
+        },
+        {
+          "day": "2026-08-07",
+          "value": 97.049
+        },
+        {
+          "day": "2026-08-08",
+          "value": 96.886
+        },
+        {
+          "day": "2026-08-09",
+          "value": 93.637
+        },
+        {
+          "day": "2026-08-10",
+          "value": 108.492
+        },
+        {
+          "day": "2026-08-11",
+          "value": 107.748
+        },
+        {
+          "day": "2026-08-12",
+          "value": 93.988
+        },
+        {
+          "day": "2026-08-13",
+          "value": 105.908
+        },
+        {
+          "day": "2026-08-14",
+          "value": 103.317
+        },
+        {
+          "day": "2026-08-15",
+          "value": 98.04
+        },
+        {
+          "day": "2026-08-16",
+          "value": 99.211
+        },
+        {
+          "day": "2026-08-17",
+          "value": 100.534
+        },
+        {
+          "day": "2026-08-18",
+          "value": 90.301
+        },
+        {
+          "day": "2026-08-19",
+          "value": 95.266
+        },
+        {
+          "day": "2026-08-20",
+          "value": 103.429
+        },
+        {
+          "day": "2026-08-21",
+          "value": 104.347
+        },
+        {
+          "day": "2026-08-22",
+          "value": 94.818
+        },
+        {
+          "day": "2026-08-23",
+          "value": 93.317
+        },
+        {
+          "day": "2026-08-24",
+          "value": 98.214
+        },
+        {
+          "day": "2026-08-25",
+          "value": 98.685
+        },
+        {
+          "day": "2026-08-26",
+          "value": 102.488
+        },
+        {
+          "day": "2026-08-27",
+          "value": 98.077
+        },
+        {
+          "day": "2026-08-28",
+          "value": 101.417
+        },
+        {
+          "day": "2026-08-29",
+          "value": 94.695
+        },
+        {
+          "day": "2026-08-30",
+          "value": 92.187
+        },
+        {
+          "day": "2026-08-31",
+          "value": 98.389
+        },
+        {
+          "day": "2026-09-01",
+          "value": 94.016
+        },
+        {
+          "day": "2026-09-02",
+          "value": 99.505
+        },
+        {
+          "day": "2026-09-03",
+          "value": 102.969
+        },
+        {
+          "day": "2026-09-04",
+          "value": 92.84
+        },
+        {
+          "day": "2026-09-05",
+          "value": 107.523
+        },
+        {
+          "day": "2026-09-06",
+          "value": 99.384
+        },
+        {
+          "day": "2026-09-07",
+          "value": 99.749
+        },
+        {
+          "day": "2026-09-08",
+          "value": 102.588
+        },
+        {
+          "day": "2026-09-09",
+          "value": 88.957
+        },
+        {
+          "day": "2026-09-10",
+          "value": 101.992
+        },
+        {
+          "day": "2026-09-11",
+          "value": 101.922
+        },
+        {
+          "day": "2026-09-12",
+          "value": 104.368
+        },
+        {
+          "day": "2026-09-13",
+          "value": 98.86
+        },
+        {
+          "day": "2026-09-14",
+          "value": 104.134
+        },
+        {
+          "day": "2026-09-15",
+          "value": 100.627
+        },
+        {
+          "day": "2026-09-16",
+          "value": 107.486
+        },
+        {
+          "day": "2026-09-17",
+          "value": 107.051
+        },
+        {
+          "day": "2026-09-18",
+          "value": 89.51
+        },
+        {
+          "day": "2026-09-19",
+          "value": 107.911
+        },
+        {
+          "day": "2026-09-20",
+          "value": 102.425
+        },
+        {
+          "day": "2026-09-21",
+          "value": 94.637
+        },
+        {
+          "day": "2026-09-22",
+          "value": 105.735
+        },
+        {
+          "day": "2026-09-23",
+          "value": 110.063
+        },
+        {
+          "day": "2026-09-24",
+          "value": 104.467
+        },
+        {
+          "day": "2026-09-25",
+          "value": 96.732
+        },
+        {
+          "day": "2026-09-26",
+          "value": 103.464
+        },
+        {
+          "day": "2026-09-27",
+          "value": 104.298
+        },
+        {
+          "day": "2026-09-28",
+          "value": 100.843
+        },
+        {
+          "day": "2026-09-29",
+          "value": 102.463
+        },
+        {
+          "day": "2026-09-30",
+          "value": 180.0
+        }
+      ]
+    },
+    {
+      "id": "SIGNAL_012",
+      "scenario_id": "RISK_012",
+      "family": "market",
+      "subtype": "control",
+      "plant": "PLT_BJS",
+      "material": "MAT_003_A",
+      "metric": "daily demand index",
+      "unit": "index",
+      "direction": "high",
+      "source_text": "Synthetic market / control monitoring case at PLT_BJS for MAT_003_A. daily demand index is 102 index, compared with a historical baseline around 100. No disruption overlay is applied. This is an illustrative source notice, not a live or verified event.",
+      "synthetic": true,
+      "observations": [
+        {
+          "day": "2026-08-01",
+          "value": 100.468
+        },
+        {
+          "day": "2026-08-02",
+          "value": 99.202
+        },
+        {
+          "day": "2026-08-03",
+          "value": 91.235
+        },
+        {
+          "day": "2026-08-04",
+          "value": 108.243
+        },
+        {
+          "day": "2026-08-05",
+          "value": 100.588
+        },
+        {
+          "day": "2026-08-06",
+          "value": 101.133
+        },
+        {
+          "day": "2026-08-07",
+          "value": 111.729
+        },
+        {
+          "day": "2026-08-08",
+          "value": 103.407
+        },
+        {
+          "day": "2026-08-09",
+          "value": 99.739
+        },
+        {
+          "day": "2026-08-10",
+          "value": 98.117
+        },
+        {
+          "day": "2026-08-11",
+          "value": 103.487
+        },
+        {
+          "day": "2026-08-12",
+          "value": 101.763
+        },
+        {
+          "day": "2026-08-13",
+          "value": 101.104
+        },
+        {
+          "day": "2026-08-14",
+          "value": 103.265
+        },
+        {
+          "day": "2026-08-15",
+          "value": 98.005
+        },
+        {
+          "day": "2026-08-16",
+          "value": 102.575
+        },
+        {
+          "day": "2026-08-17",
+          "value": 98.5
+        },
+        {
+          "day": "2026-08-18",
+          "value": 103.901
+        },
+        {
+          "day": "2026-08-19",
+          "value": 93.859
+        },
+        {
+          "day": "2026-08-20",
+          "value": 99.105
+        },
+        {
+          "day": "2026-08-21",
+          "value": 101.838
+        },
+        {
+          "day": "2026-08-22",
+          "value": 90.631
+        },
+        {
+          "day": "2026-08-23",
+          "value": 104.915
+        },
+        {
+          "day": "2026-08-24",
+          "value": 88.223
+        },
+        {
+          "day": "2026-08-25",
+          "value": 111.705
+        },
+        {
+          "day": "2026-08-26",
+          "value": 94.6
+        },
+        {
+          "day": "2026-08-27",
+          "value": 105.729
+        },
+        {
+          "day": "2026-08-28",
+          "value": 102.69
+        },
+        {
+          "day": "2026-08-29",
+          "value": 102.088
+        },
+        {
+          "day": "2026-08-30",
+          "value": 97.53
+        },
+        {
+          "day": "2026-08-31",
+          "value": 105.929
+        },
+        {
+          "day": "2026-09-01",
+          "value": 101.05
+        },
+        {
+          "day": "2026-09-02",
+          "value": 102.381
+        },
+        {
+          "day": "2026-09-03",
+          "value": 100.918
+        },
+        {
+          "day": "2026-09-04",
+          "value": 91.925
+        },
+        {
+          "day": "2026-09-05",
+          "value": 103.432
+        },
+        {
+          "day": "2026-09-06",
+          "value": 95.655
+        },
+        {
+          "day": "2026-09-07",
+          "value": 88.276
+        },
+        {
+          "day": "2026-09-08",
+          "value": 93.103
+        },
+        {
+          "day": "2026-09-09",
+          "value": 104.789
+        },
+        {
+          "day": "2026-09-10",
+          "value": 95.371
+        },
+        {
+          "day": "2026-09-11",
+          "value": 111.57
+        },
+        {
+          "day": "2026-09-12",
+          "value": 108.564
+        },
+        {
+          "day": "2026-09-13",
+          "value": 104.251
+        },
+        {
+          "day": "2026-09-14",
+          "value": 95.823
+        },
+        {
+          "day": "2026-09-15",
+          "value": 92.023
+        },
+        {
+          "day": "2026-09-16",
+          "value": 99.8
+        },
+        {
+          "day": "2026-09-17",
+          "value": 113.791
+        },
+        {
+          "day": "2026-09-18",
+          "value": 100.555
+        },
+        {
+          "day": "2026-09-19",
+          "value": 96.299
+        },
+        {
+          "day": "2026-09-20",
+          "value": 97.84
+        },
+        {
+          "day": "2026-09-21",
+          "value": 97.47
+        },
+        {
+          "day": "2026-09-22",
+          "value": 103.841
+        },
+        {
+          "day": "2026-09-23",
+          "value": 104.556
+        },
+        {
+          "day": "2026-09-24",
+          "value": 95.154
+        },
+        {
+          "day": "2026-09-25",
+          "value": 101.69
+        },
+        {
+          "day": "2026-09-26",
+          "value": 109.604
+        },
+        {
+          "day": "2026-09-27",
+          "value": 104.447
+        },
+        {
+          "day": "2026-09-28",
+          "value": 92.987
+        },
+        {
+          "day": "2026-09-29",
+          "value": 105.025
+        },
+        {
+          "day": "2026-09-30",
+          "value": 102.0
+        }
+      ]
+    }
+  ]
+}

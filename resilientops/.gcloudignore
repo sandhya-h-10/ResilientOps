@@ -1,0 +1,15 @@
+.git
+.venv
+.env
+.env.*
+var
+__pycache__
+*.pyc
+.pytest_cache
+.ruff_cache
+*.zip
+*.pem
+*.key
+client_secret_*.json
+application_default_credentials.json
+deploy/cloud-run.env

@@ -1,0 +1,43 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "resilientops"
+version = "0.1.0"
+description = "Evidence-grounded supply chain disruption agents with approved simulated execution"
+requires-python = ">=3.11,<3.15"
+dependencies = [
+  "fastapi>=0.115,<1", "uvicorn>=0.34,<1", "pydantic>=2.10,<3",
+  "httpx>=0.28,<1", "numpy>=2.2,<3", "scikit-learn>=1.6,<2",
+  "ortools>=9.12,<10", "python-dotenv>=1.1,<2",
+  "psycopg[binary]>=3.2,<4",
+  "authlib>=1.6,<2", "itsdangerous>=2.2,<3", "reportlab>=4.4,<5",
+]
+
+[project.optional-dependencies]
+google = ["google-adk>=2.12,<3", "google-genai>=2.30,<3", "google-cloud-bigquery>=3.30,<4", "google-cloud-aiplatform>=1.90,<2", "google-cloud-storage>=3,<4", "mcp>=1.12,<2"]
+mcp = ["mcp>=1.12,<2"]
+dev = ["pytest>=8.3,<10", "ruff>=0.11,<1", "pypdf>=6,<7"]
+
+[project.scripts]
+resilientops = "resilientops.cli:main"
+resilientops-mcp = "resilientops.tools.mcp_server:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/resilientops"]
+
+[tool.hatch.build.targets.wheel.force-include]
+"web2" = "resilientops/web2"
+"resilientops_data" = "resilientops/resilientops_data"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+ignore = ["E501"]

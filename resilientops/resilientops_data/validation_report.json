@@ -1,0 +1,186 @@
+{
+  "passed": true,
+  "checks": 25,
+  "results": [
+    {
+      "check": "Unique primary keys",
+      "passed": true,
+      "error_count": 0,
+      "examples": [],
+      "detail": ""
+    },
+    {
+      "check": "Foreign key references",
+      "passed": true,
+      "error_count": 0,
+      "examples": [],
+      "detail": ""
+    },
+    {
+      "check": "Agreed network scope",
+      "passed": true,
+      "error_count": 0,
+      "examples": [],
+      "detail": ""
+    },
+    {
+      "check": "Five critical components",
+      "passed": true,
+      "error_count": 0,
+      "examples": [],
+      "detail": ""
+    },
+    {
+      "check": "All 30 components used by a BOM",
+      "passed": true,
+      "error_count": 0,
+      "examples": [],
+      "detail": ""
+    },
+    {
+      "check": "Dataset provenance",
+      "passed": true,
+      "error_count": 0,
+      "examples": [],
+      "detail": ""
+    },
+    {
+      "check": "Historical consumption equals BOM demand",
+      "passed": true,
+      "error_count": 0,
+      "examples": [],
+      "detail": ""
+    },
+    {
+      "check": "Requirements recomputed from production and BOM",
+      "passed": true,
+      "error_count": 0,
+      "examples": [],
+      "detail": ""
+    },
+    {
+      "check": "No negative historical lot balance",
+      "passed": true,
+      "error_count": 0,
+      "examples": [],
+      "detail": ""
+    },
+    {
+      "check": "Current inventory reconciles to opening plus ledger",
+      "passed": true,
+      "error_count": 0,
+      "examples": [],
+      "detail": ""
+    },
+    {
+      "check": "Reservations fit current usable inventory",
+      "passed": true,
+      "error_count": 0,
+      "examples": [],
+      "detail": ""
+    },
+    {
+      "check": "Production allocation totals",
+      "passed": true,
+      "error_count": 0,
+      "examples": [],
+      "detail": ""
+    },
+    {
+      "check": "Customer allocation totals",
+      "passed": true,
+      "error_count": 0,
+      "examples": [],
+      "detail": ""
+    },
+    {
+      "check": "Product capability and duration",
+      "passed": true,
+      "error_count": 0,
+      "examples": [],
+      "detail": ""
+    },
+    {
+      "check": "Daily line capacity",
+      "passed": true,
+      "error_count": 0,
+      "examples": [],
+      "detail": ""
+    },
+    {
+      "check": "No line schedule overlaps",
+      "passed": true,
+      "error_count": 0,
+      "examples": [],
+      "detail": ""
+    },
+    {
+      "check": "Receipt quantities match received shipments",
+      "passed": true,
+      "error_count": 0,
+      "examples": [],
+      "detail": ""
+    },
+    {
+      "check": "Procurement approval and pack sizes",
+      "passed": true,
+      "error_count": 0,
+      "examples": [],
+      "detail": ""
+    },
+    {
+      "check": "Supplier capacity not exceeded",
+      "passed": true,
+      "error_count": 0,
+      "examples": [],
+      "detail": ""
+    },
+    {
+      "check": "Actual events precede decision cutoff",
+      "passed": true,
+      "error_count": 0,
+      "examples": [],
+      "detail": ""
+    },
+    {
+      "check": "No actual dispatch for planned shipments",
+      "passed": true,
+      "error_count": 0,
+      "examples": [],
+      "detail": ""
+    },
+    {
+      "check": "Forward baseline has no negative stock",
+      "passed": true,
+      "error_count": 0,
+      "examples": [],
+      "detail": ""
+    },
+    {
+      "check": "All daily balances independently reconstructed",
+      "passed": true,
+      "error_count": 0,
+      "examples": [],
+      "detail": ""
+    },
+    {
+      "check": "Scenario target IDs exist",
+      "passed": true,
+      "error_count": 0,
+      "examples": [],
+      "detail": ""
+    },
+    {
+      "check": "SQLite foreign key integrity",
+      "passed": true,
+      "error_count": 0,
+      "examples": [],
+      "detail": ""
+    }
+  ],
+  "limitations": [
+    "Baseline is intentionally disruption-free; it cannot establish anomaly-model accuracy.",
+    "Scenario overlays are definitions, not applied outcomes or validated recovery plans.",
+    "No public/live API observations or real commercial rates are included."
+  ]
+}

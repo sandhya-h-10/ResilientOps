@@ -1,0 +1,277 @@
+{
+  "version": "showcase-v1",
+  "synthetic": true,
+  "base_dataset_version": "v2_2024-01-01_2026-10-01_seed42",
+  "scenarios": [
+    {
+      "id": "SHOW_001",
+      "title": "Mumbai inbound delay",
+      "description": "A synthetic carrier notice delays the inbound material shipment by two days. Compare qualified recovery sources and explain the first shortage day.",
+      "plant": "PLT_MUM",
+      "material": "MAT_001_A",
+      "shipment_id": "SHIP_00144",
+      "delay_days": 2,
+      "category": "Inbound logistics",
+      "questions": [
+        "What is at risk, and which evidence supports it?",
+        "What should I do next, and what assumptions should I review?"
+      ],
+      "demonstrates": [
+        "Problem alignment & impact",
+        "User experience & solution design"
+      ]
+    },
+    {
+      "id": "SHOW_002",
+      "title": "Tokyo customs clearance delay",
+      "description": "A synthetic customs-clearance hold is modeled as a five-day inbound shipment delay. The cause is a demonstration narrative, not a live customs event.",
+      "plant": "PLT_TYO",
+      "material": "MAT_002_A",
+      "shipment_id": "SHIP_04113",
+      "delay_days": 5,
+      "category": "Customs & timing",
+      "questions": [
+        "What is at risk, and which evidence supports it?",
+        "What should I do next, and what assumptions should I review?"
+      ],
+      "demonstrates": [
+        "Problem alignment & impact",
+        "User experience & solution design"
+      ]
+    },
+    {
+      "id": "SHOW_003",
+      "title": "Beijing component delivery interruption",
+      "description": "A synthetic supplier dispatch interruption delays the shipment by four days. Compare local timing and the related customer-order exposure.",
+      "plant": "PLT_BJS",
+      "material": "MAT_003_A",
+      "shipment_id": "SHIP_08082",
+      "delay_days": 4,
+      "category": "Supplier delivery",
+      "questions": [
+        "What is at risk, and which evidence supports it?",
+        "What should I do next, and what assumptions should I review?"
+      ],
+      "demonstrates": [
+        "Problem alignment & impact",
+        "User experience & solution design"
+      ]
+    },
+    {
+      "id": "SHOW_004",
+      "title": "Mumbai extended route disruption",
+      "description": "A synthetic logistics disruption postpones one shipment by nine days. Show why more severe delay can increase uncovered demand; do not infer closure of other routes.",
+      "plant": "PLT_MUM",
+      "material": "MAT_004_A",
+      "shipment_id": "SHIP_00585",
+      "delay_days": 9,
+      "category": "Extended disruption",
+      "questions": [
+        "What is at risk, and which evidence supports it?",
+        "What should I do next, and what assumptions should I review?"
+      ],
+      "demonstrates": [
+        "Problem alignment & impact",
+        "User experience & solution design"
+      ]
+    },
+    {
+      "id": "SHOW_005",
+      "title": "Tokyo short delay",
+      "description": "A one-day synthetic shipment delay tests whether available stock and dated receipts cover demand. Recommend action only if the calculation warrants it.",
+      "plant": "PLT_TYO",
+      "material": "MAT_001_A",
+      "shipment_id": "SHIP_03966",
+      "delay_days": 1,
+      "category": "Early warning",
+      "questions": [
+        "What is at risk, and which evidence supports it?",
+        "What should I do next, and what assumptions should I review?"
+      ],
+      "demonstrates": [
+        "Problem alignment & impact",
+        "User experience & solution design"
+      ]
+    },
+    {
+      "id": "SHOW_006",
+      "title": "Beijing no-disruption control",
+      "description": "A zero-delay control case tests that the system does not manufacture a disruption or recommend unnecessary procurement.",
+      "plant": "PLT_BJS",
+      "material": "MAT_002_A",
+      "shipment_id": "SHIP_07935",
+      "delay_days": 0,
+      "category": "Control case",
+      "questions": [
+        "What is at risk, and which evidence supports it?",
+        "What should I do next, and what assumptions should I review?"
+      ],
+      "demonstrates": [
+        "Problem alignment & impact",
+        "User experience & solution design"
+      ]
+    },
+    {
+      "id": "SHOW_007",
+      "title": "Mumbai budget-constrained recovery",
+      "description": "A five-day synthetic delay with a zero additional-spend ceiling. Demonstrate blocked planning and revising constraints instead of inventing an affordable plan.",
+      "plant": "PLT_MUM",
+      "material": "MAT_001_A",
+      "shipment_id": "SHIP_00144",
+      "delay_days": 5,
+      "category": "Budget trade-off",
+      "questions": [
+        "What is at risk, and which evidence supports it?",
+        "What should I do next, and what assumptions should I review?"
+      ],
+      "demonstrates": [
+        "Problem alignment & impact",
+        "User experience & solution design"
+      ],
+      "max_cost_paise": 0
+    },
+    {
+      "id": "SHOW_008",
+      "title": "Tokyo deadline-constrained recovery",
+      "description": "A six-day synthetic delay with recovery required by planning day 2. Show whether qualified supply can meet the deadline and explain infeasibility when it cannot.",
+      "plant": "PLT_TYO",
+      "material": "MAT_003_A",
+      "shipment_id": "SHIP_04260",
+      "delay_days": 6,
+      "category": "Feasibility boundary",
+      "questions": [
+        "What is at risk, and which evidence supports it?",
+        "What should I do next, and what assumptions should I review?"
+      ],
+      "demonstrates": [
+        "Problem alignment & impact",
+        "User experience & solution design"
+      ],
+      "latest_arrival_day": 2
+    },
+    {
+      "id": "SHOW_009",
+      "title": "Beijing prolonged inbound delay",
+      "description": "An eight-day synthetic inbound delay on a different material and plant. Compare affected orders, qualified sources and INR-normalized purchase estimates.",
+      "plant": "PLT_BJS",
+      "material": "MAT_004_A",
+      "shipment_id": "SHIP_08229",
+      "delay_days": 8,
+      "category": "Regional comparison",
+      "questions": [
+        "What is at risk, and which evidence supports it?",
+        "What should I do next, and what assumptions should I review?"
+      ],
+      "demonstrates": [
+        "Problem alignment & impact",
+        "User experience & solution design"
+      ]
+    },
+    {
+      "id": "SHOW_010",
+      "title": "Mumbai conflicting supplier messages",
+      "description": "Two synthetic reports disagree about the same recovery booking arrival. The Investigator must surface the conflict rather than silently choose the newer message.",
+      "plant": "PLT_MUM",
+      "material": "MAT_001_A",
+      "shipment_id": "SHIP_00144",
+      "delay_days": 3,
+      "category": "Evidence conflict",
+      "questions": [
+        "Explain the supplier messages, conflicts or corrections and their effect on recovery options.",
+        "What is at risk, and which evidence supports it?",
+        "What should I do next, and what assumptions should I review?"
+      ],
+      "demonstrates": [
+        "Problem alignment & impact",
+        "User experience & solution design",
+        "Technical merit & Gen AI implementation",
+        "Innovation in evidence reconciliation"
+      ],
+      "updates": [
+        {
+          "id": "SHOW_010_A",
+          "source_label": "Synthetic supplier confirmation",
+          "text": "Booking SRC_PLT_MUM_MAT_001_A_0. Confirmed arrival: 2026-10-06. Available: 300 units.",
+          "received_at": "2026-10-01T01:00:00Z",
+          "supersedes": []
+        },
+        {
+          "id": "SHOW_010_B",
+          "source_label": "Synthetic supplier confirmation",
+          "text": "Booking SRC_PLT_MUM_MAT_001_A_0. Confirmed arrival: 2026-10-08. Available: 300 units.",
+          "received_at": "2026-10-01T02:00:00Z",
+          "supersedes": []
+        }
+      ]
+    },
+    {
+      "id": "SHOW_011",
+      "title": "Tokyo corrected supplier confirmation",
+      "description": "A synthetic correction explicitly supersedes an earlier report for a recovery booking. Demonstrate cited evidence reconciliation and explain the revised arrival.",
+      "plant": "PLT_TYO",
+      "material": "MAT_002_A",
+      "shipment_id": "SHIP_04113",
+      "delay_days": 3,
+      "category": "Evidence correction",
+      "questions": [
+        "Explain the supplier messages, conflicts or corrections and their effect on recovery options.",
+        "What is at risk, and which evidence supports it?",
+        "What should I do next, and what assumptions should I review?"
+      ],
+      "demonstrates": [
+        "Problem alignment & impact",
+        "User experience & solution design",
+        "Technical merit & Gen AI implementation",
+        "Innovation in evidence reconciliation"
+      ],
+      "updates": [
+        {
+          "id": "SHOW_011_A",
+          "source_label": "Synthetic supplier confirmation",
+          "text": "Booking SRC_PLT_TYO_MAT_002_A_0. Confirmed arrival: 2026-10-08. Available: 300 units.",
+          "received_at": "2026-10-01T01:00:00Z",
+          "supersedes": []
+        },
+        {
+          "id": "SHOW_011_B",
+          "source_label": "Synthetic supplier confirmation",
+          "text": "Booking SRC_PLT_TYO_MAT_002_A_0. Confirmed arrival: 2026-10-06. Available: 300 units.",
+          "received_at": "2026-10-01T02:00:00Z",
+          "supersedes": [
+            "SHOW_011_A"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SHOW_012",
+      "title": "Beijing limited recovery availability",
+      "description": "A synthetic supplier message confirms only 10 units for one recovery source. Recalculate options from the bounded availability; never assume other sources share the reduction.",
+      "plant": "PLT_BJS",
+      "material": "MAT_003_A",
+      "shipment_id": "SHIP_08082",
+      "delay_days": 5,
+      "category": "Capacity trade-off",
+      "questions": [
+        "Explain the supplier messages, conflicts or corrections and their effect on recovery options.",
+        "What is at risk, and which evidence supports it?",
+        "What should I do next, and what assumptions should I review?"
+      ],
+      "demonstrates": [
+        "Problem alignment & impact",
+        "User experience & solution design",
+        "Technical merit & Gen AI implementation",
+        "Innovation in evidence reconciliation"
+      ],
+      "updates": [
+        {
+          "id": "SHOW_012_A",
+          "source_label": "Synthetic supplier confirmation",
+          "text": "Booking SRC_PLT_BJS_MAT_003_A_0. Confirmed arrival: 2026-10-06. Available: 10 units.",
+          "received_at": "2026-10-01T01:00:00Z",
+          "supersedes": []
+        }
+      ]
+    }
+  ]
+}

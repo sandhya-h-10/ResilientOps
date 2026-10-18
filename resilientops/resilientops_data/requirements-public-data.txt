@@ -1,0 +1,2 @@
+# Optional. Synthetic generation and offline checks use only the Python standard library.
+google-cloud-bigquery>=3.25,<4

@@ -1,0 +1,23 @@
+{
+  "event": {"id":"STORM-SUP017-001","supplier_id":"SUP017","material_id":"PCB-X41","plant_id":"CHENNAI","event_type":"STORM_AND_SHIPMENT_DELAY","source":"SYNTHETIC_DEMO","latitude":22.54,"longitude":114.06,"severity":0.85,"planning_days":6,"delay_min_days":2,"delay_mode_days":6,"delay_max_days":8,"synthetic":true,"planning_start":"2026-10-14"},
+  "inventories": [
+    {"plant_id":"CHENNAI","material_id":"PCB-X41","on_hand":520,"reserved":120,"quality_hold":80,"safety_stock":0},
+    {"plant_id":"PUNE","material_id":"PCB-X41","on_hand":900,"reserved":200,"quality_hold":100,"safety_stock":200}
+  ],
+  "options": [
+    {"id":"PUNE-TRANSFER","action_type":"TRANSFER","source_id":"PUNE","material_id":"PCB-X41","destination":"CHENNAI","capacity":400,"arrival_day":2,"unit_cost_paise":15500,"fixed_cost_paise":2000000,"approved":true},
+    {"id":"SHIP-882-EXPEDITE","action_type":"EXPEDITE","source_id":"SUP017","material_id":"PCB-X41","destination":"CHENNAI","capacity":200,"arrival_day":2,"unit_cost_paise":45000,"fixed_cost_paise":500000,"approved":true},
+    {"id":"SUP044-ALTERNATE","action_type":"ALTERNATE_SUPPLIER","source_id":"SUP044","material_id":"PCB-X41","destination":"CHENNAI","capacity":600,"arrival_day":2,"unit_cost_paise":10000,"fixed_cost_paise":0,"approved":false},
+    {"id":"SUP052-ALTERNATE","action_type":"ALTERNATE_SUPPLIER","source_id":"SUP052","material_id":"PCB-X41","destination":"CHENNAI","capacity":600,"arrival_day":5,"unit_cost_paise":22000,"fixed_cost_paise":1000000,"approved":true}
+  ],
+  "daily_demand":[100,100,100,100,100,100],
+  "supplier_history":[[0.96,12,0.01,0],[0.95,12,0.01,0],[0.97,11,0.009,0],[0.96,12,0.011,0],[0.95,13,0.01,1],[0.94,12,0.012,0],[0.96,12,0.01,0],[0.95,13,0.011,1],[0.94,12,0.012,0],[0.96,11,0.01,0],[0.95,12,0.011,0],[0.94,13,0.012,1],[0.93,13,0.013,1],[0.92,14,0.014,2],[0.89,15,0.016,3],[0.78,19,0.025,6]],
+  "edges":[["SUP017","PCB-X41"],["PCB-X41","BCU-100"],["BCU-100","PROD-991"],["PROD-991","ORDER-204"]],
+  "unit_shortage_cost_paise":500000,
+  "documents":[
+    {"id":"AUDIT-SUP017-01","title":"SUP017 supplier continuity audit","text":"Synthetic supplier audit. SUP017 supplies PCB-X41 and primarily uses Yantian port. Severe storms can interrupt its outbound logistics. This audit does not establish a specific delay or maximum monthly capacity.","supplier_id":"SUP017","document_type":"AUDIT","version":1},
+    {"id":"POLICY-TRANSFER-01","title":"Active emergency inventory transfer policy","text":"Synthetic demo policy: emergency inventory transfer may be proposed when the source plant retains its safety stock, the material matches, and the approved route arrives before a shortage. All simulated actions require a human decision. A manager can approve plans costing up to INR 500000; a senior approver is required above that limit.","document_type":"POLICY","version":1},
+    {"id":"POLICY-SOURCING-01","title":"Active alternate sourcing policy","text":"Synthetic demo policy: alternate supplier sourcing requires an already approved supplier, compatible material, available capacity and an open route. Human approval cannot override supplier qualification or inventory constraints.","document_type":"POLICY","version":1},
+    {"id":"POLICY-OLD-01","title":"Retired sourcing policy","text":"Emergency sourcing policy. This obsolete version allowed unqualified suppliers.","document_type":"POLICY","active":false,"version":1}
+  ]
+}

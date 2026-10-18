@@ -1,0 +1,246 @@
+{
+  "synthetic": true,
+  "base_dataset_version": "v2_2024-01-01_2026-10-01_seed42",
+  "scenarios": [
+    {
+      "id": "RISK_001",
+      "title": "Political disruption - PLT_MUM",
+      "description": "Synthetic external / political monitoring case at PLT_MUM for MAT_001_A. border clearance hours is 48 hours, compared with a historical baseline around 12. A planner-supplied three-day receipt delay models the material availability consequence; the root cause is not inferred from the outlier. This is an illustrative source notice, not a live or verified event.",
+      "plant": "PLT_MUM",
+      "material": "MAT_001_A",
+      "shipment_id": "SHIP_00144",
+      "delay_days": 3,
+      "demand_multiplier": 1,
+      "category": "External / Political",
+      "questions": [
+        "Which signals are anomalous and what is the historical baseline?",
+        "What evidence links this signal to the incident, and what remains uncertain?"
+      ],
+      "demonstrates": [
+        "Statistical monitoring",
+        "Grounded agent reasoning",
+        "Cross-domain disruptions"
+      ]
+    },
+    {
+      "id": "RISK_002",
+      "title": "Economic disruption - PLT_TYO",
+      "description": "Synthetic external / economic monitoring case at PLT_TYO for MAT_002_A. import cost index is 180 index, compared with a historical baseline around 100. A planner-supplied three-day receipt delay models the material availability consequence; the root cause is not inferred from the outlier. This is an illustrative source notice, not a live or verified event.",
+      "plant": "PLT_TYO",
+      "material": "MAT_002_A",
+      "shipment_id": "SHIP_04113",
+      "delay_days": 3,
+      "demand_multiplier": 1,
+      "category": "External / Economic",
+      "questions": [
+        "Which signals are anomalous and what is the historical baseline?",
+        "What evidence links this signal to the incident, and what remains uncertain?"
+      ],
+      "demonstrates": [
+        "Statistical monitoring",
+        "Grounded agent reasoning",
+        "Cross-domain disruptions"
+      ]
+    },
+    {
+      "id": "RISK_003",
+      "title": "Environmental disruption - PLT_BJS",
+      "description": "Synthetic external / environmental monitoring case at PLT_BJS for MAT_003_A. rainfall is 105 mm/day, compared with a historical baseline around 15. A planner-supplied three-day receipt delay models the material availability consequence; the root cause is not inferred from the outlier. This is an illustrative source notice, not a live or verified event.",
+      "plant": "PLT_BJS",
+      "material": "MAT_003_A",
+      "shipment_id": "SHIP_08082",
+      "delay_days": 3,
+      "demand_multiplier": 1,
+      "category": "External / Environmental",
+      "questions": [
+        "Which signals are anomalous and what is the historical baseline?",
+        "What evidence links this signal to the incident, and what remains uncertain?"
+      ],
+      "demonstrates": [
+        "Statistical monitoring",
+        "Grounded agent reasoning",
+        "Cross-domain disruptions"
+      ]
+    },
+    {
+      "id": "RISK_004",
+      "title": "Technological disruption - PLT_MUM",
+      "description": "Synthetic external / technological monitoring case at PLT_MUM for MAT_001_A. port system outage is 150 minutes/day, compared with a historical baseline around 10. A planner-supplied three-day receipt delay models the material availability consequence; the root cause is not inferred from the outlier. This is an illustrative source notice, not a live or verified event.",
+      "plant": "PLT_MUM",
+      "material": "MAT_001_A",
+      "shipment_id": "SHIP_00144",
+      "delay_days": 3,
+      "demand_multiplier": 1,
+      "category": "External / Technological",
+      "questions": [
+        "Which signals are anomalous and what is the historical baseline?",
+        "What evidence links this signal to the incident, and what remains uncertain?"
+      ],
+      "demonstrates": [
+        "Statistical monitoring",
+        "Grounded agent reasoning",
+        "Cross-domain disruptions"
+      ]
+    },
+    {
+      "id": "RISK_005",
+      "title": "Social disruption - PLT_TYO",
+      "description": "Synthetic external / social monitoring case at PLT_TYO for MAT_002_A. transport absence is 30 percent, compared with a historical baseline around 5. A planner-supplied three-day receipt delay models the material availability consequence; the root cause is not inferred from the outlier. This is an illustrative source notice, not a live or verified event.",
+      "plant": "PLT_TYO",
+      "material": "MAT_002_A",
+      "shipment_id": "SHIP_04113",
+      "delay_days": 3,
+      "demand_multiplier": 1,
+      "category": "External / Social",
+      "questions": [
+        "Which signals are anomalous and what is the historical baseline?",
+        "What evidence links this signal to the incident, and what remains uncertain?"
+      ],
+      "demonstrates": [
+        "Statistical monitoring",
+        "Grounded agent reasoning",
+        "Cross-domain disruptions"
+      ]
+    },
+    {
+      "id": "RISK_006",
+      "title": "Legal disruption - PLT_BJS",
+      "description": "Synthetic external / legal monitoring case at PLT_BJS for MAT_003_A. compliance clearance hours is 40 hours, compared with a historical baseline around 8. A planner-supplied three-day receipt delay models the material availability consequence; the root cause is not inferred from the outlier. This is an illustrative source notice, not a live or verified event.",
+      "plant": "PLT_BJS",
+      "material": "MAT_003_A",
+      "shipment_id": "SHIP_08082",
+      "delay_days": 3,
+      "demand_multiplier": 1,
+      "category": "External / Legal",
+      "questions": [
+        "Which signals are anomalous and what is the historical baseline?",
+        "What evidence links this signal to the incident, and what remains uncertain?"
+      ],
+      "demonstrates": [
+        "Statistical monitoring",
+        "Grounded agent reasoning",
+        "Cross-domain disruptions"
+      ]
+    },
+    {
+      "id": "RISK_007",
+      "title": "Equipment disruption - PLT_MUM",
+      "description": "Synthetic internal / equipment monitoring case at PLT_MUM for MAT_001_A. receiving equipment downtime is 108 minutes/day, compared with a historical baseline around 12. A planner-supplied three-day receipt delay models the material availability consequence; the root cause is not inferred from the outlier. This is an illustrative source notice, not a live or verified event.",
+      "plant": "PLT_MUM",
+      "material": "MAT_001_A",
+      "shipment_id": "SHIP_00144",
+      "delay_days": 3,
+      "demand_multiplier": 1,
+      "category": "Internal / Equipment",
+      "questions": [
+        "Which signals are anomalous and what is the historical baseline?",
+        "What evidence links this signal to the incident, and what remains uncertain?"
+      ],
+      "demonstrates": [
+        "Statistical monitoring",
+        "Grounded agent reasoning",
+        "Cross-domain disruptions"
+      ]
+    },
+    {
+      "id": "RISK_008",
+      "title": "Quality disruption - PLT_TYO",
+      "description": "Synthetic internal / quality monitoring case at PLT_TYO for MAT_002_A. incoming inspection rejection is 20 percent, compared with a historical baseline around 2. A planner-supplied three-day receipt delay models the material availability consequence; the root cause is not inferred from the outlier. This is an illustrative source notice, not a live or verified event.",
+      "plant": "PLT_TYO",
+      "material": "MAT_002_A",
+      "shipment_id": "SHIP_04113",
+      "delay_days": 3,
+      "demand_multiplier": 1,
+      "category": "Internal / Quality",
+      "questions": [
+        "Which signals are anomalous and what is the historical baseline?",
+        "What evidence links this signal to the incident, and what remains uncertain?"
+      ],
+      "demonstrates": [
+        "Statistical monitoring",
+        "Grounded agent reasoning",
+        "Cross-domain disruptions"
+      ]
+    },
+    {
+      "id": "RISK_009",
+      "title": "Workforce disruption - PLT_BJS",
+      "description": "Synthetic internal / workforce monitoring case at PLT_BJS for MAT_003_A. receiving team absence is 28 percent, compared with a historical baseline around 4. A planner-supplied three-day receipt delay models the material availability consequence; the root cause is not inferred from the outlier. This is an illustrative source notice, not a live or verified event.",
+      "plant": "PLT_BJS",
+      "material": "MAT_003_A",
+      "shipment_id": "SHIP_08082",
+      "delay_days": 3,
+      "demand_multiplier": 1,
+      "category": "Internal / Workforce",
+      "questions": [
+        "Which signals are anomalous and what is the historical baseline?",
+        "What evidence links this signal to the incident, and what remains uncertain?"
+      ],
+      "demonstrates": [
+        "Statistical monitoring",
+        "Grounded agent reasoning",
+        "Cross-domain disruptions"
+      ]
+    },
+    {
+      "id": "RISK_010",
+      "title": "Supplier disruption - PLT_MUM",
+      "description": "Synthetic market / supplier monitoring case at PLT_MUM for MAT_001_A. supplier lead time is 15 days, compared with a historical baseline around 5. A planner-supplied three-day receipt delay models the material availability consequence; the root cause is not inferred from the outlier. This is an illustrative source notice, not a live or verified event.",
+      "plant": "PLT_MUM",
+      "material": "MAT_001_A",
+      "shipment_id": "SHIP_00144",
+      "delay_days": 3,
+      "demand_multiplier": 1,
+      "category": "Market / Supplier",
+      "questions": [
+        "Which signals are anomalous and what is the historical baseline?",
+        "What evidence links this signal to the incident, and what remains uncertain?"
+      ],
+      "demonstrates": [
+        "Statistical monitoring",
+        "Grounded agent reasoning",
+        "Cross-domain disruptions"
+      ]
+    },
+    {
+      "id": "RISK_011",
+      "title": "Demand disruption - PLT_TYO",
+      "description": "Synthetic market / demand monitoring case at PLT_TYO for MAT_002_A. daily demand index is 180 index, compared with a historical baseline around 100. Aggregate demand is increased by 40%; no extra customer-order value is invented. This is an illustrative source notice, not a live or verified event.",
+      "plant": "PLT_TYO",
+      "material": "MAT_002_A",
+      "shipment_id": "SHIP_04113",
+      "delay_days": 0,
+      "demand_multiplier": 1.4,
+      "category": "Market / Demand",
+      "questions": [
+        "Which signals are anomalous and what is the historical baseline?",
+        "What evidence links this signal to the incident, and what remains uncertain?"
+      ],
+      "demonstrates": [
+        "Statistical monitoring",
+        "Grounded agent reasoning",
+        "Cross-domain disruptions"
+      ]
+    },
+    {
+      "id": "RISK_012",
+      "title": "Control disruption - PLT_BJS",
+      "description": "Synthetic market / control monitoring case at PLT_BJS for MAT_003_A. daily demand index is 102 index, compared with a historical baseline around 100. No disruption overlay is applied. This is an illustrative source notice, not a live or verified event.",
+      "plant": "PLT_BJS",
+      "material": "MAT_003_A",
+      "shipment_id": "SHIP_08082",
+      "delay_days": 0,
+      "demand_multiplier": 1,
+      "category": "Market / Control",
+      "questions": [
+        "Which signals are anomalous and what is the historical baseline?",
+        "What evidence links this signal to the incident, and what remains uncertain?"
+      ],
+      "demonstrates": [
+        "Statistical monitoring",
+        "Grounded agent reasoning",
+        "Cross-domain disruptions"
+      ]
+    }
+  ]
+}

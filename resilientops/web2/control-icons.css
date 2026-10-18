@@ -1,0 +1,4 @@
+body.marketing .account-links>button.icon-control,body.dashboard button.icon-control{display:inline-flex;align-items:center;justify-content:center;flex:0 0 44px;width:44px;min-width:44px;height:44px;min-height:44px;padding:0;line-height:1;border-radius:8px}
+.icon-control svg{display:block;pointer-events:none;flex-shrink:0}.icon-control[aria-pressed=true],.icon-control[aria-checked=true]{border-color:var(--accent,#12766b)}
+html[data-theme=light] body.marketing .pill{color:#096b5c;border-color:#096b5c}html[data-theme=light] body.marketing .sharp-preview .pill{color:#73e4c4;border-color:#417265}
+html[data-theme=light] body.marketing dialog{background:var(--surface);color:var(--ink);border-color:var(--line)}html[data-theme=light] body.marketing dialog p{color:var(--muted)}

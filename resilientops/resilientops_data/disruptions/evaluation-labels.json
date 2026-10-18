@@ -1,0 +1,54 @@
+{
+  "synthetic": true,
+  "base_dataset_version": "v2_2024-01-01_2026-10-01_seed42",
+  "labels": [
+    {
+      "scenario_id": "RISK_001",
+      "expected_anomaly": true
+    },
+    {
+      "scenario_id": "RISK_002",
+      "expected_anomaly": true
+    },
+    {
+      "scenario_id": "RISK_003",
+      "expected_anomaly": true
+    },
+    {
+      "scenario_id": "RISK_004",
+      "expected_anomaly": true
+    },
+    {
+      "scenario_id": "RISK_005",
+      "expected_anomaly": true
+    },
+    {
+      "scenario_id": "RISK_006",
+      "expected_anomaly": true
+    },
+    {
+      "scenario_id": "RISK_007",
+      "expected_anomaly": true
+    },
+    {
+      "scenario_id": "RISK_008",
+      "expected_anomaly": true
+    },
+    {
+      "scenario_id": "RISK_009",
+      "expected_anomaly": true
+    },
+    {
+      "scenario_id": "RISK_010",
+      "expected_anomaly": true
+    },
+    {
+      "scenario_id": "RISK_011",
+      "expected_anomaly": true
+    },
+    {
+      "scenario_id": "RISK_012",
+      "expected_anomaly": false
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+/* Benefits are informational, not interactive cards. */
+body.marketing #why .feature,body.marketing #why .feature:hover,body.marketing #why .feature:active{cursor:default;transform:none!important;box-shadow:none!important;transition:none!important}
+body.marketing #why .feature:hover{translate:none!important;border-color:var(--line)!important}

@@ -1,0 +1,4 @@
+{"base_uom": "EA", "dataset_version": "v2_2024-01-01_2026-10-01_seed42", "is_synthetic": true, "product_id": "PRD_001", "product_name": "Body control module"}
+{"base_uom": "EA", "dataset_version": "v2_2024-01-01_2026-10-01_seed42", "is_synthetic": true, "product_id": "PRD_002", "product_name": "Vehicle control module"}
+{"base_uom": "EA", "dataset_version": "v2_2024-01-01_2026-10-01_seed42", "is_synthetic": true, "product_id": "PRD_003", "product_name": "Power control module"}
+{"base_uom": "EA", "dataset_version": "v2_2024-01-01_2026-10-01_seed42", "is_synthetic": true, "product_id": "PRD_004", "product_name": "Sensor control module"}

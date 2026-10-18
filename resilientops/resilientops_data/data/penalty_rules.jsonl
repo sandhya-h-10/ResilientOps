@@ -1,0 +1,1 @@
+{"currency": "INR", "dataset_version": "v2_2024-01-01_2026-10-01_seed42", "grace_hours": 24, "is_synthetic": true, "maximum_penalty": "100000.00", "penalty_rule_id": "PEN_001", "rate": "10.00", "rule_type": "PER_LATE_UNIT_PER_DAY"}

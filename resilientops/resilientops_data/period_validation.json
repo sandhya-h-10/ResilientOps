@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "History is 1004 days including leap day",
+      "passed": true
+    },
+    {
+      "check": "Every historical date has 90 plant-material balances",
+      "passed": true
+    },
+    {
+      "check": "Planning dates are separate October 1\u201330",
+      "passed": true
+    },
+    {
+      "check": "Audits unavailable before decision date",
+      "passed": true
+    },
+    {
+      "check": "Weather gaps reconcile without invented observations",
+      "passed": true
+    },
+    {
+      "check": "All operational file hashes match manifest",
+      "passed": true
+    },
+    {
+      "check": "News backfill windows cover range with no gaps",
+      "passed": true
+    }
+  ]
+}

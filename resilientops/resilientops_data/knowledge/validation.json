@@ -1,0 +1,14 @@
+{
+  "documents": 29,
+  "chunks": 146,
+  "passed": true,
+  "checks": [
+    "Unique document/chunk IDs",
+    "All 15 supplier sites covered",
+    "All 3 plants covered",
+    "Source record references exist",
+    "Five policies and six SOPs generated",
+    "Each document marked synthetic"
+  ],
+  "embedding_status": "NOT_EMBEDDED"
+}

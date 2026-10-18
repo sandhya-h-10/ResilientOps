@@ -1,0 +1,4 @@
+{
+  "passed": true,
+  "scope": "Unit conversions, missing sentinels, provenance labels and SQL generation. No live BigQuery verification."
+}

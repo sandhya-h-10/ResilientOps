@@ -1,0 +1,8 @@
+{"capability_id": "CAP_PLT_MUM_PRD_001", "dataset_version": "v2_2024-01-01_2026-10-01_seed42", "is_synthetic": true, "line_id": "PLT_MUM_L1", "product_id": "PRD_001", "setup_hours": 0.5, "units_per_hour": 50}
+{"capability_id": "CAP_PLT_MUM_PRD_002", "dataset_version": "v2_2024-01-01_2026-10-01_seed42", "is_synthetic": true, "line_id": "PLT_MUM_L2", "product_id": "PRD_002", "setup_hours": 0.5, "units_per_hour": 50}
+{"capability_id": "CAP_PLT_MUM_PRD_003", "dataset_version": "v2_2024-01-01_2026-10-01_seed42", "is_synthetic": true, "line_id": "PLT_MUM_L1", "product_id": "PRD_003", "setup_hours": 0.5, "units_per_hour": 50}
+{"capability_id": "CAP_PLT_TYO_PRD_002", "dataset_version": "v2_2024-01-01_2026-10-01_seed42", "is_synthetic": true, "line_id": "PLT_TYO_L1", "product_id": "PRD_002", "setup_hours": 0.5, "units_per_hour": 50}
+{"capability_id": "CAP_PLT_TYO_PRD_003", "dataset_version": "v2_2024-01-01_2026-10-01_seed42", "is_synthetic": true, "line_id": "PLT_TYO_L2", "product_id": "PRD_003", "setup_hours": 0.5, "units_per_hour": 50}
+{"capability_id": "CAP_PLT_TYO_PRD_004", "dataset_version": "v2_2024-01-01_2026-10-01_seed42", "is_synthetic": true, "line_id": "PLT_TYO_L1", "product_id": "PRD_004", "setup_hours": 0.5, "units_per_hour": 50}
+{"capability_id": "CAP_PLT_BJS_PRD_001", "dataset_version": "v2_2024-01-01_2026-10-01_seed42", "is_synthetic": true, "line_id": "PLT_BJS_L1", "product_id": "PRD_001", "setup_hours": 0.5, "units_per_hour": 50}
+{"capability_id": "CAP_PLT_BJS_PRD_004", "dataset_version": "v2_2024-01-01_2026-10-01_seed42", "is_synthetic": true, "line_id": "PLT_BJS_L2", "product_id": "PRD_004", "setup_hours": 0.5, "units_per_hour": 50}

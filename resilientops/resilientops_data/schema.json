@@ -1,0 +1,890 @@
+{
+  "primary_keys": {
+    "plants": "plant_id",
+    "materials": "material_id",
+    "material_revisions": "material_revision_id",
+    "products": "product_id",
+    "production_lines": "line_id",
+    "line_product_capabilities": "capability_id",
+    "bom_headers": "bom_id",
+    "bom_lines": "bom_line_id",
+    "suppliers": "supplier_id",
+    "supplier_sites": "supplier_site_id",
+    "customers": "customer_id",
+    "logistics_nodes": "node_id",
+    "transport_routes": "route_id",
+    "route_legs": "route_leg_id",
+    "transfer_permissions": "permission_id",
+    "transport_offers": "offer_id",
+    "sourcing_agreements": "sourcing_id",
+    "inventory_policies": "inventory_policy_id",
+    "approval_rules": "approval_rule_id",
+    "penalty_rules": "penalty_rule_id",
+    "plant_calendar": "calendar_id",
+    "line_capacity_daily": "capacity_id",
+    "exchange_rates": "rate_id",
+    "production_orders": "production_order_id",
+    "customer_orders": "customer_order_id",
+    "customer_order_lines": "customer_order_line_id",
+    "order_allocations": "allocation_id",
+    "material_requirements": "requirement_id",
+    "inventory_lots": "lot_id",
+    "opening_inventory": "opening_id",
+    "purchase_orders": "po_id",
+    "purchase_order_lines": "po_line_id",
+    "shipments": "shipment_id",
+    "shipment_lines": "shipment_line_id",
+    "shipment_updates": "update_id",
+    "inventory_movements": "movement_id",
+    "production_completions": "completion_id",
+    "inventory_daily": "balance_id",
+    "goods_receipts": "receipt_id",
+    "inventory_balances": "balance_id",
+    "inventory_reservations": "reservation_id",
+    "inventory_projection_daily": "projection_id",
+    "supplier_capacity_daily": "capacity_id",
+    "supplier_performance": "performance_id",
+    "scenarios": "scenario_id",
+    "scenario_changes": "change_id"
+  },
+  "foreign_keys": [
+    [
+      "material_revisions",
+      "material_id",
+      "materials",
+      "material_id"
+    ],
+    [
+      "production_lines",
+      "plant_id",
+      "plants",
+      "plant_id"
+    ],
+    [
+      "line_product_capabilities",
+      "line_id",
+      "production_lines",
+      "line_id"
+    ],
+    [
+      "line_product_capabilities",
+      "product_id",
+      "products",
+      "product_id"
+    ],
+    [
+      "bom_headers",
+      "product_id",
+      "products",
+      "product_id"
+    ],
+    [
+      "bom_headers",
+      "plant_id",
+      "plants",
+      "plant_id"
+    ],
+    [
+      "bom_lines",
+      "bom_id",
+      "bom_headers",
+      "bom_id"
+    ],
+    [
+      "bom_lines",
+      "material_revision_id",
+      "material_revisions",
+      "material_revision_id"
+    ],
+    [
+      "supplier_sites",
+      "supplier_id",
+      "suppliers",
+      "supplier_id"
+    ],
+    [
+      "sourcing_agreements",
+      "supplier_site_id",
+      "supplier_sites",
+      "supplier_site_id"
+    ],
+    [
+      "sourcing_agreements",
+      "material_revision_id",
+      "material_revisions",
+      "material_revision_id"
+    ],
+    [
+      "sourcing_agreements",
+      "destination_plant_id",
+      "plants",
+      "plant_id"
+    ],
+    [
+      "sourcing_agreements",
+      "route_id",
+      "transport_routes",
+      "route_id"
+    ],
+    [
+      "route_legs",
+      "route_id",
+      "transport_routes",
+      "route_id"
+    ],
+    [
+      "route_legs",
+      "from_node_id",
+      "logistics_nodes",
+      "node_id"
+    ],
+    [
+      "route_legs",
+      "to_node_id",
+      "logistics_nodes",
+      "node_id"
+    ],
+    [
+      "transport_routes",
+      "origin_node_id",
+      "logistics_nodes",
+      "node_id"
+    ],
+    [
+      "transport_routes",
+      "destination_node_id",
+      "logistics_nodes",
+      "node_id"
+    ],
+    [
+      "transport_offers",
+      "route_id",
+      "transport_routes",
+      "route_id"
+    ],
+    [
+      "transport_offers",
+      "material_id",
+      "materials",
+      "material_id"
+    ],
+    [
+      "transfer_permissions",
+      "source_plant_id",
+      "plants",
+      "plant_id"
+    ],
+    [
+      "transfer_permissions",
+      "destination_plant_id",
+      "plants",
+      "plant_id"
+    ],
+    [
+      "transfer_permissions",
+      "material_revision_id",
+      "material_revisions",
+      "material_revision_id"
+    ],
+    [
+      "inventory_policies",
+      "plant_id",
+      "plants",
+      "plant_id"
+    ],
+    [
+      "inventory_policies",
+      "material_revision_id",
+      "material_revisions",
+      "material_revision_id"
+    ],
+    [
+      "plant_calendar",
+      "plant_id",
+      "plants",
+      "plant_id"
+    ],
+    [
+      "line_capacity_daily",
+      "line_id",
+      "production_lines",
+      "line_id"
+    ],
+    [
+      "production_orders",
+      "plant_id",
+      "plants",
+      "plant_id"
+    ],
+    [
+      "production_orders",
+      "line_id",
+      "production_lines",
+      "line_id"
+    ],
+    [
+      "production_orders",
+      "product_id",
+      "products",
+      "product_id"
+    ],
+    [
+      "production_orders",
+      "bom_id",
+      "bom_headers",
+      "bom_id"
+    ],
+    [
+      "customer_orders",
+      "customer_id",
+      "customers",
+      "customer_id"
+    ],
+    [
+      "customer_order_lines",
+      "customer_order_id",
+      "customer_orders",
+      "customer_order_id"
+    ],
+    [
+      "customer_order_lines",
+      "product_id",
+      "products",
+      "product_id"
+    ],
+    [
+      "customer_order_lines",
+      "penalty_rule_id",
+      "penalty_rules",
+      "penalty_rule_id"
+    ],
+    [
+      "order_allocations",
+      "production_order_id",
+      "production_orders",
+      "production_order_id"
+    ],
+    [
+      "order_allocations",
+      "customer_order_line_id",
+      "customer_order_lines",
+      "customer_order_line_id"
+    ],
+    [
+      "material_requirements",
+      "production_order_id",
+      "production_orders",
+      "production_order_id"
+    ],
+    [
+      "material_requirements",
+      "plant_id",
+      "plants",
+      "plant_id"
+    ],
+    [
+      "material_requirements",
+      "material_revision_id",
+      "material_revisions",
+      "material_revision_id"
+    ],
+    [
+      "purchase_orders",
+      "supplier_site_id",
+      "supplier_sites",
+      "supplier_site_id"
+    ],
+    [
+      "purchase_order_lines",
+      "po_id",
+      "purchase_orders",
+      "po_id"
+    ],
+    [
+      "purchase_order_lines",
+      "sourcing_id",
+      "sourcing_agreements",
+      "sourcing_id"
+    ],
+    [
+      "shipments",
+      "route_id",
+      "transport_routes",
+      "route_id"
+    ],
+    [
+      "shipment_lines",
+      "shipment_id",
+      "shipments",
+      "shipment_id"
+    ],
+    [
+      "shipment_lines",
+      "po_line_id",
+      "purchase_order_lines",
+      "po_line_id"
+    ],
+    [
+      "shipment_updates",
+      "shipment_id",
+      "shipments",
+      "shipment_id"
+    ],
+    [
+      "goods_receipts",
+      "shipment_line_id",
+      "shipment_lines",
+      "shipment_line_id"
+    ],
+    [
+      "goods_receipts",
+      "lot_id",
+      "inventory_lots",
+      "lot_id"
+    ],
+    [
+      "inventory_lots",
+      "plant_id",
+      "plants",
+      "plant_id"
+    ],
+    [
+      "inventory_lots",
+      "material_revision_id",
+      "material_revisions",
+      "material_revision_id"
+    ],
+    [
+      "inventory_lots",
+      "supplier_site_id",
+      "supplier_sites",
+      "supplier_site_id"
+    ],
+    [
+      "inventory_balances",
+      "lot_id",
+      "inventory_lots",
+      "lot_id"
+    ],
+    [
+      "opening_inventory",
+      "lot_id",
+      "inventory_lots",
+      "lot_id"
+    ],
+    [
+      "inventory_movements",
+      "lot_id",
+      "inventory_lots",
+      "lot_id"
+    ],
+    [
+      "inventory_reservations",
+      "lot_id",
+      "inventory_lots",
+      "lot_id"
+    ],
+    [
+      "inventory_reservations",
+      "production_order_id",
+      "production_orders",
+      "production_order_id"
+    ],
+    [
+      "production_completions",
+      "production_order_id",
+      "production_orders",
+      "production_order_id"
+    ],
+    [
+      "supplier_capacity_daily",
+      "supplier_site_id",
+      "supplier_sites",
+      "supplier_site_id"
+    ],
+    [
+      "supplier_capacity_daily",
+      "material_revision_id",
+      "material_revisions",
+      "material_revision_id"
+    ],
+    [
+      "supplier_performance",
+      "supplier_site_id",
+      "supplier_sites",
+      "supplier_site_id"
+    ],
+    [
+      "scenario_changes",
+      "scenario_id",
+      "scenarios",
+      "scenario_id"
+    ]
+  ],
+  "tables": {
+    "plants": {
+      "plant_id": "str",
+      "plant_name": "str",
+      "city": "str",
+      "country_code": "str",
+      "timezone": "str",
+      "local_currency": "str",
+      "latitude": "float",
+      "longitude": "float",
+      "active": "bool",
+      "dataset_version": "str",
+      "is_synthetic": "bool"
+    },
+    "materials": {
+      "material_id": "str",
+      "material_name": "str",
+      "base_uom": "str",
+      "quantity_increment": "int",
+      "criticality": "str",
+      "dataset_version": "str",
+      "is_synthetic": "bool"
+    },
+    "material_revisions": {
+      "material_revision_id": "str",
+      "material_id": "str",
+      "revision_code": "str",
+      "valid_from": "str",
+      "valid_to": "NoneType",
+      "status": "str",
+      "dataset_version": "str",
+      "is_synthetic": "bool"
+    },
+    "products": {
+      "product_id": "str",
+      "product_name": "str",
+      "base_uom": "str",
+      "dataset_version": "str",
+      "is_synthetic": "bool"
+    },
+    "production_lines": {
+      "line_id": "str",
+      "plant_id": "str",
+      "line_name": "str",
+      "dataset_version": "str",
+      "is_synthetic": "bool"
+    },
+    "line_product_capabilities": {
+      "capability_id": "str",
+      "line_id": "str",
+      "product_id": "str",
+      "units_per_hour": "int",
+      "setup_hours": "float",
+      "dataset_version": "str",
+      "is_synthetic": "bool"
+    },
+    "bom_headers": {
+      "bom_id": "str",
+      "product_id": "str",
+      "plant_id": "str",
+      "version": "int",
+      "output_quantity": "int",
+      "valid_from": "str",
+      "valid_to": "NoneType",
+      "status": "str",
+      "dataset_version": "str",
+      "is_synthetic": "bool"
+    },
+    "bom_lines": {
+      "bom_line_id": "str",
+      "bom_id": "str",
+      "material_revision_id": "str",
+      "quantity_per_output": "int",
+      "scrap_rate": "int",
+      "dataset_version": "str",
+      "is_synthetic": "bool"
+    },
+    "suppliers": {
+      "supplier_id": "str",
+      "supplier_name": "str",
+      "status": "str",
+      "dataset_version": "str",
+      "is_synthetic": "bool"
+    },
+    "supplier_sites": {
+      "supplier_site_id": "str",
+      "supplier_id": "str",
+      "latitude": "float",
+      "longitude": "float",
+      "country_code": "str",
+      "currency": "str",
+      "status": "str",
+      "dataset_version": "str",
+      "is_synthetic": "bool"
+    },
+    "customers": {
+      "customer_id": "str",
+      "customer_name": "str",
+      "service_priority": "int",
+      "dataset_version": "str",
+      "is_synthetic": "bool"
+    },
+    "logistics_nodes": {
+      "node_id": "str",
+      "node_type": "str",
+      "country_code": "str",
+      "latitude": "float",
+      "longitude": "float",
+      "dataset_version": "str",
+      "is_synthetic": "bool"
+    },
+    "transport_routes": {
+      "route_id": "str",
+      "origin_node_id": "str",
+      "destination_node_id": "str",
+      "mode": "str",
+      "active": "bool",
+      "dataset_version": "str",
+      "is_synthetic": "bool"
+    },
+    "route_legs": {
+      "route_leg_id": "str",
+      "route_id": "str",
+      "sequence_number": "int",
+      "from_node_id": "str",
+      "to_node_id": "str",
+      "transit_hours": "int",
+      "clearance_hours": "int",
+      "handling_hours": "int",
+      "dataset_version": "str",
+      "is_synthetic": "bool"
+    },
+    "transfer_permissions": {
+      "permission_id": "str",
+      "source_plant_id": "str",
+      "destination_plant_id": "str",
+      "material_revision_id": "str",
+      "permitted": "bool",
+      "receiving_release_hours": "int",
+      "dataset_version": "str",
+      "is_synthetic": "bool"
+    },
+    "transport_offers": {
+      "offer_id": "str",
+      "route_id": "str",
+      "material_id": "str",
+      "fixed_cost": "str",
+      "cost_per_base_unit": "str",
+      "currency": "str",
+      "dispatch_prep_hours": "int",
+      "capacity_qty_per_day": "int",
+      "dataset_version": "str",
+      "is_synthetic": "bool"
+    },
+    "sourcing_agreements": {
+      "sourcing_id": "str",
+      "supplier_site_id": "str",
+      "material_revision_id": "str",
+      "destination_plant_id": "str",
+      "approval_status": "str",
+      "valid_from": "str",
+      "valid_to": "NoneType",
+      "unit_price": "str",
+      "currency": "str",
+      "minimum_order_qty": "int",
+      "order_multiple": "int",
+      "processing_lead_time_days": "int",
+      "route_id": "str",
+      "is_primary": "bool",
+      "dataset_version": "str",
+      "is_synthetic": "bool"
+    },
+    "inventory_policies": {
+      "inventory_policy_id": "str",
+      "plant_id": "str",
+      "material_revision_id": "str",
+      "minimum_protected_qty": "int",
+      "dataset_version": "str",
+      "is_synthetic": "bool"
+    },
+    "approval_rules": {
+      "approval_rule_id": "str",
+      "action_type": "str",
+      "amount_from": "str",
+      "amount_to": "str",
+      "currency": "str",
+      "required_role": "str",
+      "dataset_version": "str",
+      "is_synthetic": "bool"
+    },
+    "penalty_rules": {
+      "penalty_rule_id": "str",
+      "rule_type": "str",
+      "rate": "str",
+      "currency": "str",
+      "grace_hours": "int",
+      "maximum_penalty": "str",
+      "dataset_version": "str",
+      "is_synthetic": "bool"
+    },
+    "plant_calendar": {
+      "calendar_id": "str",
+      "plant_id": "str",
+      "local_date": "str",
+      "is_working_day": "bool",
+      "working_hours": "int",
+      "dataset_version": "str",
+      "is_synthetic": "bool"
+    },
+    "line_capacity_daily": {
+      "capacity_id": "str",
+      "line_id": "str",
+      "local_date": "str",
+      "available_hours": "int",
+      "planned_maintenance_hours": "int",
+      "dataset_version": "str",
+      "is_synthetic": "bool"
+    },
+    "exchange_rates": {
+      "rate_id": "str",
+      "rate_date": "str",
+      "from_currency": "str",
+      "to_currency": "str",
+      "rate": "str",
+      "rate_basis": "str",
+      "dataset_version": "str",
+      "is_synthetic": "bool"
+    },
+    "production_orders": {
+      "production_order_id": "str",
+      "plant_id": "str",
+      "line_id": "str",
+      "product_id": "str",
+      "bom_id": "str",
+      "planned_qty": "int",
+      "scheduled_start_utc": "str",
+      "scheduled_end_utc": "str",
+      "local_date": "str",
+      "priority": "int",
+      "status": "str",
+      "dataset_version": "str",
+      "is_synthetic": "bool"
+    },
+    "customer_orders": {
+      "customer_order_id": "str",
+      "customer_id": "str",
+      "created_at_utc": "str",
+      "currency": "str",
+      "status": "str",
+      "dataset_version": "str",
+      "is_synthetic": "bool"
+    },
+    "customer_order_lines": {
+      "customer_order_line_id": "str",
+      "customer_order_id": "str",
+      "product_id": "str",
+      "ordered_qty": "int",
+      "due_at_utc": "str",
+      "selling_price_per_unit": "str",
+      "contribution_margin_per_unit": "str",
+      "penalty_rule_id": "str",
+      "outbound_delivery_hours": "int",
+      "dataset_version": "str",
+      "is_synthetic": "bool"
+    },
+    "order_allocations": {
+      "allocation_id": "str",
+      "customer_order_line_id": "str",
+      "production_order_id": "str",
+      "allocated_qty": "int",
+      "dataset_version": "str",
+      "is_synthetic": "bool"
+    },
+    "material_requirements": {
+      "requirement_id": "str",
+      "production_order_id": "str",
+      "plant_id": "str",
+      "material_revision_id": "str",
+      "required_qty": "int",
+      "required_at_utc": "str",
+      "dataset_version": "str",
+      "is_synthetic": "bool"
+    },
+    "inventory_lots": {
+      "lot_id": "str",
+      "plant_id": "str",
+      "material_revision_id": "str",
+      "supplier_site_id": "str",
+      "received_at_utc": "str",
+      "expiry_at_utc": "NoneType",
+      "dataset_version": "str",
+      "is_synthetic": "bool"
+    },
+    "opening_inventory": {
+      "opening_id": "str",
+      "lot_id": "str",
+      "as_of_utc": "str",
+      "quantity": "int",
+      "dataset_version": "str",
+      "is_synthetic": "bool"
+    },
+    "purchase_orders": {
+      "po_id": "str",
+      "supplier_site_id": "str",
+      "created_at_utc": "str",
+      "status": "str",
+      "currency": "str",
+      "dataset_version": "str",
+      "is_synthetic": "bool"
+    },
+    "purchase_order_lines": {
+      "po_line_id": "str",
+      "po_id": "str",
+      "sourcing_id": "str",
+      "ordered_qty": "int",
+      "cancelled_qty": "int",
+      "unit_price": "str",
+      "promised_receipt_at_utc": "str",
+      "dataset_version": "str",
+      "is_synthetic": "bool"
+    },
+    "shipments": {
+      "shipment_id": "str",
+      "route_id": "str",
+      "status": "str",
+      "planned_dispatch_at_utc": "str",
+      "actual_dispatch_at_utc": "str",
+      "original_eta_utc": "str",
+      "dataset_version": "str",
+      "is_synthetic": "bool"
+    },
+    "shipment_lines": {
+      "shipment_line_id": "str",
+      "shipment_id": "str",
+      "po_line_id": "str",
+      "shipped_qty": "int",
+      "planned_qty": "int",
+      "dataset_version": "str",
+      "is_synthetic": "bool"
+    },
+    "shipment_updates": {
+      "update_id": "str",
+      "shipment_id": "str",
+      "observed_at_utc": "str",
+      "expected_arrival_at_utc": "str",
+      "status": "str",
+      "reason_code": "str",
+      "dataset_version": "str",
+      "is_synthetic": "bool"
+    },
+    "inventory_movements": {
+      "movement_id": "str",
+      "lot_id": "str",
+      "movement_type": "str",
+      "quantity": "int",
+      "occurred_at_utc": "str",
+      "reference_id": "str",
+      "dataset_version": "str",
+      "is_synthetic": "bool"
+    },
+    "production_completions": {
+      "completion_id": "str",
+      "production_order_id": "str",
+      "completed_at_utc": "str",
+      "good_qty": "int",
+      "scrap_qty": "int",
+      "dataset_version": "str",
+      "is_synthetic": "bool"
+    },
+    "inventory_daily": {
+      "balance_id": "str",
+      "plant_id": "str",
+      "material_revision_id": "str",
+      "local_date": "str",
+      "physical_qty": "int",
+      "quality_hold_qty": "int",
+      "other_blocked_qty": "int",
+      "dataset_version": "str",
+      "is_synthetic": "bool"
+    },
+    "goods_receipts": {
+      "receipt_id": "str",
+      "shipment_line_id": "str",
+      "lot_id": "str",
+      "received_qty": "int",
+      "received_at_utc": "str",
+      "dataset_version": "str",
+      "is_synthetic": "bool"
+    },
+    "inventory_balances": {
+      "balance_id": "str",
+      "lot_id": "str",
+      "as_of_utc": "str",
+      "physical_qty": "int",
+      "quality_hold_qty": "int",
+      "other_blocked_qty": "int",
+      "dataset_version": "str",
+      "is_synthetic": "bool"
+    },
+    "inventory_reservations": {
+      "reservation_id": "str",
+      "lot_id": "str",
+      "production_order_id": "str",
+      "reserved_qty": "int",
+      "required_at_utc": "str",
+      "status": "str",
+      "dataset_version": "str",
+      "is_synthetic": "bool"
+    },
+    "inventory_projection_daily": {
+      "projection_id": "str",
+      "plant_id": "str",
+      "material_revision_id": "str",
+      "local_date": "str",
+      "projected_physical_qty": "int",
+      "basis": "str",
+      "dataset_version": "str",
+      "is_synthetic": "bool"
+    },
+    "supplier_capacity_daily": {
+      "capacity_id": "str",
+      "supplier_site_id": "str",
+      "material_revision_id": "str",
+      "capacity_date": "str",
+      "total_capacity_qty": "int",
+      "committed_qty": "int",
+      "capacity_basis": "str",
+      "dataset_version": "str",
+      "is_synthetic": "bool"
+    },
+    "supplier_performance": {
+      "performance_id": "str",
+      "supplier_site_id": "str",
+      "period_start": "str",
+      "period_end_exclusive": "str",
+      "delivered_lines": "int",
+      "delivered_qty": "int",
+      "on_time_in_full_rate": "str",
+      "average_delay_days": "str",
+      "dataset_version": "str",
+      "is_synthetic": "bool"
+    },
+    "scenarios": {
+      "scenario_id": "str",
+      "scenario_name": "str",
+      "scenario_type": "str",
+      "base_dataset_version": "str",
+      "decision_time_utc": "str",
+      "random_seed": "int",
+      "description": "str",
+      "dataset_version": "str",
+      "is_synthetic": "bool"
+    },
+    "scenario_changes": {
+      "change_id": "str",
+      "scenario_id": "str",
+      "target_type": "str",
+      "target_id": "str",
+      "change_type": "str",
+      "effective_at_utc": "str",
+      "known_at_utc": "str",
+      "parameters": "dict",
+      "dataset_version": "str",
+      "is_synthetic": "bool"
+    }
+  }
+}

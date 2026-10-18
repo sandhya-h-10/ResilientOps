@@ -1,0 +1,64 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "Unique weather keys",
+      "passed": true
+    },
+    {
+      "check": "Historical weather dates unchanged",
+      "passed": true
+    },
+    {
+      "check": "Entity links resolve to observations",
+      "passed": true
+    },
+    {
+      "check": "Ambiguous rain excluded from daily analysis",
+      "passed": true
+    },
+    {
+      "check": "Public records labeled observed",
+      "passed": true
+    },
+    {
+      "check": "News URLs unique",
+      "passed": true
+    },
+    {
+      "check": "No unverified operational impact links",
+      "passed": true
+    },
+    {
+      "check": "Short paraphrases only",
+      "passed": true
+    },
+    {
+      "check": "News temporal boundaries explicit",
+      "passed": true
+    },
+    {
+      "check": "Chunks unique and synthetic",
+      "passed": true
+    },
+    {
+      "check": "Chunk documents exist",
+      "passed": true
+    },
+    {
+      "check": "Chunk checksums match",
+      "passed": true
+    }
+  ],
+  "counts": {
+    "weather_observations": 3911,
+    "entity_links": 10384,
+    "news_summaries": 16,
+    "knowledge_chunks": 146
+  },
+  "limits": [
+    "No live Google query executed",
+    "No embeddings generated",
+    "No confirmed supplier impacts inferred"
+  ]
+}

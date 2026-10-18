@@ -1,0 +1,7 @@
+{
+  "status": "NOT_RUN",
+  "source": "GOOGLE_BIGQUERY_NOAA",
+  "requested_start": "2024-01-01",
+  "requested_end_inclusive": "2026-09-30",
+  "reason": "Google project and credentials not configured. Direct NOAA archive downloads are separate; see weather_reference/download_status.json."
+}

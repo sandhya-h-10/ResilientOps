@@ -1,0 +1,59 @@
+{
+  "synthetic": true,
+  "live_gemini": true,
+  "scenario": "RISK_001",
+  "model": "gemini-3.5-flash",
+  "status": "FAILED",
+  "error": "Gemini request quota exhausted. Wait for the quota window to reset or adjust the project's quota, then retry. No local fallback was used.",
+  "stages": [
+    "Sentinel"
+  ],
+  "reviews": {},
+  "retrievals": {
+    "Sentinel": [
+      {
+        "backend": "LocalKnowledge",
+        "document_ids": [
+          "RISK_001",
+          "SIGNAL_001",
+          "AUD_SUP_001",
+          "AUD_SUP_002",
+          "AUD_SUP_003"
+        ],
+        "query": "border clearance hours political signal PLT_MUM MAT_001_A"
+      }
+    ]
+  },
+  "model_usage": [
+    {
+      "agent": "Sentinel",
+      "input_tokens": 801,
+      "output_tokens": 12,
+      "scope": "ADK orchestration",
+      "thought_tokens": 116
+    },
+    {
+      "agent": "Sentinel",
+      "input_tokens": 1966,
+      "output_tokens": 32,
+      "scope": "ADK orchestration",
+      "thought_tokens": 218
+    },
+    {
+      "agent": "Sentinel",
+      "input_tokens": 4609,
+      "output_tokens": 11,
+      "scope": "ADK orchestration",
+      "thought_tokens": 15
+    }
+  ],
+  "investigator_provider": null,
+  "complete_live_workflow_verified": false,
+  "blocking_condition": "Provider returned a 20-request daily quota exhaustion after the preceding live validation attempts.",
+  "separately_verified_context_extraction": {
+    "provider": "gemini",
+    "family": "external",
+    "cited_facts": 3,
+    "source": "Generated SIGNAL_001 synthetic notice"
+  }
+}
