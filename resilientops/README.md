@@ -188,7 +188,7 @@ uv.lock             Locked dependency resolution
 
 The application reads operational JSONL inputs. The optional duplicate `resilientops.sqlite` source export is not included in this archive; it is not required by the runtime adapter. Keep `data/`, which is used by regression tests.
 
-## Validation and submission
+## Validation
 
 ```sh
 uv run pytest -q
@@ -196,6 +196,5 @@ uv run pytest -q
 
 The tests use isolated state and mocked providers where appropriate. They verify calculations and workflow behavior, not live model availability or production readiness. PostgreSQL integration tests need a disposable `RESILIENTOPS_TEST_POSTGRES_URL`; otherwise they skip. Historical evaluation results under `docs/evaluation/` describe their recorded datasets and modes, not a universal accuracy score.
 
-For submission, provide the **public GitHub URL**, **working deployed URL**, **demo video under three minutes**, and **presentation deck**, according to the [AI Builder Cup FAQs](https://aibuildercup.com/Faqs.html). Replace the clone URL placeholder and add the actual video/deck links when available. The team must substantiate hackathon timeline eligibility using genuine development history; no such history is fabricated by this archive.
 
-This is a single-tenant prototype with some publicly readable synthetic endpoints. It has no real purchasing integration, no calibrated disruption-probability claim, no measured business-savings claim and no formal accessibility certification.
+This is a single-tenant prototype with some publicly readable synthetic endpoints. It has no real purchasing integration, no calibrated disruption-probability claim, no measured business-savings claim and no formal accessibility certification yet.
